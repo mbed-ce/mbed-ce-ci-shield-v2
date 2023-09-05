@@ -475,6 +475,14 @@
     [
       "d2cb7c4f-a03f-4f1c-8cab-0427a0ad2909",
       "USB Hub"
+    ],
+    [
+      "a2280405-5315-4fe3-be7c-fd34d4bf90fe",
+      "FT232H"
+    ],
+    [
+      "f4546d92-79b2-49d8-a7ba-866a7f1f353e",
+      "Logic Analyzer"
     ]
   ],
   "text_variables": {}
