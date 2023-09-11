@@ -111,21 +111,21 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.0,
-        "min_connection": 0.0,
-        "min_copper_edge_clearance": 0.0,
+        "min_clearance": 0.09999999999999999,
+        "min_connection": 0.09999999999999999,
+        "min_copper_edge_clearance": 0.5,
         "min_hole_clearance": 0.25,
-        "min_hole_to_hole": 0.25,
+        "min_hole_to_hole": 0.3,
         "min_microvia_diameter": 0.19999999999999998,
         "min_microvia_drill": 0.09999999999999999,
         "min_resolved_spokes": 2,
         "min_silk_clearance": 0.0,
         "min_text_height": 0.7999999999999999,
         "min_text_thickness": 0.08,
-        "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.0,
-        "min_via_annular_width": 0.09999999999999999,
-        "min_via_diameter": 0.5,
+        "min_through_hole_diameter": 0.19999999999999998,
+        "min_track_width": 0.09999999999999999,
+        "min_via_annular_width": 0.15,
+        "min_via_diameter": 0.35,
         "solder_mask_clearance": 0.0,
         "solder_mask_min_width": 0.0,
         "solder_mask_to_copper_clearance": 0.0,
@@ -193,7 +193,14 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      "power_pin_not_driven|1219200|863600|f280f215-202a-4fb7-b2c9-098860b73142|00000000-0000-0000-0000-000000000000|||",
+      "power_pin_not_driven|1244600|863600|93cca6ce-0b6e-4575-abac-3b3ebfff03a6|00000000-0000-0000-0000-000000000000|||",
+      "power_pin_not_driven|3606800|1181100|bcb0d6f5-03ec-4a28-beee-9814c0079291|00000000-0000-0000-0000-000000000000|||",
+      "power_pin_not_driven|3606800|1206500|b430d233-caf7-4a2c-8905-29b8b5a25781|00000000-0000-0000-0000-000000000000|||",
+      "power_pin_not_driven|927100|482600|b6330b03-ae1c-46e9-8a79-dd8a90984186|00000000-0000-0000-0000-000000000000|||",
+      "power_pin_not_driven|927100|584200|11c786aa-9a97-4357-b79e-6060fa1d2b03|00000000-0000-0000-0000-000000000000|||"
+    ],
     "meta": {
       "version": 0
     },
@@ -499,7 +506,7 @@
       "version": 1
     },
     "net_format_name": "",
-    "page_layout_descr_file": "",
+    "page_layout_descr_file": "${KICAD_USER_TEMPLATE_DIR}/Mbed CE Sheet.kicad_wks",
     "plot_directory": "",
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
@@ -529,6 +536,14 @@
     [
       "1e471c6e-a872-4398-8c30-01f0a30d79ce",
       "ArduinoConnector"
+    ],
+    [
+      "25f8559c-e7f1-47b3-be11-aaa166453322",
+      "MicroSDCard"
+    ],
+    [
+      "502804e3-3934-4e7a-a466-dea1f6df7ba2",
+      "I2CEEPROM"
     ]
   ],
   "text_variables": {}
