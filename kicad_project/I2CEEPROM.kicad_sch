@@ -417,11 +417,11 @@
     (uuid 626fdc36-ddd2-4afa-a0ea-1490be6a2bc3)
   )
 
-  (label "I2C.SDA" (at 102.87 66.04 0)
+  (label "I2C.SDA" (at 102.87 66.04 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 21a37b4e-7ad2-4051-a91b-11495dbafbab)
   )
-  (label "I2C.SCL" (at 102.87 68.58 0)
+  (label "I2C.SCL" (at 102.87 68.58 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 373dffac-668e-49fe-9b09-ce9c10321840)
   )
