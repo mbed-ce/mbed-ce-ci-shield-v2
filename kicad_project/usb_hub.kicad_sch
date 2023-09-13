@@ -6007,7 +6007,7 @@
     (property "Footprint" "Connector_USB:USB_A_CUI_UJ2-ADH-TH_Horizontal_Stacked" (at 367.03 142.24 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
-    (property "Datasheet" " https://www.cuidevices.com/product/resource/uj2-adh-th.pdf" (at 365.76 127 0)
+    (property "Datasheet" "https://www.cuidevices.com/product/resource/uj2-adh-th.pdf" (at 365.76 127 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "SKU" "102-5876-ND" (at 370.84 128.27 0)

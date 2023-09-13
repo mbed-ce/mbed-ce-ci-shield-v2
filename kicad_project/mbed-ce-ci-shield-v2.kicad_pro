@@ -506,7 +506,7 @@
       "version": 1
     },
     "net_format_name": "",
-    "page_layout_descr_file": "${KICAD_USER_TEMPLATE_DIR}/Mbed CE Sheet.kicad_wks",
+    "page_layout_descr_file": "Mbed CE Sheet.kicad_wks",
     "plot_directory": "",
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
@@ -546,5 +546,8 @@
       "I2CEEPROM"
     ]
   ],
-  "text_variables": {}
+  "text_variables": {
+    "date": "2023-09-12",
+    "version": "98fa3b7"
+  }
 }
