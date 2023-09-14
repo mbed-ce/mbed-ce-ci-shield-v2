@@ -55,7 +55,10 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "lib_footprint_mismatch|147250000|90439998|f81e837f-47cc-4f43-93ce-5d45cf47857d|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_mismatch|72600000|44400000|b0c66658-abcd-49ff-802a-3adb0823929d|00000000-0000-0000-0000-000000000000"
+      ],
       "meta": {
         "version": 2
       },
@@ -92,7 +95,7 @@
         "pth_inside_courtyard": "ignore",
         "shorting_items": "error",
         "silk_edge_clearance": "warning",
-        "silk_over_copper": "warning",
+        "silk_over_copper": "ignore",
         "silk_overlap": "warning",
         "skew_out_of_range": "error",
         "solder_mask_bridge": "error",
@@ -114,7 +117,7 @@
         "min_clearance": 0.09999999999999999,
         "min_connection": 0.09999999999999999,
         "min_copper_edge_clearance": 0.5,
-        "min_hole_clearance": 0.25,
+        "min_hole_clearance": 0.19999999999999998,
         "min_hole_to_hole": 0.3,
         "min_microvia_diameter": 0.19999999999999998,
         "min_microvia_drill": 0.09999999999999999,
@@ -537,10 +540,14 @@
     [
       "502804e3-3934-4e7a-a466-dea1f6df7ba2",
       "I2CEEPROM"
+    ],
+    [
+      "059ba0d2-25a2-4040-8fdd-1e25fcedcad8",
+      "PowerUSBPort"
     ]
   ],
   "text_variables": {
-    "date": "2023-09-12",
-    "version": "98fa3b7"
+    "date": "2023-09-13",
+    "version": "0646786"
   }
 }
