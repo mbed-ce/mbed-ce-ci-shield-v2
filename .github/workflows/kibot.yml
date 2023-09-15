@@ -1,0 +1,44 @@
+# SPDX-FileCopyrightText: 2022 nerdyscout <https://github.com/nerdyscout/>
+#
+# SPDX-License-Identifier: CC0-1.0
+
+name: KiBot
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+    - "kicad_project/*.kicad_sch"
+    - "kicad_project/*.kicad_pcb"
+    - "kicad_project/*.kicad_pro"
+    - "**/*kibot.yml"
+
+env:
+  schema: "mbed-ce-ci-shield-v2.kicad_sch"
+  board: "mbed-ce-ci-shield-v2.kicad_pcb"
+  project_dir: kicad_project
+  out_dir: out
+
+jobs:
+# checks
+  ERC:
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/inti-cmnb/kicad7_auto:latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: run kibot
+        run: | 
+          cd ${{env.project_dir}}
+          mkdir ${{env.out_dir}}
+          kibot -c kibot.yml -e ${{env.schema}} -b ${{env.board}} -d ${{env.out_dir}} -s run_drc -v -i
+  DRC:
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/inti-cmnb/kicad7_auto:latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: run kibot
+        run: | 
+          cd ${{env.project_dir}}
+          kibot -c kibot.yml -e ${{env.schema}} -b ${{env.board}} -d ${{env.out_dir}} -s run_erc -v -i
