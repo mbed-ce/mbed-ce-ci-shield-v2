@@ -100,8 +100,8 @@
     )
   )
 
-  (property "date" "2023-09-13")
-  (property "version" "0646786")
+  (property "date" "2023-09-15")
+  (property "version" "f1539fe")
 
   (net 0 "")
   (net 1 "GND")

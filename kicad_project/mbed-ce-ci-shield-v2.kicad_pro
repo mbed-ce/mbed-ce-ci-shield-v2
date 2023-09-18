@@ -84,7 +84,7 @@
         "items_not_allowed": "error",
         "length_out_of_range": "error",
         "lib_footprint_issues": "warning",
-        "lib_footprint_mismatch": "warning",
+        "lib_footprint_mismatch": "ignore",
         "malformed_courtyard": "error",
         "microvia_drill_out_of_range": "error",
         "missing_courtyard": "ignore",
@@ -547,7 +547,7 @@
     ]
   ],
   "text_variables": {
-    "date": "2023-09-14",
-    "version": "19c7a45"
+    "date": "2023-09-15",
+    "version": "f1539fe"
   }
 }

@@ -1,6 +1,6 @@
 outputs:
-  - name: 'octopart.csv'
-    comment: 'https://octopart.com/'
+  - name: 'bom-pcbinv.csv'
+    comment: 'BoM for pcbinv'
     type: 'kibom'
     dir: 'docs/bom'
     options:
@@ -20,7 +20,9 @@ outputs:
           - Description
           - Part
           - Value
+          - Supplier
           - SKU
+          - Footprint
           - field: Quantity Per PCB
             name: Qty
         # [list(list(string))] A series of values which are considered to be equivalent for the part name.
@@ -66,6 +68,8 @@ outputs:
             regex: LOGO
           - column: Part
             regex: Jumper
+          - column: Part
+            regex: NetTie
         # [string='Config'] Field name used to determine if a particular part is to be fitted (also DNC and variants)
         fit_field: 'Config'
         # [boolean=true] Connectors with the same footprints will be grouped together, independent of the name of the connector
@@ -108,7 +112,7 @@ outputs:
       # [number=1] Number of boards to build (components multiplier)
       number: 1
       # [string='%f-%i%v.%x'] filename for the output (%i=bom). Affected by global options
-      output: '%f-%i.%x'
+      output: '%f-%i-pcbinv.%x'
       # [string=','] CSV Separator
       separator: ','
       # [string=''] Board variant(s), used to determine which components
