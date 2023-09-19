@@ -254,6 +254,9 @@
     (property "ki_locked" "" (at 0 0 0)
       (effects (font (size 1.27 1.27)))
     )
+    (property "ki_description" "4 Port USB Hub Controller USB 2.0 48-TQFP" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (symbol "CY7C65632-48AXCT_1_1"
       (polyline
         (pts

@@ -20,25 +20,23 @@ env:
   out_dir: out
 
 jobs:
-# checks
-  ERC:
+  compile-and-gen-design-files:
     runs-on: ubuntu-latest
     container:
       image: ghcr.io/inti-cmnb/kicad7_auto:latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: run kibot
         run: | 
           cd ${{env.project_dir}}
           mkdir ${{env.out_dir}}
-          kibot -c kibot.yml -e ${{env.schema}} -b ${{env.board}} -d ${{env.out_dir}} -s run_drc -v -i
-  DRC:
-    runs-on: ubuntu-latest
-    container:
-      image: ghcr.io/inti-cmnb/kicad7_auto:latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: run kibot
-        run: | 
-          cd ${{env.project_dir}}
-          kibot -c kibot.yml -e ${{env.schema}} -b ${{env.board}} -d ${{env.out_dir}} -s run_erc -v -i
+          kibot -c kibot.yml -e ${{env.schema}} -b ${{env.board}} -d ${{env.out_dir}} -v
+      - uses: actions/upload-artifact@v3
+        if: ${{success()}}
+        with:
+          name: ${{github.event.repository.name}}_design_files
+          if-no-files-found: error
+          path: |
+            ${{env.out_dir}}/**
+            !${{env.dir}}/**/*.ogv
+            !${{env.dir}}/**/*.log
