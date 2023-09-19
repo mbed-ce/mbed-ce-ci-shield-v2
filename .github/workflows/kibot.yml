@@ -26,11 +26,10 @@ jobs:
       image: ghcr.io/inti-cmnb/kicad7_auto:latest
     steps:
       - uses: actions/checkout@v3
-      - name: install pcbdraw
+      - name: install pcbdraw resources
         run: |
           git clone https://github.com/yaqwsx/PcbDraw.git
-          cd PcbDraw
-          python3 setup.py install
+          cp -r PcbDraw/pcbdraw/resources /usr/share/pcbdraw
       - name: run kibot
         run: | 
           cd ${{env.project_dir}}
