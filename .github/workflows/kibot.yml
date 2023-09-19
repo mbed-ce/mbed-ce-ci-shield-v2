@@ -28,7 +28,6 @@ jobs:
       - uses: actions/checkout@v3
       - name: install pcbdraw
         run: |
-          apt-get install -y python3-pip
           python3 -m pip install pcbdraw
       - name: run kibot
         run: | 
