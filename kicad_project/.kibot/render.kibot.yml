@@ -1,6 +1,7 @@
 outputs:
-  # For more information: https://github.com/INTI-CMNB/KiBoM
-  - name: 'kicad 3d view top'
+  # For more information: https://github.com/INTI-CMNB/KiBot
+  - name: 'mbed-ce-ci-shield-v2-top.png'
+    comment: Render Raytraced 3D View
     type: 'render_3d'
     dir: 'img/render'
     options:
@@ -8,48 +9,11 @@ outputs:
       output: '%f-top.%x'
       ray_tracing: true
       view: top
+      zoom: 2
+      rotate_x: 1
+      rotate_y: 1
+      auto_crop: true
+      transparent_background: true
 
-  - name: 'kicad 3d view bottom'
-    type: 'render_3d'
-    dir: 'img/render'
-    options:
-      download: true
-      output: '%f-bottom.%x'
-      ray_tracing: true
-      view: bottom
-
-  - name: 'kicad 3d view front'
-    type: 'render_3d'
-    dir: 'img/render'
-    options:
-      download: true
-      output: '%f-front.%x'
-      ray_tracing: true
-      view: front
-
-  - name: 'kicad 3d view rear'
-    type: 'render_3d'
-    dir: 'img/render'
-    options:
-      download: true
-      output: '%f-rear.%x'
-      ray_tracing: true
-      view: rear
-
-  - name: 'kicad 3d view right'
-    type: 'render_3d'
-    dir: 'img/render'
-    options:
-      download: true
-      output: '%f-right.%x'
-      ray_tracing: true
-      view: right
-
-  - name: 'kicad 3d view left'
-    type: 'render_3d'
-    dir: 'img/render'
-    options:
-      download: true
-      output: '%f-left.%x'
-      ray_tracing: true
-      view: left
+      height: 1280
+      width: 1280
