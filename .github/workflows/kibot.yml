@@ -26,10 +26,6 @@ jobs:
       image: ghcr.io/inti-cmnb/kicad7_auto:latest
     steps:
       - uses: actions/checkout@v3
-      - name: install pcbdraw resources
-        run: |
-          git clone https://github.com/yaqwsx/PcbDraw.git
-          cp -r PcbDraw/pcbdraw/resources /usr/share/pcbdraw
       - name: run kibot
         run: | 
           cd ${{env.project_dir}}
@@ -41,6 +37,6 @@ jobs:
           name: ${{github.event.repository.name}}_design_files
           if-no-files-found: error
           path: |
-            ${{env.out_dir}}/**
-            !${{env.dir}}/**/*.ogv
-            !${{env.dir}}/**/*.log
+            ${{env.project_dir}}/${{env.out_dir}}/**
+            !${{env.project_dir}}/${{env.out_dir}}/**/*.ogv
+            !${{env.project_dir}}/${{env.out_dir}}/**/*.log
