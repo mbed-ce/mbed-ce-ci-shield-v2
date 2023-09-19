@@ -26,6 +26,9 @@ jobs:
       image: ghcr.io/inti-cmnb/kicad7_auto:latest
     steps:
       - uses: actions/checkout@v3
+      - name: install pcbdraw
+        run: |
+          sudo apt-get install -y pcbdraw
       - name: run kibot
         run: | 
           cd ${{env.project_dir}}
