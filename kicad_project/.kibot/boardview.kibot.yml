@@ -1,6 +1,6 @@
 outputs:
-  - name: 'openboardview.brd'
-    comment: 'https://openboardview.org/'
+  - name: 'BRD'
+    comment: 'BRD file for https://openboardview.org/'
     type: boardview
     dir: cad
     options:

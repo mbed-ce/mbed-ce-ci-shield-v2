@@ -1,6 +1,6 @@
 outputs:
-  - name: 'ibom.html'
-    comment: 'https://github.com/openscopeproject/InteractiveHtmlBom'
+  - name: 'HTML IBOM'
+    comment: 'Interactive HTML BOM'
     type: 'ibom'
     dir: 'docs/bom'
     options:

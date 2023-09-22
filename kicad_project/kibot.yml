@@ -12,17 +12,6 @@ preflight:
   run_drc: true
   check_zone_fills: true
   ignore_unconnected: false
-#  update_qr: true
-  # filters:
-  #   - filter: 'suppress courtyards overlap'
-  #     regex: 'Courtyards overlap'
-  #     error: 'courtyards_overlap'
-  #   - filter: 'suppress clearance violation'
-  #     regex: 'Clearance violation'
-  #     error: 'clearance'
-  #   - filter: 'suppress board edge clearance violation'
-  #     regex: 'Board edge clearance violation'
-  #     error: 'copper_edge_clearance'
 
 filters:
   - name: "exclude_any"
@@ -37,16 +26,11 @@ import:
   - file: .kibot/bom_ibom.kibot.yml
   - file: .kibot/bom_pcbinv.kibot.yml
   - file: .kibot/docs.kibot.yml
-#  - file: .kibot/datasheets.kibot.yml
 # fabrications
-  
-#  - file: .kibot/gerbers.kibot.yml
   - file: .kibot/PCBWay.kibot.yml
-  - file: .kibot/drills.kibot.yml
 # img
   - file: .kibot/render.kibot.yml
   - file: .kibot/plot.kibot.yml
 # cad
   - file: .kibot/boardview.kibot.yml
   - file: .kibot/step.kibot.yml
-  - file: .kibot/dxf.kibot.yml

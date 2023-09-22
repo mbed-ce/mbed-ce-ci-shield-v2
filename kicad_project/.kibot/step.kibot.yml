@@ -1,6 +1,6 @@
 outputs:
-  - name: 'model.step'
-    comment: 'Renders - 3D model (STEP)'
+  - name: 'PCB STEP'
+    comment: 'Generate 3D model (STEP) of PCB and components'
     type: step
     dir: cad
     options:

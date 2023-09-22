@@ -5,7 +5,7 @@ kibot:
   version: 1
 
 outputs:
-  - name: PCBWay_gerbers
+  - name: PCBWay Gerbers
     comment: Gerbers compatible with PCBWay
     type: gerber
     dir: PCBWay
@@ -37,8 +37,8 @@ outputs:
       - B.Paste
       - Edge.Cuts
 
-  - name: PCBWay_drill
-    comment: Drill files compatible with PCBWay
+  - name: PCBWay Drill
+    comment: Excellon drill files compatible with PCBWay
     type: excellon
     dir: PCBWay
     options:
@@ -56,14 +56,14 @@ outputs:
       npth_id: '-NPTH'
       output: "%f%i.drl"
 
-  - name: PCBWay-design-files
-    comment: ZIP file for PCBWay
+  - name: PCBWay Zip
+    comment: Zipped design files for PCBWay
     type: compress
     dir: PCBWay
     options:
       format: ZIP
       files:
-        - from_output: PCBWay_gerbers
+        - from_output: PCBWay Gerbers
           dest: /
-        - from_output: PCBWay_drill
+        - from_output: PCBWay Drill
           dest: /

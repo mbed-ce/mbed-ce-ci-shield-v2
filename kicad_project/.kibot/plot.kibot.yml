@@ -1,6 +1,6 @@
 outputs:
-  - name: 'board_black_top.svg'
-    comment: 'https://github.com/yaqwsx/PcbDraw'
+  - name: 'PCB Top SVG'
+    comment: 'SVG for top of PCB via PcbDraw plugin'
     type: 'pcbdraw'
     dir: 'img/pcb'
     options:
@@ -39,8 +39,8 @@ outputs:
       # [string='visible'] [visible,all,none] using visible only the warnings about components in the visible side are generated
       warnings: 'none'
 
-  - name: 'board_black_bottom.svg'
-    comment: 'https://github.com/yaqwsx/PcbDraw'
+  - name: 'PCB Bottom SVG'
+    comment: 'SVG for bottom of PCB via PcbDraw plugin'
     type: 'pcbdraw'
     dir: 'img/pcb'
     options:

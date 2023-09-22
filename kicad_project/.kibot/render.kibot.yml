@@ -1,7 +1,7 @@
 outputs:
   # For more information: https://github.com/INTI-CMNB/KiBot
-  - name: 'mbed-ce-ci-shield-v2-top.png'
-    comment: Render Raytraced 3D View
+  - name: '3D Render PNG'
+    comment: Render 3D view as PNG with raytracing, tilted front view
     type: 'render_3d'
     dir: 'img/render'
     options:

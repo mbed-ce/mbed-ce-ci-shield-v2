@@ -1,6 +1,6 @@
 outputs:
-  - name: 'bom-pcbinv.csv'
-    comment: 'BoM for pcbinv'
+  - name: 'pcbinv BoM'
+    comment: 'CSV bill of materials for pcbinv'
     type: 'bom'
     #  [string='./'] Output directory for the generated files. If it starts with + the rest is concatenated to the default dir.
     dir: 'docs/bom'
