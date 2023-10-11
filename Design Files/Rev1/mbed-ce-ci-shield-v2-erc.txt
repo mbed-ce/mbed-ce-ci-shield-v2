@@ -1,0 +1,19 @@
+ERC report (Fri Sep 22 06:10:56 2023, Encoding UTF8)
+
+***** Sheet /
+
+***** Sheet /USB Hub/
+
+***** Sheet /FT232H/
+
+***** Sheet /Logic Analyzer/
+
+***** Sheet /ArduinoConnector/
+
+***** Sheet /MicroSDCard/
+
+***** Sheet /I2CEEPROM/
+
+***** Sheet /PowerUSBPort/
+
+ ** ERC messages: 0  Errors 0  Warnings 0
