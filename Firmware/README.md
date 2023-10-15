@@ -1,0 +1,1 @@
+Ths firmware file was complied from the [fx2lafw project](https://sigrok.org/wiki/Fx2lafw), version 0.1.7.  It turns a Cypress FX2LP chip into an 8 channel logic analyzer.
