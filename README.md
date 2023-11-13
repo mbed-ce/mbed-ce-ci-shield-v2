@@ -55,8 +55,59 @@ Logic analyzer inputs are muxed by the FUNC_SEL[0..2] pins.
 | D7 | GPOUT2 | GPOUT2 | GPOUT2 | GPOUT2 | 
 
 
+## Board Bringup and Testing
 ### Flashing Firmware on New Boards
 
-## Board Testing and Bring-Up Steps
+To flash the logic analyzer firmware, use [the mbed-ce fork of fxload](https://github.com/mbed-ce/fxload).  After installing it (and setting up udev rules, if on Linux), run the following command from the repo root:
+
+```
+$ fxload load_eeprom --ihex-path Firmware/fx2lafw-sigrok-fx2-8ch.ihx -t FX2LP --control-byte 0xC2
+```
+
+## Using the Logic Analyzer
+The logic analyzer integrated into this board runs firmware from the Sigrok project, and is designed to be used with the sigrok CLI and the PulseView GUI.  This provides a complete set of open-source tools for capturing and decoding traffic moving across the board.
+
+### Side Note: Sigrok Windows Issues
+Unfortunately, the Sigrok project currently has extremely shoddy support for using USB-based logic analyzers when running on Windows, and I was not ultimately able to get it working.  I did a bit of a deep dive into what's going on here, including looking through the source code, and came up with the following information.
+
+Internally, sigrok uses the epoll mechanism to handle asynchronous events.  Libusb, which it uses to communicate with USB devices, has never supported epoll on Windows in official releases.  However, back in like 2015, someone made a [fork](https://github.com/libusb/libusb/issues/252) called "event abstraction" of libusb-1.0 which added this support.  Ever since then, even though it was never merged or updated, sigrok [has used](https://sigrok.org/bugzilla/show_bug.cgi?id=1593) this fork to provide USB support on Windows.  
+
+Unfortunately, in my testing, this old libusb version no longer seems to function reliably on Windows 10 and 11 machines.   It seems like factors such as the direction of the wind, blue whale migration patterns, and the mood of the river spirits determine whether it will actually be able to connect to a given USB device.  Even unplugging other USB devices or moving the board to a different machine sometimes made a difference.  With the same exact machines and hardware, fxload (built against the latest libusb) works perfectly reliably.  So I can only assume that this behavior is due to a bug or compatibility issue between Windows 10/11 and that old version of libusb.
+
+More recently, in the nightlies after the sigrok-cli 0.7.2 and pulseview 0.4.2 releases, sigrok switched to building with the mainline version of libusb.  However, this version does not contain epoll emulation support, so any attempt by a sigrok driver to connect to a USB device on Windows will fail with an internal error.  It simply does not work and cannot be made to work -- I can only assume that the sigrok devs did not realize that it would completely break things when they made the change.  
+
+As far as I can tell, the only way to fix this situation would be to refactor libsigrok's internals to use the libusb-1.0 threaded API (which is fully supported on windows) instead of the epoll-based API.  I raised this concern to the sigrok developers on IRC, and they did not seem interested in doing this refactor anytime soon.
+
+So, TL;DR: sigrok-cli <=0.7.2 has buggy USB device support on Windows and sigrok-cli >0.7.2 has no USB device support at all, and no fix is currently planned.  Infinite sadness.  I can only hope that someone at sigrok HQ changes their mind about this someday -- perhaps the next major release breaking all USB devices on windows will raise a little more awareness.
+
+Note that I would have reported this information on sigrok's bugzilla, but the developers refused to create an account for me.  So putting it here instead.
+
+### Using the Logic Analyzer via WSL2 on Windows
+If you have Windows 11 and WSL2, you can proxy USB devices to WSL using `usbipd`.  I found that this worked perfectly fine for the FX2 logic analyzer on the board.  First install usbipd using [these instructions](https://github.com/dorssel/usbipd-win/wiki/WSL-support).  Then, follow the linux instructions which follow.
+
+### Using the Logic Analyzer on Linux
+First, you need to install the udev rules. Copy the 60-libsigrok.rukes and 61-libsigrok-plugdev.rules files from [here](https://github.com/sigrokproject/libsigrok/blob/master/contrib/) into /etc/udev/rules.d.  Then, make sure your user account is in the `plugdev` group.  Finally, run:
+```
+$ sudo udevadm control --reload-rules
+$ sudo udevadm trigger
+```
+
+If on WSL2 and the first command gives an error, run
+```
+$ sudo service udev restart
+```
+first.
+
+You should now be able to run sigrok without root.  Now, you can run:
+```
+$ sigrok-cli -d fx2lafw --scan
+```
+and you should see something like
+```
+The following devices were found:
+fx2lafw:conn=1.4 - sigrok FX2 LA (8ch) with 8 channels: D0 D1 D2 D3 D4 D5 D6 D7
+```
+This means your logic analyzer is working!
+
 
 ## Building the Design with KiBot
