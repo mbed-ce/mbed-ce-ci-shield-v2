@@ -1940,6 +1940,10 @@
       (effects (font (size 1.27 1.27)) (justify left))
       (uuid 68f20c23-e450-4b85-b8e0-839e6251cec6)
     )
+    (pin "SD_CARD_ENABLE" output (at 196.85 71.12 180)
+      (effects (font (size 1.27 1.27)) (justify left))
+      (uuid 4004f5b5-cc8b-44c1-bab3-d77cea51700b)
+    )
     (instances
       (project "mbed-ce-ci-shield-v2"
         (path "/a0f40274-9469-4bcf-885c-e8b8a490ea54" (page "5"))
