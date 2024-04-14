@@ -23,10 +23,10 @@ It can test up to 10 different types of IO:
 |---|---|
 | **USB Device** | The Mbed target's USB Device port can be connected to one of the shield's downstream USB ports |
 | **SPI Master** | The Mbed target can interact with the MicroSD card.  The logic analyzer can observe this interaction. |
-| **SPI Slave** | The FT232H can initiate SPI transactions which are handled by the MCU.  The logic analyzer can observe this interaction. |
+| **SPI Slave** | The CY7C65211 can initiate SPI transactions which are handled by the MCU.  The logic analyzer can observe this interaction. |
 | **I2C Master** | The Mbed target can talk to the EEPROM over I2C.  The logic analyzer can observe this interaction. |
-| **I2C Slave** | The FT232H can initiate I2C transactions which are handled by the MCU.  The logic analyzer can observe this interaction. |
-| **UART** | The MCU can communicate with the FT232H bidirectionally over UART.  The logic analyzer can observe this interaction. |
+| **I2C Slave** | The CY7C65211 can initiate I2C transactions which are handled by the MCU.  The logic analyzer can observe this interaction. |
+| **UART** | The MCU can communicate with the CY7C65211 bidirectionally over UART.  The logic analyzer can observe this interaction. |
 | **GPIO** (incl. interrupts) | The shield has 3 sets of "looped back" GPIOs, through which the MCU can send signals to itself.  The logic analyzer can observe this interaction. |
 | **PWM** | The MCU outputs a PWM signal via GPIN1.  The logic analyzer measures the frequency and duty cycle. |
 | **ADC** (AnalogIn) | The MCU outputs a PWM signal, which is averaged via an RC filter into a voltage.  This voltage is fed into the ADC and the test verifies whether it's read correctly. |
