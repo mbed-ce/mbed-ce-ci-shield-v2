@@ -34,10 +34,7 @@ It can test up to 10 different types of IO:
 
 ## Board Design Files
 
-The top level schematic of the board looks like this:
-![Schematic First Page](https://app.box.com/shared/static/wtlwuf5gnrsw1ivigsv61j54yn62e4ua.png)
-
-The complete schematic PDF can be seen here: https://github.com/mbed-ce/mbed-ce-ci-shield-v2/blob/master/Design%20Files/Rev1/docs/mbed-ce-ci-shield-v2-schematic.pdf
+The complete schematic PDF can be seen here: https://github.com/mbed-ce/mbed-ce-ci-shield-v2/blob/master/Design%20Files/Rev2/docs/mbed-ce-ci-shield-v2-schematic.pdf
 
 ## The Logic Analyzer
 
