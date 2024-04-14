@@ -1,0 +1,10 @@
+** Drc report for /__w/mbed-ce-ci-shield-v2/mbed-ce-ci-shield-v2/kicad_project/mbed-ce-ci-shield-v2.kicad_pcb **
+** Created on 2024-04-14 01:38:27 **
+
+** Found 0 DRC violations **
+
+** Found 0 unconnected pads **
+
+** Found 0 Footprint errors **
+
+** End of Report **

@@ -1,0 +1,52 @@
+ERC report (Sun Apr 14 01:38:24 2024, Encoding UTF8)
+
+***** Sheet /
+
+***** Sheet /USB Hub/
+[lib_symbol_issues]: Symbol 'USBLC6-2SC6' has been modified in library 'Power_Protection'
+    ; Severity: warning
+    @(323.8500 mm, 59.6900 mm): Symbol U3 [USBLC6-2SC6]
+[lib_symbol_issues]: Symbol 'USBLC6-2SC6' has been modified in library 'Power_Protection'
+    ; Severity: warning
+    @(325.1200 mm, 115.5700 mm): Symbol U4 [USBLC6-2SC6]
+[lib_symbol_issues]: Symbol 'USB_C_Receptacle_USB2.0' not found in symbol library 'Connector'
+    ; Severity: warning
+    @(375.9200 mm, 57.1500 mm): Symbol J1 [USB_C_Receptacle_USB2.0]
+[lib_symbol_issues]: Symbol 'USBLC6-2SC6' has been modified in library 'Power_Protection'
+    ; Severity: warning
+    @(325.1200 mm, 148.5900 mm): Symbol U5 [USBLC6-2SC6]
+
+***** Sheet /USBSerialAdapter/
+
+***** Sheet /Logic Analyzer/
+
+***** Sheet /ArduinoConnector/
+
+***** Sheet /MicroSDCard/
+[lib_symbol_issues]: Symbol 'ADG733BRU' has been modified in library 'Analog_Switch'
+    ; Severity: warning
+    @(71.1200 mm, 118.1100 mm): Symbol U14 [ADG733BRU]
+[lib_symbol_issues]: Symbol 'ADG733BRU' has been modified in library 'Analog_Switch'
+    ; Severity: warning
+    @(71.1200 mm, 101.6000 mm): Symbol U14 [ADG733BRU]
+[lib_symbol_issues]: Symbol 'ADG733BRU' has been modified in library 'Analog_Switch'
+    ; Severity: warning
+    @(111.7600 mm, 146.0500 mm): Symbol U14 [ADG733BRU]
+[lib_symbol_issues]: Symbol 'ADG733BRU' has been modified in library 'Analog_Switch'
+    ; Severity: warning
+    @(111.7600 mm, 181.6100 mm): Symbol U14 [ADG733BRU]
+[lib_symbol_issues]: Symbol 'ADG733BRU' has been modified in library 'Analog_Switch'
+    ; Severity: warning
+    @(71.1200 mm, 86.3600 mm): Symbol U14 [ADG733BRU]
+
+***** Sheet /I2CEEPROM/
+
+***** Sheet /PowerUSBPort/
+[lib_symbol_issues]: Symbol 'USB_C_Receptacle_USB2.0' not found in symbol library 'Connector'
+    ; Severity: warning
+    @(87.6300 mm, 90.1700 mm): Symbol J1 [USB_C_Receptacle_USB2.0]
+[lib_symbol_issues]: Symbol 'USBLC6-2SC6' has been modified in library 'Power_Protection'
+    ; Severity: warning
+    @(121.9200 mm, 101.6000 mm): Symbol U3 [USBLC6-2SC6]
+
+ ** ERC messages: 11  Errors 0  Warnings 11
