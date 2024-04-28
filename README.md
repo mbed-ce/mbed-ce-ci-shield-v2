@@ -89,7 +89,15 @@ Finally, unplug and replug the board from power and data.
 
 Note: The python script run in step 2 works by modifying one of the fx2lafw source files to inject a unique serial number into the firmware, as I wasn't able to find any other way to do this.
 
-### Flashing USB-Serial Adapter Configuration.
+### Flashing USB-Serial Adapter Configuration
+
+To configure the USB-serial adapter (the CY7C65211), you will need to use Mbed CE's [cy_serial_bridge](https://github.com/mbed-ce/cy_serial_bridge) library.  This can be installed using `python3 -m pip install cy_serial_bridge`.  Then, we can use the following commands to load a configuration and program the serial number.
+
+```
+$ cy_serial_cli --pid 0x00fb load Firmware\CY7C65211-Configs\mbed_ce_cy7c65211a_cdc_base_config.bin
+$ cy_serial_cli reconfigure --set-serno ShieldSN001 <replace 001 with the serial number you want to give this board>
+$ cy_serial_cli change-type I2C # Change to I2C initially so it will not drive any lines on the board
+```
 
 ## Using the Logic Analyzer
 The logic analyzer integrated into this board runs firmware from the Sigrok project, and is designed to be used with the sigrok CLI and the PulseView GUI.  This provides a complete set of open-source tools for capturing and decoding traffic moving across the board.
