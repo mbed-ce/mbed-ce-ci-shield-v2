@@ -44,10 +44,10 @@ Logic analyzer inputs are muxed by the FUNC_SEL[0..2] pins.
 
 | Analyzer Input | FUNC_SEL = 000 | FUNC_SEL = 001 | FUNC_SEL = 010 | FUNC_SEL = 1xx |
 |---|---|---|---|---|
-| D0 | UART.MCU_RX | I2C.SCL | SPI.SCLK | NC |
-| D1 | UART.MCU_TX | I2C.SDA | SPI.MOSI | NC |
-| D2 | UART.RTS | NC | SPI.MISO | NC |
-| D3 | UART.CTS | NC | SPI.HW_CS | NC |
+| D0 | UART.MCU_TX | NC | SPI.HW_CS | NC |
+| D1 | UART.RTS | I2C.SCL | SPI.MISO | NC |
+| D2 | UART.CTS | I2C.SDA | SPI.MOSI | NC |
+| D3 | UART.MCU_RX | NC | SPI.SCLK | NC |
 | D4 | SPI.SD_CS | SPI.SD_CS | SPI.SD_CS | SPI.SD_CS |
 | D5 | GPOUT0 | GPOUT0 | GPOUT0 | GPOUT0 |
 | D6 | GPOUT1/PWM | GPOUT1/PWM | GPOUT1/PWM | GPOUT1/PWM |
