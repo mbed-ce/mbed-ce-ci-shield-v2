@@ -1,0 +1,3 @@
+[submodule "Firmware/sigrok-firmware-fx2lafw"]
+	path = Firmware/sigrok-firmware-fx2lafw
+	url = git://sigrok.org/sigrok-firmware-fx2lafw

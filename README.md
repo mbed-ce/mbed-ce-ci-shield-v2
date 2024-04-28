@@ -55,13 +55,41 @@ Logic analyzer inputs are muxed by the FUNC_SEL[0..2] pins.
 
 
 ## Board Bringup and Testing
-### Flashing Firmware on New Boards
+### Initial Testing
+Before powering on a board, check that the resistance across the 5V rail is at least 10kOhms and the resistance across the 3V3 rail is at least 600 ohms.  These rails can be found on the LD1117S33 voltage regulator pins.  If these resistance checks fail, you almost certainly have a short somewhere.
 
-To flash the logic analyzer firmware, use [the mbed-ce fork of fxload](https://github.com/mbed-ce/fxload).  After installing it (and setting up udev rules, if on Linux), run the following command from the repo root:
+When you first plug in a board, you should see three USB devices enumerate:
+- One "Cypress Semiconductor Corp. Unprogrammed CY7C65632/34 hub HX2VL"
+- One "Cypress Semiconductor Corp. USB-Serial (Single Channel)"
+- One FX2LP in no-EEPROM mode (TODO what is this named in lsusb?)
+
+If these USB devices do not enumerate, double-check the circuitry for the chips that don't enumerate.
+
+Additionally, the current draw of the board should be between ~14mA and ~100mA when no Mbed board is connected.  A USB-C power meter (e.g. [this one](https://www.amazon.com/YOJOCK-Multimeter-Capacity-Voltmeter-Detector/dp/B0B99Z2GJK/ref=sr_1_9?dib=eyJ2IjoiMSJ9.iX__gGmXBPxxHfNBzHxyfFgmTumfZEwPzNiqHgM-xjpKqZPnhOuJR1RiFy9FZd9ywnokZULX3uNuLn3wjPfRzMTa6wi9CuISauNXOu6fG7H42mFD_JcXo6YkIb4BTH0TeAXOhVcqFAUZVJzWdGv3LkE6tN-ZSztvhJ_B8Q743Y4SdjQ1yXoat4ZTFl21J7AWT0NIZBzon9ufCeXE1DIOapZ1UtwN8YUdWXMnL6Na9XfRSr-9XrJQDiP0O8BlMa1EuW7bwhreSt4rebeifAKf5IgKVMM9mwSHv_Q01_jeqCs.-UOXTx2C3OK_0aZgVHIznGnAXKxyaKn3s9FG-mkci_g&dib_tag=se&keywords=usb+c+power+meter&qid=1714315489&sr=8-9)) is highly recommended when testing new boards.
+
+### Flashing Logic Analyzer Firmware
+
+To build and flash the logic analyzer firmware, you will need [Small Device C Compiler](https://sdcc.sourceforge.net/).  On Ubuntu, this can be installed with `sudo apt install sdcc sdcc-libraries`.  You will also need [the mbed-ce fork of fxload](https://github.com/mbed-ce/fxload).  Lastly, you will need access to a Linux command line environment -- WSL or MSYS2 should work if on Windows.
+
+After installing these (and setting up udev rules for fxload, if on Linux), run the following commands from the repo root:
 
 ```
-$ fxload load_eeprom --ihex-path Firmware/fx2lafw-sigrok-fx2-8ch.ihx -t FX2LP --control-byte 0xC2
+$ cd Firmware
+$ python3 fx2lafw_update_serial_number.py 001 <replace 001 with the serial number you want to give this board>
+$ cd sigrok-firmware-fx2lafw
+$ ./autogen.sh
+$ mkdir build
+$ cd build
+$ ../configure
+$ make
+$ fxload load_eeprom --ihex-path hw/sigrok-fx2-8ch/fx2lafw-sigrok-fx2-8ch.ihx -t FX2LP --control-byte 0xC2
 ```
+
+Finally, unplug and replug the board from power and data.
+
+Note: The python script run in step 2 works by modifying one of the fx2lafw source files to inject a unique serial number into the firmware, as I wasn't able to find any other way to do this.
+
+### Flashing USB-Serial Adapter Configuration.
 
 ## Using the Logic Analyzer
 The logic analyzer integrated into this board runs firmware from the Sigrok project, and is designed to be used with the sigrok CLI and the PulseView GUI.  This provides a complete set of open-source tools for capturing and decoding traffic moving across the board.
