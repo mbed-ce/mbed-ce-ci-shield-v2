@@ -9,62 +9,41 @@ outputs:
 
   - name: 'PCB Top PDF'
     comment: "PDF print of circuit board top side"
-    type: 'pdf_pcb_print'
+    type: 'pcb_print'
     dir: 'docs'
     options:
-      # [string|list(string)=''] Name of the filter to mark components as not fitted.
-      # A short-cut to use for simple cases where a variant is an overkill
-      dnf_filter: ''
-      # [string='full'] What to use to indicate the drill places, can be none, small or full (for real scale)
-      drill_marks: 'none'
-      # [boolean=false] Print mirrored (X axis inverted). ONLY for KiCad 6
-      mirror: false
-      # [boolean=false] Print in black and white
-      monochrome: false
-      # [string='%f-%i%v.%x'] Filename for the output PDF (%i=layers, %x=pdf). Affected by global options
       output: '%f-board_top.%x'
-      # `output_name` is an alias for `output`
-      # [boolean=true] Include the title-block
-      plot_sheet_reference: true
-      # [number=1.0] Scale factor (0 means autoscaling)
-      scaling: 0
-      # [boolean=false] Print layers in separated pages
-      separated: false
-      # [string=''] Board variant to apply
-      variant: ''
-    layers:
-      - 'F.SilkS'
-      - 'F.Mask'
-      - 'Cmts.User'
-      - 'Edge.Cuts'
+      pages:
+        - 
+          # Layers to plot.  Order is important -- last entry in the list will be plotted on top.
+          # By default it seems to choose colors randomly, so override the colors to be the same as the schematic editor.
+          layers:
+          - layer: 'B.Cu'
+            color: "#2E5384"
+          - layer: 'F.Cu'
+            color: "#C83434"
+          - layer: 'F.SilkS'
+            color: "#F2EDA1"
+          - layer: 'Edge.Cuts'
+            color: "#D0D2CD"
 
   - name: 'PCB Bottom PDF'
     comment: "PDF print of circuit board bottom side"
-    type: 'pdf_pcb_print'
+    type: 'pcb_print'
     dir: 'docs'
     options:
-      # [string|list(string)=''] Name of the filter to mark components as not fitted.
-      # A short-cut to use for simple cases where a variant is an overkill
-      dnf_filter: ''
-      # [string='full'] What to use to indicate the drill places, can be none, small or full (for real scale)
-      drill_marks: 'none'
-      # [boolean=false] Print mirrored (X axis inverted). ONLY for KiCad 6
-      mirror: true
-      # [boolean=false] Print in black and white
-      monochrome: false
-      # [string='%f-%i%v.%x'] Filename for the output PDF (%i=layers, %x=pdf). Affected by global options
       output: '%f-board_bottom.%x'
-      # `output_name` is an alias for `output`
-      # [boolean=true] Include the title-block
-      plot_sheet_reference: true
-      # [number=1.0] Scale factor (0 means autoscaling)
-      scaling: 0
-      # [boolean=false] Print layers in separated pages
-      separated: false
-      # [string=''] Board variant to apply
-      variant: ''
-    layers:
-      - 'B.SilkS'
-      - 'B.Mask'
-      - 'Dwgs.User'
-      - 'Edge.Cuts'
+      pages:
+        - 
+          mirror: true
+          # Layers to plot.  Order is important -- last entry in the list will be plotted on top.
+          # By default it seems to choose colors randomly, so override the colors to be the same as the schematic editor.
+          layers:
+          - layer: 'F.Cu'
+            color: "#C83434"
+          - layer: 'B.Cu'
+            color: "#2E5384"
+          - layer: 'B.SilkS'
+            color: "#E8B2A7"
+          - layer: 'Edge.Cuts'
+            color: "#D0D2CD"

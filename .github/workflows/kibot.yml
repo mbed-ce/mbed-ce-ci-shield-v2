@@ -23,7 +23,7 @@ jobs:
   compile-and-gen-design-files:
     runs-on: ubuntu-latest
     container:
-      image: ghcr.io/inti-cmnb/kicad7_auto:latest
+      image: ghcr.io/inti-cmnb/kicad8_auto:latest
     steps:
       - uses: actions/checkout@v4
       - name: run kibot
