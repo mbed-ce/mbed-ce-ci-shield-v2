@@ -2315,6 +2315,168 @@
 				)
 			)
 		)
+		(symbol "Diode:BAT54W"
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "BAT54W"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-323_SC-70"
+				(at 0 -4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BAT54W_SER.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Schottky barrier diode, SOT-323"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "schottky diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOT?323*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "BAT54W_0_1"
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "BAT54W_1_1"
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 0 0 90)
+					(length 2.54) hide
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Oscillator:ASV-xxxMHz"
 			(pin_names
 				(offset 0.254)
@@ -5151,6 +5313,12 @@
 		(uuid "f4778009-1cb8-467e-b3ed-5bad18110539")
 	)
 	(junction
+		(at 36.83 130.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f47c81b2-1edd-4e28-ba8f-a1f643259d3a")
+	)
+	(junction
 		(at 318.77 229.87)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6060,6 +6228,16 @@
 	)
 	(wire
 		(pts
+			(xy 36.83 118.11) (xy 36.83 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5945497a-2a18-47fa-9147-1f7f1045afbc")
+	)
+	(wire
+		(pts
 			(xy 335.28 229.87) (xy 327.66 229.87)
 		)
 		(stroke
@@ -6417,6 +6595,16 @@
 			(type default)
 		)
 		(uuid "6e83a2da-5ee9-4dad-944b-a6e37fd08dfd")
+	)
+	(wire
+		(pts
+			(xy 36.83 130.81) (xy 43.18 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f6f529b-ff61-4ce4-9df9-f033674c1750")
 	)
 	(wire
 		(pts
@@ -6930,7 +7118,7 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 121.92) (xy 43.18 130.81)
+			(xy 43.18 128.27) (xy 43.18 130.81)
 		)
 		(stroke
 			(width 0)
@@ -7450,6 +7638,16 @@
 	)
 	(wire
 		(pts
+			(xy 36.83 127) (xy 36.83 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "deabb337-7f24-4e9d-9027-18fd8b5aa701")
+	)
+	(wire
+		(pts
 			(xy 58.42 45.72) (xy 58.42 48.26)
 		)
 		(stroke
@@ -7650,7 +7848,7 @@
 	)
 	(wire
 		(pts
-			(xy 24.13 130.81) (xy 43.18 130.81)
+			(xy 24.13 130.81) (xy 36.83 130.81)
 		)
 		(stroke
 			(width 0)
@@ -7710,7 +7908,7 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 121.92) (xy 43.18 121.92)
+			(xy 45.72 128.27) (xy 43.18 128.27)
 		)
 		(stroke
 			(width 0)
@@ -7974,10 +8172,10 @@
 		)
 		(uuid "9c9c28e4-41da-4076-9567-5c9314168ba5")
 	)
-	(text_box "RC timer is used to bring the hub chip's reset line high ~10ms after VBUS from the upstream port is detected.  Circuit copied from reference design."
+	(text_box "RC timer is used to bring the hub chip's reset line high ~10ms after VBUS from the upstream port is detected, per the reference design.\nThis circuit also divides the 5V down to 3.3V for use as a general reset signal, and makes sure that the reset isn't high if the power USB is not connected."
 		(exclude_from_sim no)
-		(at 27.94 97.79 0)
-		(size 39.37 16.51)
+		(at 26.67 92.71 0)
+		(size 44.45 20.32)
 		(stroke
 			(width 0)
 			(type default)
@@ -8564,7 +8762,7 @@
 	)
 	(hierarchical_label "DATA_USB_CONNECTED"
 		(shape output)
-		(at 44.45 121.92 0)
+		(at 45.72 128.27 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10096,94 +10294,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 24.13 137.16 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "25770233-7583-4834-aba4-adcdbec4a50c")
-		(property "Reference" "C21"
-			(at 21.59 135.8836 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "1u"
-			(at 21.59 138.4236 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
-			(at 24.13 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 24.13 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 24.13 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier" "Digi-Key"
-			(at 24.13 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LibRef" "CL31B105KBHNNNE"
-			(at 24.13 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "81a667b9-4a5d-40c8-8bb2-df863b3d7a9d")
-		)
-		(pin "2"
-			(uuid "02a1972c-be40-4f7e-a3ac-f65e0e3f20e7")
-		)
-		(instances
-			(project "mbed-ce-ci-shield-v2"
-				(path "/a0f40274-9469-4bcf-885c-e8b8a490ea54/d2cb7c4f-a03f-4f1c-8cab-0427a0ad2909"
-					(reference "C21")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_US")
 		(at 351.79 223.52 0)
 		(unit 1)
@@ -10903,6 +11013,103 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
+		(at 29.21 137.16 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "40c37a36-83de-4d81-a6a4-0dacb059c7e5")
+		(property "Reference" "R13"
+			(at 31.75 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "9.1k"
+			(at 31.75 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+			(at 30.226 137.414 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 29.21 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 29.21 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier" "Digi-Key"
+			(at 29.21 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LibRef" "ERJ-8ENF9101V"
+			(at 29.21 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" "P9.10KFCT-ND"
+			(at 29.21 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9c1a1fc6-fdef-4c11-bb97-0d635567b730")
+		)
+		(pin "2"
+			(uuid "8e73851c-e8df-4b15-a17e-131667fb475b")
+		)
+		(instances
+			(project "mbed-ce-ci-shield-v2"
+				(path "/a0f40274-9469-4bcf-885c-e8b8a490ea54/d2cb7c4f-a03f-4f1c-8cab-0427a0ad2909"
+					(reference "R13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
 		(at 90.17 125.73 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11392,6 +11599,102 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small")
+		(at 24.13 137.16 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4a594659-ffdc-4072-bad2-960240e3e2ff")
+		(property "Reference" "C21"
+			(at 18.034 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "2.2uF"
+			(at 16.51 138.176 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+			(at 24.13 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 24.13 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "CAP CER 2.2uF 50V X7R 1206"
+			(at 24.13 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier" "Digi-Key"
+			(at 24.13 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LibRef" "CL31B225KBHNNNE"
+			(at 24.13 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" "1276-1291-1-ND"
+			(at 24.13 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3c4ff2e9-bab0-4f9e-b159-b4df7e96ac24")
+		)
+		(pin "2"
+			(uuid "1129bf2f-eb87-4148-af90-54d9fcc75dac")
+		)
+		(instances
+			(project "mbed-ce-ci-shield-v2"
+				(path "/a0f40274-9469-4bcf-885c-e8b8a490ea54/d2cb7c4f-a03f-4f1c-8cab-0427a0ad2909"
+					(reference "C21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 24.13 143.51 0)
 		(unit 1)
@@ -11518,6 +11821,71 @@
 			(project "mbed-ce-ci-shield-v2"
 				(path "/a0f40274-9469-4bcf-885c-e8b8a490ea54/d2cb7c4f-a03f-4f1c-8cab-0427a0ad2909"
 					(reference "#PWR040")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 36.83 118.11 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "59ea22bd-c0db-4279-9819-70a612891a6f")
+		(property "Reference" "#PWR052"
+			(at 36.83 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 41.402 117.348 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 36.83 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 36.83 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 36.83 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a5bc7c37-1713-4495-adaa-a908b2615db5")
+		)
+		(instances
+			(project "mbed-ce-ci-shield-v2"
+				(path "/a0f40274-9469-4bcf-885c-e8b8a490ea54/d2cb7c4f-a03f-4f1c-8cab-0427a0ad2909"
+					(reference "#PWR052")
 					(unit 1)
 				)
 			)
@@ -11757,6 +12125,79 @@
 			(project "mbed-ce-ci-shield-v2"
 				(path "/a0f40274-9469-4bcf-885c-e8b8a490ea54/d2cb7c4f-a03f-4f1c-8cab-0427a0ad2909"
 					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:BAT54W")
+		(at 36.83 123.19 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5ea299e5-834d-47c6-b64b-619bd446be7d")
+		(property "Reference" "D7"
+			(at 39.37 121.6024 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BAT54W"
+			(at 39.37 124.1424 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-323_SC-70"
+			(at 32.385 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BAT54W_SER.pdf"
+			(at 36.83 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Schottky barrier diode, SOT-323"
+			(at 36.83 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e764db38-8fa5-4e3f-96c7-173bfd46c865")
+		)
+		(pin "3"
+			(uuid "1ef45cfc-d8b3-4685-9d54-df5f1ba806f9")
+		)
+		(pin "2"
+			(uuid "a729d193-3ca3-41b0-9cea-350d283058d2")
+		)
+		(instances
+			(project "mbed-ce-ci-shield-v2"
+				(path "/a0f40274-9469-4bcf-885c-e8b8a490ea54/d2cb7c4f-a03f-4f1c-8cab-0427a0ad2909"
+					(reference "D7")
 					(unit 1)
 				)
 			)
@@ -14559,103 +15000,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_US")
-		(at 24.13 121.92 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "aee3bdbf-c597-4ea5-bbd3-4074d3150475")
-		(property "Reference" "R13"
-			(at 26.67 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 26.67 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
-			(at 25.146 122.174 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 24.13 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 24.13 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier" "Digi-Key"
-			(at 24.13 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LibRef" "ERJ-8ENF1002V"
-			(at 24.13 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SKU" "P10.0KFCT-ND"
-			(at 24.13 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "86ae8c62-87ab-4604-a21f-747a83101ebd")
-		)
-		(pin "2"
-			(uuid "562ebcf8-1c80-4bd4-9aa2-4d7a6f9b0761")
-		)
-		(instances
-			(project "mbed-ce-ci-shield-v2"
-				(path "/a0f40274-9469-4bcf-885c-e8b8a490ea54/d2cb7c4f-a03f-4f1c-8cab-0427a0ad2909"
-					(reference "R13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 213.36 254 0)
 		(unit 1)
@@ -14804,6 +15148,103 @@
 			(project "mbed-ce-ci-shield-v2"
 				(path "/a0f40274-9469-4bcf-885c-e8b8a490ea54/d2cb7c4f-a03f-4f1c-8cab-0427a0ad2909"
 					(reference "C5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 24.13 121.92 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b3fc9953-2388-4df6-8d0d-fbc73ca049ad")
+		(property "Reference" "R14"
+			(at 26.67 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7k"
+			(at 26.67 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+			(at 25.146 122.174 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 24.13 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 24.13 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier" "Digi-Key"
+			(at 24.13 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LibRef" "ERJ-8ENF4702V"
+			(at 24.13 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" "P4.70KFCT-ND"
+			(at 24.13 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c0e0cd45-9248-42b7-93fa-1138f8990281")
+		)
+		(pin "2"
+			(uuid "c5f0ce3b-18f1-4daf-aff9-55dfdf5d5763")
+		)
+		(instances
+			(project "mbed-ce-ci-shield-v2"
+				(path "/a0f40274-9469-4bcf-885c-e8b8a490ea54/d2cb7c4f-a03f-4f1c-8cab-0427a0ad2909"
+					(reference "R14")
 					(unit 1)
 				)
 			)
@@ -16839,103 +17280,6 @@
 				(path "/a0f40274-9469-4bcf-885c-e8b8a490ea54/d2cb7c4f-a03f-4f1c-8cab-0427a0ad2909"
 					(reference "U2")
 					(unit 3)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 29.21 137.16 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e9aea6b5-9218-4ad1-bf65-9f099710e025")
-		(property "Reference" "R14"
-			(at 31.75 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "47k"
-			(at 31.75 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
-			(at 30.226 137.414 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 29.21 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 29.21 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier" "Digi-Key"
-			(at 29.21 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LibRef" "ERJ-8ENF4702V"
-			(at 29.21 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SKU" "P47.0KFCT-ND"
-			(at 29.21 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "fdf79523-ba82-4072-a2de-8a7a1c8de0b7")
-		)
-		(pin "2"
-			(uuid "b63389c3-31a3-4605-9c80-b7019f85fcd7")
-		)
-		(instances
-			(project "mbed-ce-ci-shield-v2"
-				(path "/a0f40274-9469-4bcf-885c-e8b8a490ea54/d2cb7c4f-a03f-4f1c-8cab-0427a0ad2909"
-					(reference "R14")
-					(unit 1)
 				)
 			)
 		)

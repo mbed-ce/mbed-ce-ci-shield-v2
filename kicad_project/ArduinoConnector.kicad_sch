@@ -1477,6 +1477,12 @@
 		(uuid "5272f086-0e1d-4899-a7f3-3bf3ae44a191")
 	)
 	(junction
+		(at 83.82 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "86904583-44e7-4882-8e5c-1f3188fbce61")
+	)
+	(junction
 		(at 210.82 107.95)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1489,12 +1495,6 @@
 		(uuid "a781b218-67c6-4934-91ee-6fba1825b8d6")
 	)
 	(junction
-		(at 88.9 97.79)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "cfb6af5b-0ee2-40ae-b1ca-e9fa214a1972")
-	)
-	(junction
 		(at 119.38 80.01)
 		(diameter 1.016)
 		(color 0 0 0 0)
@@ -1505,8 +1505,8 @@
 		(uuid "11c249e1-72f9-4d29-bc2e-e5dda6ea29de")
 	)
 	(no_connect
-		(at 121.92 102.87)
-		(uuid "1c9dc0cf-62c7-4965-8d71-a9549ba63c66")
+		(at 121.92 97.79)
+		(uuid "12381cf4-d431-466b-a722-ae846f9f1aff")
 	)
 	(no_connect
 		(at 181.61 80.01)
@@ -1721,6 +1721,16 @@
 	)
 	(wire
 		(pts
+			(xy 83.82 102.87) (xy 83.82 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1de92e1d-174b-4a0c-bbd5-e20a2870c88d")
+	)
+	(wire
+		(pts
 			(xy 181.61 62.23) (xy 201.93 62.23)
 		)
 		(stroke
@@ -1738,6 +1748,16 @@
 			(type default)
 		)
 		(uuid "24c07199-6a7f-4b64-9a90-40ab965ed5bb")
+	)
+	(wire
+		(pts
+			(xy 59.69 102.87) (xy 73.66 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ab2fd05-5e98-4dcc-b65c-90266dd0078e")
 	)
 	(wire
 		(pts
@@ -1778,6 +1798,16 @@
 			(type default)
 		)
 		(uuid "3e23a9bd-9fdb-48b1-a82c-712999f10fae")
+	)
+	(wire
+		(pts
+			(xy 81.28 102.87) (xy 83.82 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4679d2f1-eb36-4d32-a220-97dc7c0e5a0e")
 	)
 	(bus
 		(pts
@@ -1899,16 +1929,6 @@
 		)
 		(uuid "6f809095-9942-4b8e-a3c3-72b5df79323e")
 	)
-	(wire
-		(pts
-			(xy 88.9 105.41) (xy 88.9 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "705ae474-da02-436a-ba3f-aef4f54de798")
-	)
 	(bus
 		(pts
 			(xy 95.25 105.41) (xy 95.25 107.95)
@@ -1951,16 +1971,6 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 97.79) (xy 78.74 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7d3676c3-645a-4484-86b2-0ba070262472")
-	)
-	(wire
-		(pts
 			(xy 181.61 110.49) (xy 203.2 110.49)
 		)
 		(stroke
@@ -1978,6 +1988,16 @@
 			(type default)
 		)
 		(uuid "83afdef2-ff7c-4d4d-913d-078e894694e8")
+	)
+	(wire
+		(pts
+			(xy 83.82 102.87) (xy 121.92 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8651972c-78ae-4518-a8ac-4a12595cc7e5")
 	)
 	(bus
 		(pts
@@ -2038,16 +2058,6 @@
 			(type default)
 		)
 		(uuid "a09c1e12-367a-4f26-81e1-1eaa4ab96f7f")
-	)
-	(wire
-		(pts
-			(xy 88.9 97.79) (xy 88.9 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a0cc481c-fc9f-4066-b9dc-fd7c7a2e63fc")
 	)
 	(wire
 		(pts
@@ -2151,6 +2161,16 @@
 	)
 	(wire
 		(pts
+			(xy 83.82 110.49) (xy 83.82 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cdb64844-c6b5-4ff7-b2ad-8c7375f8a399")
+	)
+	(wire
+		(pts
 			(xy 210.82 107.95) (xy 215.9 107.95)
 		)
 		(stroke
@@ -2168,16 +2188,6 @@
 			(type default)
 		)
 		(uuid "d83fd096-64f7-44c0-a443-abafe2af3e05")
-	)
-	(wire
-		(pts
-			(xy 86.36 97.79) (xy 88.9 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d8ba9b7e-0285-434a-8065-b31d319a7f2c")
 	)
 	(wire
 		(pts
@@ -2271,16 +2281,6 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 97.79) (xy 121.92 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f71002c6-f149-4aa9-ba01-f83c649ebbb3")
-	)
-	(wire
-		(pts
 			(xy 181.61 115.57) (xy 237.49 115.57)
 		)
 		(stroke
@@ -2319,6 +2319,25 @@
 		)
 		(uuid "fe685f66-b284-4e00-a682-c08e9b12335e")
 	)
+	(text_box "On boards where A0 is a DAC pin, it may be jumpered to A3 to enable DAC tests."
+		(exclude_from_sim no)
+		(at 135.89 96.52 0)
+		(size 24.13 12.7)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "14d2c958-a4b6-4e3d-afd2-212864b8452e")
+	)
 	(text_box "In order to generate analog voltages to test the ADC, we can use a PWM output from the MCU under test itself.\n\nA PWM signal can be effectively averaged into a voltage by an RC filter with a cutoff frequency at 1/100 the PWM frequency.\n\nThis filter has a cutoff frequency of 100 Hz, so it can take a 10kHz PWM signal and average it into a constant voltage with a response time of roughly 10ms.\n\nSource: https://www.allaboutcircuits.com/technical-articles/\nlow-pass-filter-a-pwm-signal-into-an-analog-voltage/"
 		(exclude_from_sim no)
 		(at 19.05 54.61 0)
@@ -2338,7 +2357,7 @@
 		)
 		(uuid "8471ef58-6a5e-4bfa-ae95-877b25f47a2b")
 	)
-	(text_box "SPI has 2 chip selects:\n* SD_CS goes to the SD card socket.  It's monitored by the logic analyzer but not hooked to the FT232H.  This can be any GPIO pin since the SD card driver does not work with HW CS anyway\n* HW_CS is used for master-mode SPI operations to the logic analyzer, and also slave-mode SPI operations with the FT232H as the master.  Since slave mode usually only works with a hardware CS pin, HW_CS should be connected to a hardware CS pin if available."
+	(text_box "SPI has 2 chip selects:\n* SD_CS goes to the SD card socket.  It's monitored by the logic analyzer but not hooked to the CY7C65211.  This can be any GPIO pin since the SD card driver does not work with HW CS anyway\n* HW_CS is used for master-mode SPI operations to the logic analyzer, and also slave-mode SPI operations with the CY7C65211 as the master.  Since slave mode usually only works with a hardware CS pin, HW_CS should be connected to a hardware CS pin if available."
 		(exclude_from_sim no)
 		(at 223.52 49.53 0)
 		(size 58.42 27.94)
@@ -2791,6 +2810,16 @@
 		)
 		(uuid "24fea516-1452-4d3b-b126-3508a1464278")
 	)
+	(label "PWM_OUT"
+		(at 59.69 102.87 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "2793c9d1-d3eb-490c-adbf-c0bc5cc2ab5c")
+	)
 	(label "SPI.MOSI"
 		(at 181.61 74.93 0)
 		(effects
@@ -2802,7 +2831,7 @@
 		(uuid "3e88db05-ab41-4014-94de-c1a9001bdc8a")
 	)
 	(label "ANALOG_IN"
-		(at 119.38 97.79 180)
+		(at 95.25 102.87 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2850,16 +2879,6 @@
 			(justify left bottom)
 		)
 		(uuid "862ed9ea-9f50-4b27-83ef-36d2eaef9863")
-	)
-	(label "PWM_OUT"
-		(at 64.77 97.79 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "96f2ba85-2e11-409c-9649-49492c19e39d")
 	)
 	(label "UART.CTS"
 		(at 229.87 97.79 0)
@@ -3046,7 +3065,7 @@
 		)
 		(uuid "dacd606a-3640-40b8-969e-f91417fb5216")
 	)
-	(hierarchical_label "SD_CARD_ENABLE"
+	(hierarchical_label "~SD_CARD_ENABLE"
 		(shape output)
 		(at 118.11 100.33 180)
 		(effects
@@ -3249,6 +3268,69 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 83.82 113.03 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "19e3fbf1-185e-4b3a-8fa3-fa1bfb2b9075")
+		(property "Reference" "#PWR054"
+			(at 83.82 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 83.82 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 83.82 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 83.82 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 83.82 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "48ee7f9c-eac2-4537-957b-7dbdcaa95361")
+		)
+		(instances
+			(project "mbed-ce-ci-shield-v2"
+				(path "/a0f40274-9469-4bcf-885c-e8b8a490ea54/1e471c6e-a872-4398-8c30-01f0a30d79ce"
+					(reference "#PWR054")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_01x08")
 		(at 176.53 105.41 0)
 		(mirror y)
@@ -3367,33 +3449,35 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_US")
-		(at 82.55 97.79 270)
+		(lib_id "Device:C_Small")
+		(at 83.82 107.95 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "24e341cc-a419-406c-af6c-3a0ac91e596f")
-		(property "Reference" "R31"
-			(at 82.55 91.44 90)
+		(uuid "25d78415-854a-4bd0-95fc-cfd30f67a6a8")
+		(property "Reference" "C26"
+			(at 86.36 106.6736 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
-		(property "Value" "1.5k"
-			(at 82.55 93.98 90)
+		(property "Value" "1u"
+			(at 86.36 109.2136 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
-			(at 82.296 98.806 90)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+			(at 83.82 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3402,7 +3486,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 82.55 97.79 0)
+			(at 83.82 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3410,8 +3494,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RES 1.5k Ohm 1% 1/4W 1206"
-			(at 82.55 97.79 0)
+		(property "Description" ""
+			(at 83.82 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3420,7 +3504,7 @@
 			)
 		)
 		(property "Supplier" "Digi-Key"
-			(at 82.55 97.79 0)
+			(at 83.82 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3428,17 +3512,8 @@
 				(hide yes)
 			)
 		)
-		(property "LibRef" "RC1206FR-071K5L"
-			(at 82.55 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SKU" "311-1.50KFRCT-ND"
-			(at 82.55 97.79 0)
+		(property "LibRef" "CL31B105KBHNNNE"
+			(at 83.82 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3447,15 +3522,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "bde8d322-eb32-493a-aaec-6b905bd6ae8e")
+			(uuid "8b5126ce-bc47-447c-aaab-f3219aa27bc1")
 		)
 		(pin "2"
-			(uuid "601bc8c6-795f-4c85-9178-8922f3a56d5a")
+			(uuid "714289e5-6d18-420f-bc5e-e7f106287a02")
 		)
 		(instances
 			(project "mbed-ce-ci-shield-v2"
 				(path "/a0f40274-9469-4bcf-885c-e8b8a490ea54/1e471c6e-a872-4398-8c30-01f0a30d79ce"
-					(reference "R31")
+					(reference "C26")
 					(unit 1)
 				)
 			)
@@ -3900,6 +3975,101 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_US")
+		(at 77.47 102.87 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a60aeca5-b724-45c6-aceb-c61eb86a9e6c")
+		(property "Reference" "R29"
+			(at 77.47 96.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1.5k"
+			(at 77.47 99.06 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+			(at 77.216 103.886 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 77.47 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "RES 1.5k Ohm 1% 1/4W 1206"
+			(at 77.47 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier" "Digi-Key"
+			(at 77.47 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LibRef" "RC1206FR-071K5L"
+			(at 77.47 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" "311-1.50KFRCT-ND"
+			(at 77.47 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "315d6c08-d75b-4d69-849d-59374b384397")
+		)
+		(pin "2"
+			(uuid "fcbda6ed-361b-4906-a9a3-7778c8b09b44")
+		)
+		(instances
+			(project "mbed-ce-ci-shield-v2"
+				(path "/a0f40274-9469-4bcf-885c-e8b8a490ea54/1e471c6e-a872-4398-8c30-01f0a30d79ce"
+					(reference "R29")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_01x10")
 		(at 176.53 69.85 0)
 		(mirror y)
@@ -4275,163 +4445,6 @@
 			(project "mbed-ce-ci-shield-v2"
 				(path "/a0f40274-9469-4bcf-885c-e8b8a490ea54/1e471c6e-a872-4398-8c30-01f0a30d79ce"
 					(reference "R28")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 88.9 102.87 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e752c82f-b451-48c7-b8cc-a150fbc88f49")
-		(property "Reference" "C36"
-			(at 91.44 101.5936 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "1u"
-			(at 91.44 104.1336 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
-			(at 88.9 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 88.9 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 88.9 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier" "Digi-Key"
-			(at 88.9 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LibRef" "CL31B105KBHNNNE"
-			(at 88.9 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "90ced581-55ed-4e5b-811d-54dca333cc29")
-		)
-		(pin "2"
-			(uuid "a08f2cb8-74db-4e90-b7ce-b2793470c790")
-		)
-		(instances
-			(project "mbed-ce-ci-shield-v2"
-				(path "/a0f40274-9469-4bcf-885c-e8b8a490ea54/1e471c6e-a872-4398-8c30-01f0a30d79ce"
-					(reference "C36")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 88.9 107.95 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ff56d7cb-7074-4755-8d72-d3675046bdee")
-		(property "Reference" "#PWR065"
-			(at 88.9 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 88.9 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 88.9 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 88.9 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 88.9 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8a0396d4-5fbf-4032-8319-e293cab7c157")
-		)
-		(instances
-			(project "mbed-ce-ci-shield-v2"
-				(path "/a0f40274-9469-4bcf-885c-e8b8a490ea54/1e471c6e-a872-4398-8c30-01f0a30d79ce"
-					(reference "#PWR065")
-					(unit 1)
-				)
-			)
-			(project "Arduino Uno Template"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "#PWR04")
 					(unit 1)
 				)
 			)

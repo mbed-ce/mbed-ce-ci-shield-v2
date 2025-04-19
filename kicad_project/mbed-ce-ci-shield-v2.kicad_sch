@@ -1074,12 +1074,6 @@
 		(uuid "86a31457-ef58-475b-9849-30e48dd50850")
 	)
 	(junction
-		(at 154.94 64.77)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a4556454-b306-448d-afb6-6eb00059cc8b")
-	)
-	(junction
 		(at 165.1 64.77)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1144,15 +1138,6 @@
 			(type default)
 		)
 		(uuid "5126c0ec-2fa2-4405-9415-9670901a0a6e")
-	)
-	(bus_entry
-		(at 154.94 46.99)
-		(size -2.54 -2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "60f0a1c9-58f8-4feb-9a3a-cf19fec5d7ad")
 	)
 	(bus_entry
 		(at 189.23 147.32)
@@ -1254,15 +1239,6 @@
 		(uuid "e32d448d-177b-4767-aaa9-6ba915502a6a")
 	)
 	(bus_entry
-		(at 154.94 46.99)
-		(size 2.54 -2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ee47ba47-ba4c-4320-b195-eefc98011ca9")
-	)
-	(bus_entry
 		(at 170.18 59.69)
 		(size 2.54 -2.54)
 		(stroke
@@ -1343,16 +1319,6 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 36.83) (xy 149.86 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "11d32757-a4f7-4aec-9ff3-b52f58a079e0")
-	)
-	(wire
-		(pts
 			(xy 175.26 26.67) (xy 172.72 26.67)
 		)
 		(stroke
@@ -1390,16 +1356,6 @@
 			(type default)
 		)
 		(uuid "1ef4183d-91bf-41ab-9068-3d3a611b261f")
-	)
-	(bus
-		(pts
-			(xy 154.94 45.72) (xy 154.94 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "23ebd738-9221-46ce-821f-6029ce533f11")
 	)
 	(bus
 		(pts
@@ -1481,16 +1437,6 @@
 		)
 		(uuid "419689f3-e578-4530-8d87-ec6db49826bd")
 	)
-	(wire
-		(pts
-			(xy 140.97 44.45) (xy 140.97 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "42b963b3-d803-418a-b7ea-21621b4d8751")
-	)
 	(bus
 		(pts
 			(xy 73.66 60.96) (xy 73.66 93.98)
@@ -1500,16 +1446,6 @@
 			(type default)
 		)
 		(uuid "430539b4-e057-443a-9683-bec1df275ce3")
-	)
-	(bus
-		(pts
-			(xy 154.94 46.99) (xy 154.94 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4417be6d-17a9-40a5-8379-0873b9394f92")
 	)
 	(bus
 		(pts
@@ -1653,7 +1589,7 @@
 	)
 	(bus
 		(pts
-			(xy 142.24 64.77) (xy 154.94 64.77)
+			(xy 142.24 64.77) (xy 165.1 64.77)
 		)
 		(stroke
 			(width 0)
@@ -1680,16 +1616,6 @@
 			(type default)
 		)
 		(uuid "86458a95-9dcd-4d41-9edc-1c9ba60f17d2")
-	)
-	(wire
-		(pts
-			(xy 166.37 44.45) (xy 157.48 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "877e7244-09c5-48c7-ab27-4f381ac95df8")
 	)
 	(wire
 		(pts
@@ -1730,16 +1656,6 @@
 			(type default)
 		)
 		(uuid "93a3948e-199c-40e5-98dc-841e9f3b476b")
-	)
-	(wire
-		(pts
-			(xy 166.37 44.45) (xy 166.37 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "94d4f1ff-46d2-4fc0-86a4-f96eb1d01659")
 	)
 	(wire
 		(pts
@@ -1921,16 +1837,6 @@
 		)
 		(uuid "cb0df1b8-e7b6-4cd6-acf5-76aa88df216e")
 	)
-	(wire
-		(pts
-			(xy 152.4 44.45) (xy 140.97 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cc571f50-5437-425c-948c-790c0e3c02c4")
-	)
 	(bus
 		(pts
 			(xy 195.58 147.32) (xy 205.74 147.32)
@@ -1950,16 +1856,6 @@
 			(type default)
 		)
 		(uuid "d1801690-b23e-44d5-8e9a-d86ea606fa2e")
-	)
-	(bus
-		(pts
-			(xy 154.94 64.77) (xy 165.1 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d314415a-0a65-41e6-8df7-f17a11b63512")
 	)
 	(bus
 		(pts
@@ -2073,16 +1969,6 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 36.83) (xy 166.37 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f38c54fa-a1e2-475b-b337-e773727cea01")
-	)
-	(wire
-		(pts
 			(xy 161.29 113.03) (xy 161.29 127)
 		)
 		(stroke
@@ -2109,25 +1995,6 @@
 			(justify left top)
 		)
 		(uuid "1dba7f29-424c-4998-a5f7-3b21e3a307b6")
-	)
-	(text_box "Weak connection between MISO and MOSI on the SPI bus.  This means that if no device is driving MISO, it will tend to be a \"mirror\" of MOSI.  This way, we can do basic tests of sending out SPI data and seeing if we get the same data back."
-		(exclude_from_sim no)
-		(at 99.06 29.21 0)
-		(size 38.1 17.78)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "9e944a49-b0d8-4d3c-a8ba-0b446ee30749")
 	)
 	(text_box "Logic Analyzer Input Mapping (depending on FUNC_SELECT settings and specific test):\n\n0: UART.MCU_RX/I2C.SCL/SPI.SCLK\n1: UART.MCU_TX/I2C.SDA/SPI.MOSI\n2: UART.RTS/SPI.MISO\n3: UART.CTS/SPI.HW_CS\n4: SPI.SD_CS\n5: GPOUT0\n6: GPOUT1/PWM\n7: GPOUT2"
 		(exclude_from_sim no)
@@ -2253,16 +2120,6 @@
 		)
 		(uuid "61a6220f-3e4e-470f-8a9c-c35753151789")
 	)
-	(label "SPI.MOSI"
-		(at 166.37 36.83 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "73d0cdff-1186-4fec-a303-03eba0e600a3")
-	)
 	(label "INT_USB2{D+ D-}"
 		(at 73.66 104.14 270)
 		(effects
@@ -2292,16 +2149,6 @@
 			(justify left bottom)
 		)
 		(uuid "8527761a-4bf5-4878-8bf8-09e064cf653d")
-	)
-	(label "SPI.MISO"
-		(at 140.97 36.83 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8bf0e6ad-90f4-4e8f-916d-410f910a8d36")
 	)
 	(label "BUS_LINES1"
 		(at 154.94 127 90)
@@ -3302,101 +3149,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_US")
-		(at 153.67 36.83 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a3f8a848-0896-4cd0-ac65-140dfa7b138e")
-		(property "Reference" "R32"
-			(at 156.21 39.37 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10k"
-			(at 151.13 39.37 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
-			(at 153.924 37.846 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 153.67 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 153.67 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier" "Digi-Key"
-			(at 153.67 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LibRef" "ERJ-8ENF1002V"
-			(at 153.67 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SKU" "P10.0KFCT-ND"
-			(at 153.67 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "acba9c59-d2f0-497c-a161-56a72ccbcaad")
-		)
-		(pin "2"
-			(uuid "c24b699e-9cac-4d29-93d2-6e754482cfcd")
-		)
-		(instances
-			(project "mbed-ce-ci-shield-v2"
-				(path "/a0f40274-9469-4bcf-885c-e8b8a490ea54"
-					(reference "R32")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:NetTie_2")
 		(at 154.94 129.54 270)
 		(unit 1)
@@ -3689,7 +3441,7 @@
 			)
 			(uuid "68f20c23-e450-4b85-b8e0-839e6251cec6")
 		)
-		(pin "SD_CARD_ENABLE" output
+		(pin "~SD_CARD_ENABLE" output
 			(at 196.85 71.12 180)
 			(effects
 				(font
@@ -3747,7 +3499,7 @@
 			)
 			(uuid "caf56a87-6517-47b9-8299-0b31d8607341")
 		)
-		(pin "SD_CARD_ENABLE" input
+		(pin "~SD_CARD_ENABLE" input
 			(at 212.09 95.25 180)
 			(effects
 				(font
