@@ -1375,9 +1375,9 @@
 		)
 		(symbol "power:GND"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1451,8 +1451,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
-					(name "GND"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2357,7 +2357,7 @@
 		)
 		(uuid "8471ef58-6a5e-4bfa-ae95-877b25f47a2b")
 	)
-	(text_box "SPI has 2 chip selects:\n* SD_CS goes to the SD card socket.  It's monitored by the logic analyzer but not hooked to the CY7C65211.  This can be any GPIO pin since the SD card driver does not work with HW CS anyway\n* HW_CS is used for master-mode SPI operations to the logic analyzer, and also slave-mode SPI operations with the CY7C65211 as the master.  Since slave mode usually only works with a hardware CS pin, HW_CS should be connected to a hardware CS pin if available."
+	(text_box "SPI has 2 chip selects:\n* CAN_SD_CS goes to the SD card socket or the CAN transceiver (depending on the SD card enable line).  It's monitored by the logic analyzer but not hooked to the CY7C65211.  This can be any GPIO pin since the SD card driver does not work with HW CS anyway\n* HW_CS is used for master-mode SPI operations to the logic analyzer, and also slave-mode SPI operations with the CY7C65211 as the master.  Since slave mode usually only works with a hardware CS pin, HW_CS should be connected to a hardware CS pin if available."
 		(exclude_from_sim no)
 		(at 223.52 49.53 0)
 		(size 58.42 27.94)
@@ -2870,7 +2870,7 @@
 		)
 		(uuid "740cf83d-4260-4410-bcbd-3584e157cdd0")
 	)
-	(label "SPI.SD_CS"
+	(label "SPI.CAN_SD_CS"
 		(at 181.61 82.55 0)
 		(effects
 			(font
@@ -3043,7 +3043,7 @@
 		)
 		(uuid "358fbc7f-1af6-42a3-955f-4773ad01748f")
 	)
-	(hierarchical_label "SPI{SCLK MOSI MISO SD_CS HW_CS}"
+	(hierarchical_label "SPI{SCLK MOSI MISO CAN_SD_CS HW_CS}"
 		(shape bidirectional)
 		(at 212.09 59.69 90)
 		(effects
@@ -3309,7 +3309,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 83.82 113.03 0)
 			(effects
 				(font
@@ -3830,7 +3830,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 198.12 86.36 0)
 			(effects
 				(font
@@ -4329,7 +4329,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 119.38 85.09 0)
 			(effects
 				(font

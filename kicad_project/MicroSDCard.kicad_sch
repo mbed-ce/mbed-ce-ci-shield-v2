@@ -1795,9 +1795,9 @@
 		)
 		(symbol "power:+3.3V"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1895,8 +1895,8 @@
 			(symbol "+3.3V_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
-					(name "+3.3V"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1915,9 +1915,9 @@
 		)
 		(symbol "power:GND"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1991,8 +1991,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
-					(name "GND"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2009,224 +2009,6 @@
 				)
 			)
 		)
-		(symbol "project libraries:BD2221G-LBTR"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at 5.08 15.24 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "BD2221G-LBTR"
-				(at 17.78 15.24 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-				(at 0 -7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.digikey.com/htmldatasheets/production/1836544/0/0/1/bd2220g-lb-bd2221g-lb.pdf"
-				(at -1.27 -11.43 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Current Limit IC 0.5-1.0A, SOT-23-5"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "SKU" "BD2221G-LBTRCT-ND"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "BD2221G-LBTR_0_1"
-				(rectangle
-					(start 3.81 12.7)
-					(end 20.32 -1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "BD2221G-LBTR_1_1"
-				(polyline
-					(pts
-						(xy 7.62 5.08) (xy 11.43 5.08) (xy 11.43 7.62)
-					)
-					(stroke
-						(width 0)
-						(type default)
-						(color 0 0 255 1)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 9.4299 9.7061) (xy 13.7218 8.1373) (xy 13.781 8.1077)
-					)
-					(stroke
-						(width 0)
-						(type default)
-						(color 0 0 255 1)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 8.89 10.16)
-					(radius 0.5222)
-					(stroke
-						(width 0)
-						(type default)
-						(color 0 0 255 1)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 13.97 10.16)
-					(radius 0.5222)
-					(stroke
-						(width 0)
-						(type default)
-						(color 0 0 255 1)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin power_in line
-					(at 1.27 10.16 0)
-					(length 2.54)
-					(name "VIN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 1.27 0 0)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 1.27 5.08 0)
-					(length 2.54)
-					(name "~EN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin open_collector line
-					(at 22.86 0 180)
-					(length 2.54)
-					(name "~OC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_out line
-					(at 22.86 10.16 180)
-					(length 2.54)
-					(name "VOUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-	)
-	(junction
-		(at 67.31 38.1)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "020d5080-773b-489a-853c-c46f7c267511")
 	)
 	(junction
 		(at 214.63 121.92)
@@ -2251,18 +2033,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "39726a49-230a-4ab6-a1d8-e1ad6ca3c83a")
-	)
-	(junction
-		(at 29.21 58.42)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "853be8c6-dc84-4681-9547-311e3a0cf6af")
-	)
-	(junction
-		(at 67.31 27.94)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "88b15e52-ebe9-4408-adfc-9de1e45903bd")
 	)
 	(junction
 		(at 55.88 106.68)
@@ -2325,10 +2095,6 @@
 	(no_connect
 		(at 151.13 104.14)
 		(uuid "53dd1816-0f33-430b-96fb-bdc9d07d4e91")
-	)
-	(no_connect
-		(at 113.03 38.1)
-		(uuid "99b4be73-c0a4-4175-936a-bce121f318a0")
 	)
 	(no_connect
 		(at 151.13 106.68)
@@ -2405,6 +2171,16 @@
 	)
 	(wire
 		(pts
+			(xy 113.03 24.13) (xy 113.03 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0953e328-1147-48bb-b636-5cfa4a4c31f2")
+	)
+	(wire
+		(pts
 			(xy 233.68 121.92) (xy 233.68 124.46)
 		)
 		(stroke
@@ -2455,7 +2231,7 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 49.53) (xy 29.21 58.42)
+			(xy 29.21 49.53) (xy 29.21 96.52)
 		)
 		(stroke
 			(width 0)
@@ -2482,16 +2258,6 @@
 			(type default)
 		)
 		(uuid "31ac3b5b-64f6-4e27-93ad-68216019e4f1")
-	)
-	(wire
-		(pts
-			(xy 91.44 27.94) (xy 67.31 27.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "372c4956-b0ae-4445-b49d-d5fdca0d7884")
 	)
 	(wire
 		(pts
@@ -2595,16 +2361,6 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 27.94) (xy 67.31 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5ce01fc2-bc29-4162-831a-3ed3d02e0e5b")
-	)
-	(wire
-		(pts
 			(xy 233.68 151.13) (xy 220.98 151.13)
 		)
 		(stroke
@@ -2665,16 +2421,6 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 58.42) (xy 29.21 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6d19a36a-a474-4758-bc02-26a59ead3d41")
-	)
-	(wire
-		(pts
 			(xy 135.89 71.12) (xy 135.89 73.66)
 		)
 		(stroke
@@ -2682,26 +2428,6 @@
 			(type default)
 		)
 		(uuid "6d1a03e0-6bf7-4eb2-bf7b-1592f748482b")
-	)
-	(wire
-		(pts
-			(xy 63.5 25.4) (xy 63.5 27.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6e8bd3c1-7c24-4bee-8e2d-638eec3e888a")
-	)
-	(wire
-		(pts
-			(xy 85.09 33.02) (xy 85.09 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "730f4201-4f82-413d-9d83-cd505e49c538")
 	)
 	(wire
 		(pts
@@ -2722,16 +2448,6 @@
 			(type default)
 		)
 		(uuid "78f7fdee-c6ba-452e-86d3-c05c35e88ba9")
-	)
-	(wire
-		(pts
-			(xy 63.5 27.94) (xy 67.31 27.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7ae1b9fa-96b3-4aee-b6df-ecec5e10d381")
 	)
 	(wire
 		(pts
@@ -2785,16 +2501,6 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 38.1) (xy 67.31 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8cc615b5-f084-4ba4-af3b-61325de795b4")
-	)
-	(wire
-		(pts
 			(xy 63.5 106.68) (xy 55.88 106.68)
 		)
 		(stroke
@@ -2825,16 +2531,6 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 38.1) (xy 67.31 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "95dc60be-3d2c-427f-b394-be1bb0aa3191")
-	)
-	(wire
-		(pts
 			(xy 99.06 123.19) (xy 101.6 123.19)
 		)
 		(stroke
@@ -2852,16 +2548,6 @@
 			(type default)
 		)
 		(uuid "97639aec-db99-42c0-b328-a9b552a3f2c8")
-	)
-	(wire
-		(pts
-			(xy 67.31 38.1) (xy 67.31 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "988418d9-56a9-4833-9939-c41498d44072")
 	)
 	(wire
 		(pts
@@ -2955,16 +2641,6 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 58.42) (xy 29.21 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ae7843ad-9c2a-4dcb-b196-3c8e4fd99fe9")
-	)
-	(wire
-		(pts
 			(xy 214.63 132.08) (xy 214.63 151.13)
 		)
 		(stroke
@@ -2982,16 +2658,6 @@
 			(type default)
 		)
 		(uuid "afd0e99b-7462-4a2b-b6a2-bb7d1fb3de2e")
-	)
-	(wire
-		(pts
-			(xy 85.09 33.02) (xy 91.44 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b8f7e3c2-7131-46f8-843e-7e360f61dd40")
 	)
 	(wire
 		(pts
@@ -3115,16 +2781,6 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 40.64) (xy 63.5 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f203fac9-8565-4d62-b004-a6820a85ca2b")
-	)
-	(wire
-		(pts
 			(xy 214.63 121.92) (xy 214.63 127)
 		)
 		(stroke
@@ -3210,10 +2866,10 @@
 		)
 		(uuid "3ef0c2d7-c5df-474c-b359-442a16fb24d8")
 	)
-	(text_box "Annoyingly, MicroSD cards are not good \"citizens\" on a shared SPI bus, for a couple of reasons.  First of all, they default to SD mode when they boot up, and they can try to output data by pulling the DAT[0..3] pins low when they see clock edges.  This, of course, will interrupt other communications on the bus.  Second of all, they don't strictly obey the CS pin, and in some cases require data to be sent while CS is high!\nSo, to fix this, a separate line is used to connect or disconnect the card from the bus entirely using an analog multiplexer.  This makes sure it's disconnected from the bus and can't cause trouble when we aren't actively using it.\nAdditionally, when the SD card is disabled, we power it off completely.  This is because I've heard conflicting information about whether powering off an SD card is required to reset it and I want to hedge my bets."
+	(text_box "Annoyingly, MicroSD cards are not good \"citizens\" on a shared SPI bus, for a couple of reasons.  First of all, they default to SD mode when they boot up, and they can try to output data by pulling the DAT[0..3] pins low when they see clock edges.  This, of course, will interrupt other communications on the bus.  Second of all, they don't strictly obey the CS pin, and in some cases require data to be sent while CS is high!\nSo, to fix this, a separate line is used to connect or disconnect the card from the bus entirely using an analog multiplexer.  This makes sure it's disconnected from the bus and can't cause trouble when we aren't actively using it."
 		(exclude_from_sim no)
-		(at 158.75 24.13 0)
-		(size 58.42 38.1)
+		(at 153.67 36.83 0)
+		(size 58.42 29.21)
 		(stroke
 			(width 0)
 			(type default)
@@ -3298,7 +2954,7 @@
 		)
 		(uuid "77d55c76-0ed7-40c8-99e0-13e1ff5291bc")
 	)
-	(label "SPI.SD_CS"
+	(label "SPI.CAN_SD_CS"
 		(at 133.35 86.36 180)
 		(effects
 			(font
@@ -3338,7 +2994,7 @@
 		)
 		(uuid "ed39d917-1976-49c9-b7c1-593f12f06115")
 	)
-	(hierarchical_label "SPI{SCLK MOSI MISO SD_CS HW_CS}"
+	(hierarchical_label "SPI{SCLK MOSI MISO CAN_SD_CS}"
 		(shape bidirectional)
 		(at 39.37 49.53 90)
 		(effects
@@ -3491,6 +3147,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 113.03 24.13 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "218c2805-65b5-45fd-92fb-10539967a2be")
+		(property "Reference" "#PWR050"
+			(at 113.03 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 113.03 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 113.03 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 113.03 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 113.03 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b14142b8-9f20-4444-9549-7b56a261e35c")
+		)
+		(instances
+			(project "mbed-ce-ci-shield-v2"
+				(path "/a0f40274-9469-4bcf-885c-e8b8a490ea54/25f8559c-e7f1-47b3-be11-aaa166453322"
+					(reference "#PWR050")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 212.09 152.4 0)
 		(unit 1)
@@ -3535,7 +3257,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 212.09 152.4 0)
 			(effects
 				(font
@@ -3601,7 +3323,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 144.78 115.57 0)
 			(effects
 				(font
@@ -4062,110 +3784,6 @@
 		)
 	)
 	(symbol
-		(lib_id "project libraries:BD2221G-LBTR")
-		(at 90.17 38.1 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "77976b0d-49b5-4871-b968-1ccb1c23701a")
-		(property "Reference" "U13"
-			(at 102.235 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "BD2221G-LBTR"
-			(at 102.235 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-			(at 90.17 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.digikey.com/htmldatasheets/production/1836544/0/0/1/bd2220g-lb-bd2221g-lb.pdf"
-			(at 88.9 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 90.17 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SKU" "BD2221G-LBTRCT-ND"
-			(at 90.17 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier" "Digi-Key"
-			(at 90.17 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LibRef" ""
-			(at 90.17 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "06f49f73-f1b9-48f2-915e-f46ffd41caa2")
-		)
-		(pin "2"
-			(uuid "94d0d86a-147d-4d7d-ae97-dc7964163bab")
-		)
-		(pin "3"
-			(uuid "1bdf1ccd-b8d4-4296-83c3-65b0aca90837")
-		)
-		(pin "4"
-			(uuid "71e1b2b5-bae0-42c1-96d7-574efc62add2")
-		)
-		(pin "5"
-			(uuid "a1d325f3-7f34-4eba-a3aa-f49beedc075d")
-		)
-		(instances
-			(project "mbed-ce-ci-shield-v2"
-				(path "/a0f40274-9469-4bcf-885c-e8b8a490ea54/25f8559c-e7f1-47b3-be11-aaa166453322"
-					(reference "U13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3.3V")
 		(at 212.09 120.65 0)
 		(unit 1)
@@ -4210,7 +3828,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 			(at 212.09 120.65 0)
 			(effects
 				(font
@@ -4226,94 +3844,6 @@
 			(project "mbed-ce-ci-shield-v2"
 				(path "/a0f40274-9469-4bcf-885c-e8b8a490ea54/25f8559c-e7f1-47b3-be11-aaa166453322"
 					(reference "#PWR072")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 67.31 33.02 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "85b53ad4-e9cb-4849-8f4b-04f684b33e6a")
-		(property "Reference" "C25"
-			(at 69.85 31.7436 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "1u"
-			(at 69.85 34.2836 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
-			(at 67.31 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 67.31 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 67.31 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier" "Digi-Key"
-			(at 67.31 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LibRef" "CL31B105KBHNNNE"
-			(at 67.31 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "53964ed5-f1ea-4b07-bedc-4ae0fd16d48c")
-		)
-		(pin "2"
-			(uuid "9cee74c5-e664-451d-8062-74927a3042e9")
-		)
-		(instances
-			(project "mbed-ce-ci-shield-v2"
-				(path "/a0f40274-9469-4bcf-885c-e8b8a490ea54/25f8559c-e7f1-47b3-be11-aaa166453322"
-					(reference "C25")
 					(unit 1)
 				)
 			)
@@ -4461,7 +3991,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 196.85 113.03 0)
 			(effects
 				(font
@@ -4611,72 +4141,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 63.5 25.4 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a9213945-b875-440e-868d-8aacaf4a9b6d")
-		(property "Reference" "#PWR050"
-			(at 63.5 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 63.5 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 63.5 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 63.5 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 63.5 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1c37cebe-13c4-409e-ba0a-94e5b89a2684")
-		)
-		(instances
-			(project "mbed-ce-ci-shield-v2"
-				(path "/a0f40274-9469-4bcf-885c-e8b8a490ea54/25f8559c-e7f1-47b3-be11-aaa166453322"
-					(reference "#PWR050")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_US")
 		(at 135.89 77.47 0)
 		(mirror x)
@@ -4815,7 +4279,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 121.92 35.56 0)
 			(effects
 				(font
@@ -4881,7 +4345,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 			(at 111.76 121.92 0)
 			(effects
 				(font
@@ -5035,7 +4499,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 			(at 135.89 71.12 0)
 			(effects
 				(font
@@ -5051,72 +4515,6 @@
 			(project "mbed-ce-ci-shield-v2"
 				(path "/a0f40274-9469-4bcf-885c-e8b8a490ea54/25f8559c-e7f1-47b3-be11-aaa166453322"
 					(reference "#PWR073")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 63.5 40.64 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e7bfddab-7ccd-40b9-ab06-20d136cdce9e")
-		(property "Reference" "#PWR051"
-			(at 63.5 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 63.5 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 63.5 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 63.5 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 63.5 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "04ec878b-2ce9-4432-9d67-0ccdc78ad091")
-		)
-		(instances
-			(project "mbed-ce-ci-shield-v2"
-				(path "/a0f40274-9469-4bcf-885c-e8b8a490ea54/25f8559c-e7f1-47b3-be11-aaa166453322"
-					(reference "#PWR051")
 					(unit 1)
 				)
 			)
@@ -5392,7 +4790,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 55.88 114.3 0)
 			(effects
 				(font

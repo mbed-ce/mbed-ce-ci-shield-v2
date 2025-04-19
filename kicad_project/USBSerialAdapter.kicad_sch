@@ -312,9 +312,9 @@
 		)
 		(symbol "power:+3.3V"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -412,8 +412,8 @@
 			(symbol "+3.3V_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
-					(name "+3.3V"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -432,9 +432,9 @@
 		)
 		(symbol "power:GND"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -508,8 +508,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
-					(name "GND"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2187,6 +2187,10 @@
 	(no_connect
 		(at 256.54 157.48)
 		(uuid "74fc7c20-0a4e-4795-8c9f-71072265c415")
+	)
+	(no_connect
+		(at 256.54 99.06)
+		(uuid "85ac8448-9379-427e-b48a-c02915c471a0")
 	)
 	(no_connect
 		(at 116.84 130.81)
@@ -5709,7 +5713,7 @@
 		)
 		(uuid "7f7cf146-022d-40dc-a4ec-02ef87b7d3bb")
 	)
-	(hierarchical_label "SPI{SCLK MOSI MISO SD_CS HW_CS}"
+	(hierarchical_label "SPI{SCLK MOSI MISO HW_CS}"
 		(shape bidirectional)
 		(at 295.91 110.49 0)
 		(effects
@@ -5894,7 +5898,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 242.57 165.1 0)
 			(effects
 				(font
@@ -6099,7 +6103,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 			(at 245.11 123.19 0)
 			(effects
 				(font
@@ -6262,7 +6266,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 			(at 245.11 72.39 0)
 			(effects
 				(font
@@ -6327,7 +6331,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 60.96 143.51 0)
 			(effects
 				(font
@@ -6489,7 +6493,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 			(at 297.18 133.35 0)
 			(effects
 				(font
@@ -6555,7 +6559,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 			(at 25.4 96.52 0)
 			(effects
 				(font
@@ -6708,7 +6712,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 302.26 212.09 0)
 			(effects
 				(font
@@ -7106,7 +7110,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 242.57 114.3 0)
 			(effects
 				(font

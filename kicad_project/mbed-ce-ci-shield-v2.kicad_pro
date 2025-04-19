@@ -582,19 +582,19 @@
           "group_by": false,
           "label": "LibRef",
           "name": "LibRef",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
           "label": "SKU",
           "name": "SKU",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
           "label": "Supplier",
           "name": "Supplier",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -680,6 +680,14 @@
     [
       "059ba0d2-25a2-4040-8fdd-1e25fcedcad8",
       "PowerUSBPort"
+    ],
+    [
+      "6c93a008-184c-4fde-8753-4c70ee31e968",
+      "CAN Transceiver"
+    ],
+    [
+      "065d8c94-aeac-493b-9604-8ed7e7ad7af2",
+      "CAN - SD Mux"
     ]
   ],
   "text_variables": {
