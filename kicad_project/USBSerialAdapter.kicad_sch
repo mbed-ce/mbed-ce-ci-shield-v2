@@ -2189,10 +2189,6 @@
 		(uuid "74fc7c20-0a4e-4795-8c9f-71072265c415")
 	)
 	(no_connect
-		(at 116.84 113.03)
-		(uuid "872a8f76-6672-4792-ab7d-a186c12c1e80")
-	)
-	(no_connect
 		(at 116.84 130.81)
 		(uuid "93d71729-3c96-4eaf-be8b-7646e87b4e47")
 	)
@@ -2211,6 +2207,10 @@
 	(no_connect
 		(at 116.84 125.73)
 		(uuid "bc4e5141-a719-4043-8e0f-6a73eeaed17e")
+	)
+	(no_connect
+		(at 116.84 113.03)
+		(uuid "c097b6f5-8346-4658-9597-a8821b98c2ca")
 	)
 	(no_connect
 		(at 256.54 106.68)
@@ -2340,15 +2340,6 @@
 			(type default)
 		)
 		(uuid "983bcd48-edea-4fc8-ba95-0d6f84e401a8")
-	)
-	(bus_entry
-		(at 278.13 99.06)
-		(size 2.54 2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a435964b-ac39-40f6-a07f-0ffaa5484d80")
 	)
 	(bus_entry
 		(at 278.13 86.36)
@@ -2777,16 +2768,6 @@
 		)
 		(uuid "3aef8bfb-5bfe-4527-90dc-8f96842f9de6")
 	)
-	(bus
-		(pts
-			(xy 273.05 110.49) (xy 273.05 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3fd292ec-6cf3-47e8-9ea8-6c85a7cbe0bf")
-	)
 	(wire
 		(pts
 			(xy 284.48 138.43) (xy 270.51 138.43)
@@ -3007,6 +2988,16 @@
 		)
 		(uuid "68cffb96-4a87-4d15-9914-1bb9e43f6e25")
 	)
+	(bus
+		(pts
+			(xy 273.05 110.49) (xy 273.05 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6de9e4ea-1399-4713-bdd3-cef32d87d7ea")
+	)
 	(wire
 		(pts
 			(xy 149.86 101.6) (xy 160.02 101.6)
@@ -3026,16 +3017,6 @@
 			(type default)
 		)
 		(uuid "7271fcce-671f-4381-883a-4d9f3c43bea1")
-	)
-	(bus
-		(pts
-			(xy 280.67 101.6) (xy 280.67 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "73fac61e-602e-428e-9dda-588ef4fd419e")
 	)
 	(bus
 		(pts
@@ -3669,7 +3650,7 @@
 	)
 	(bus
 		(pts
-			(xy 280.67 88.9) (xy 280.67 101.6)
+			(xy 280.67 88.9) (xy 280.67 105.41)
 		)
 		(stroke
 			(width 0)
@@ -3696,16 +3677,6 @@
 			(type default)
 		)
 		(uuid "f567ac3f-a546-4933-accc-8969b2c997d7")
-	)
-	(wire
-		(pts
-			(xy 256.54 99.06) (xy 278.13 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f786d6a7-f8fd-4253-8cfd-98183d4b2673")
 	)
 	(wire
 		(pts
@@ -5311,6 +5282,25 @@
 			"AAAAQJf+H8EAY3LkUjLgAAAAAElFTkSuQmCC"
 		)
 	)
+	(text_box "Note: for serial flow control we connect UART.RTS (from the MCU) to ~CTS from the CY7C65211. This allows the Mbed MCU to tell the serial adapter to stop sending by taking its RTS pin high (deasserted).\nAs for UART.CTS from the MCU, that is looped back to another GPIO on the ArduinoConnector sheet. We can use that GPIO to control whether the UART peripheral is seeing CTS asserted or deasserted."
+		(exclude_from_sim no)
+		(at 59.69 210.82 0)
+		(size 91.44 16.51)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "1f1742af-d11b-48c1-a22a-06df77c276a3")
+	)
 	(text_box "Note: SCB_0 and SCB_1 are never needed at the same time, so to avoid needing a 3rd switch IC, we jumper them together.  This requires GPIO_2 and GPIO_6 to be set as tristated for when these pins are not used as SCB pins"
 		(exclude_from_sim no)
 		(at 83.82 71.12 0)
@@ -5516,7 +5506,7 @@
 		)
 		(uuid "6804c6dd-2f27-47aa-aac1-44071cab2591")
 	)
-	(label "UART.CTS"
+	(label "UART.RTS"
 		(at 257.81 137.16 0)
 		(effects
 			(font
@@ -5585,16 +5575,6 @@
 			(justify left bottom)
 		)
 		(uuid "8d3e7b90-4158-494c-ac22-ff67d0ebcdee")
-	)
-	(label "UART.RTS"
-		(at 257.81 99.06 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8ffc5ec2-ab21-43bd-91f1-e7fede90caa9")
 	)
 	(label "UART.MCU_TX"
 		(at 257.81 86.36 0)
