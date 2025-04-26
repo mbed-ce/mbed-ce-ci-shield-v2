@@ -6,6 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "FX2LP Logic Analyzer")
+		(comment 1 "Cypress FX2LP USB microcontroller (with logic analyzer firmware)")
 	)
 	(lib_symbols
 		(symbol "ColorLEDs:AA3528SURSK"

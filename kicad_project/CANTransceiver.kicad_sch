@@ -6,6 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "CAN Transceiver")
+		(comment 1 "for the MCU to use.")
+		(comment 2 "Miniature CAN bus with an SPI-CAN adapter and a second CAN PHY")
 	)
 	(lib_symbols
 		(symbol "Connector:Conn_01x02_Pin"
@@ -2973,16 +2975,6 @@
 		)
 		(uuid "3f7c1d9a-27b0-4552-8dee-3d538b2554e3")
 	)
-	(label "CANH"
-		(at 177.8 62.23 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "66adfb07-fd62-4b81-b5c6-99b28b8ee31c")
-	)
 	(label "MCU_CAN_TX"
 		(at 81.28 140.97 0)
 		(effects
@@ -3013,15 +3005,25 @@
 		)
 		(uuid "93dcc4c9-d024-4f03-959d-ea3b063eaa61")
 	)
-	(label "CANL"
-		(at 166.37 62.23 270)
+	(label "CANH"
+		(at 166.37 73.66 270)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "e55668d2-be3c-4710-9599-534f20f5b5b4")
+		(uuid "af82f0e3-4b7d-406a-9b0b-832ab21646b2")
+	)
+	(label "CANL"
+		(at 177.8 73.66 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "bf87e0d8-6ac1-4680-be1b-34dcfdbdb01c")
 	)
 	(hierarchical_label "SPI{SCLK MOSI MISO CAN_CS}"
 		(shape bidirectional)

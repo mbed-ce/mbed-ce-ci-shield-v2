@@ -6,6 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "Arduino Connector")
+		(comment 1 "Arduino Uno headers that connect to all of the board's functions")
 	)
 	(lib_symbols
 		(symbol "Connector_Generic:Conn_01x06"

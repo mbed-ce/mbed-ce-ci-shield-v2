@@ -4,6 +4,9 @@
 	(generator_version "8.0")
 	(uuid "45cda335-c1df-4a99-92d5-fb45322a8fec")
 	(paper "A3")
+	(title_block
+		(comment 1 "CY7C65211-based USB to UART/SPI/I2C converter")
+	)
 	(lib_symbols
 		(symbol "Device:C_Small"
 			(pin_numbers hide)

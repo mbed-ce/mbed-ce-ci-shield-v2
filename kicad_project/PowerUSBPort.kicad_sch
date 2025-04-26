@@ -6,6 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Power Input USB Port")
+		(comment 1 "Intended to connect to a multi port USB power brick.")
+		(comment 2 "Power supply for the board using a second (power only) USB port.")
 	)
 	(lib_symbols
 		(symbol "Connector:USB_C_Receptacle_USB2.0_16P"

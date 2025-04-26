@@ -1720,10 +1720,10 @@
 		)
 		(uuid "1dba7f29-424c-4998-a5f7-3b21e3a307b6")
 	)
-	(text_box "Logic Analyzer Input Mapping (depending on FUNC_SELECT settings and specific test):\n\n0: UART.MCU_RX/I2C.SCL/SPI.SCLK\n1: UART.MCU_TX/I2C.SDA/SPI.MOSI\n2: SPI.MISO\n3: SPI.HW_CS\n4: SPI.CAN_SD_CS\n5: GPOUT0/UART.RTS/CAN Bus\n6: GPOUT1/PWM\n7: GPOUT2/UART.CTS"
+	(text_box "Logic Analyzer Input Mapping (depending on FUNC_SELECT settings and specific test):\n\n0: UART.MCU_RX/I2C.SCL/SPI.SCLK\n1: UART.MCU_TX/I2C.SDA/SPI.MOSI\n2: SPI.MISO\n3: SPI.HW_CS\n4: SPI.CAN_SD_CS\n5: GPOUT0/UART.RTS\n6: GPOUT1/PWM\n7: GPOUT2/UART.CTS/CAN Bus"
 		(exclude_from_sim no)
-		(at 99.06 92.71 0)
-		(size 40.64 33.02)
+		(at 93.98 100.33 0)
+		(size 46.99 25.4)
 		(stroke
 			(width 0)
 			(type default)
@@ -1874,7 +1874,7 @@
 		)
 		(uuid "61b55f8e-c89b-4fed-928d-62219a92fd7c")
 	)
-	(label "INT_USB2{D+ D-}"
+	(label "INT_USB1{D+ D-}"
 		(at 73.66 104.14 270)
 		(effects
 			(font
@@ -1884,7 +1884,7 @@
 		)
 		(uuid "75d5585a-342f-4abe-9027-c61b568184ca")
 	)
-	(label "INT_USB1{D+ D-}"
+	(label "INT_USB2{D+ D-}"
 		(at 73.66 82.55 90)
 		(effects
 			(font

@@ -6,6 +6,7 @@
 	(paper "A5")
 	(title_block
 		(title "I^{2}C EEPROM")
+		(comment 1 "EEPROM for the board to talk to over I^{2}C")
 	)
 	(lib_symbols
 		(symbol "Device:C_Small"

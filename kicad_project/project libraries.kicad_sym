@@ -727,19 +727,6 @@
 				(hide yes)
 			)
 		)
-		(symbol "BD2221G-LBTR_0_1"
-			(rectangle
-				(start 3.81 12.7)
-				(end 20.32 -1.27)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-		)
 		(symbol "BD2221G-LBTR_1_1"
 			(polyline
 				(pts
@@ -765,6 +752,17 @@
 				)
 				(fill
 					(type none)
+				)
+			)
+			(rectangle
+				(start 3.81 12.7)
+				(end 20.32 -1.27)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
 				)
 			)
 			(circle
