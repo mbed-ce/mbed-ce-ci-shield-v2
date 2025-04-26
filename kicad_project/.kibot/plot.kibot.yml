@@ -25,8 +25,6 @@ outputs:
       output: '%f-%i.%x'
       # [boolean=false] show placeholder for missing components
       placeholder: false
-      # [dict|None] replacements for PCB references using components (lib:component)
-      remap:
       # [list(string)|string=none] [none,all] list of components to draw, can be also a string for none or all.
       # The default is none
       show_components: none
@@ -65,8 +63,6 @@ outputs:
       output: '%f-%i.%x'
       # [boolean=false] show placeholder for missing components
       placeholder: false
-      # [dict|None] replacements for PCB references using components (lib:component)
-      remap:
       # [list(string)|string=none] [none,all] list of components to draw, can be also a string for none or all.
       # The default is none
       show_components: none
