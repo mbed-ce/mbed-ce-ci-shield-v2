@@ -1962,7 +1962,7 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "X"
+			(property "Reference" "Y"
 				(at -5.08 6.35 0)
 				(effects
 					(font
@@ -4340,7 +4340,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 54.61 86.36 0)
 			(effects
 				(font
@@ -4499,7 +4499,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "24 MHz HCMOS Oscillator 3.3V 4-SMD"
+		(property "Description" "3.3V HCMOS SMD Crystal Clock Oscillator, Abracon"
 			(at 43.18 43.18 0)
 			(effects
 				(font
@@ -4666,7 +4666,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 158.75 33.02 0)
 			(effects
 				(font
@@ -4819,7 +4819,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 179.07 33.02 0)
 			(effects
 				(font
@@ -4906,7 +4906,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 128.27 33.02 0)
 			(effects
 				(font
@@ -4994,7 +4994,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 36.83 109.22 0)
 			(effects
 				(font
@@ -5088,7 +5088,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "FERRITE BEAD 300 OHM 1206 1LN"
+		(property "Description" "Ferrite bead, small symbol"
 			(at 69.85 30.48 0)
 			(effects
 				(font
@@ -5185,7 +5185,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "I2C Serial EEPROM, 2Kb, DIP-8/SOIC-8/TSSOP-8/DFN-8"
 			(at 44.45 123.19 0)
 			(effects
 				(font
@@ -5364,7 +5364,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Red LED 100mcd 20mA Vf=1.95V"
 			(at 154.94 118.11 0)
 			(effects
 				(font
@@ -5591,7 +5591,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 99.06 34.29 0)
 			(effects
 				(font
@@ -5678,7 +5678,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RES 820 Ohm 1% 1/4W 1206"
+		(property "Description" "Resistor, US symbol"
 			(at 166.37 118.11 0)
 			(effects
 				(font
@@ -5906,7 +5906,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RES 2.2k Ohm 1% 1/4W 1206"
+		(property "Description" "Resistor, US symbol"
 			(at 80.01 114.3 0)
 			(effects
 				(font
@@ -6003,7 +6003,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "CYPRESS FX2LP USB Microcontroller, 48MHz 8051, 16KB RAM, USB 2.0, I2C, SSOP-56"
 			(at 123.19 92.71 0)
 			(effects
 				(font
@@ -6261,7 +6261,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 54.61 74.93 0)
 			(effects
 				(font
@@ -6424,7 +6424,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 59.69 130.81 0)
 			(effects
 				(font
@@ -6520,7 +6520,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 168.91 33.02 0)
 			(effects
 				(font
@@ -6673,7 +6673,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 27.94 43.18 0)
 			(effects
 				(font
@@ -6964,7 +6964,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RES 2.2k Ohm 1% 1/4W 1206"
+		(property "Description" "Resistor, US symbol"
 			(at 74.93 114.3 0)
 			(effects
 				(font
@@ -7060,7 +7060,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 86.36 74.93 0)
 			(effects
 				(font
@@ -7221,7 +7221,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 88.9 34.29 0)
 			(effects
 				(font
@@ -7570,7 +7570,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 148.59 33.02 0)
 			(effects
 				(font
@@ -7723,7 +7723,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "CAP CER 2.2uF 50V X7R 1206"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 77.47 34.29 0)
 			(effects
 				(font
@@ -7819,7 +7819,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 138.43 33.02 0)
 			(effects
 				(font

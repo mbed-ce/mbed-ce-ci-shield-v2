@@ -923,6 +923,16 @@
 	)
 	(wire
 		(pts
+			(xy 193.04 130.81) (xy 193.04 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "128a8d0b-79e0-4bea-8a68-b523fc8c509d")
+	)
+	(wire
+		(pts
 			(xy 245.11 140.97) (xy 241.3 140.97)
 		)
 		(stroke
@@ -1040,16 +1050,6 @@
 			(type default)
 		)
 		(uuid "3e7a7548-68ce-47f3-af81-9ded3555484a")
-	)
-	(wire
-		(pts
-			(xy 193.04 130.81) (xy 193.04 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3fc19e79-75ba-4cb7-9691-a15419f4d9e6")
 	)
 	(bus
 		(pts
@@ -1764,6 +1764,16 @@
 		)
 		(uuid "072dffdd-604d-4111-9171-9ec1a16f042a")
 	)
+	(label "LOGIC_IN7"
+		(at 193.04 132.08 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0c455c46-e06b-447c-b814-1e0fe46ec76f")
+	)
 	(label "BUS_LINES0"
 		(at 148.59 127 90)
 		(effects
@@ -1814,6 +1824,16 @@
 		)
 		(uuid "3994f7ed-1ccc-41cb-a845-31c194eb526b")
 	)
+	(label "SPI{SCLK MOSI MISO CAN_SD_CS HW_CS CAN_CS}"
+		(at 146.05 64.77 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "43688ed7-f9b5-4118-a1af-640b1fed4262")
+	)
 	(label "I2C.SCL"
 		(at 172.72 36.83 270)
 		(effects
@@ -1863,16 +1883,6 @@
 			(justify right bottom)
 		)
 		(uuid "75d5585a-342f-4abe-9027-c61b568184ca")
-	)
-	(label "LOGIC_IN7"
-		(at 193.04 132.08 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "7a916615-c51d-40dd-b1b9-a64585cfbe30")
 	)
 	(label "INT_USB1{D+ D-}"
 		(at 73.66 82.55 90)
@@ -2021,7 +2031,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Net tie, 2 pins"
 			(at 161.29 129.54 0)
 			(effects
 				(font
@@ -2101,7 +2111,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Net tie, 2 pins"
 			(at 180.34 129.54 0)
 			(effects
 				(font
@@ -2247,7 +2257,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Net tie, 2 pins"
 			(at 186.69 129.54 0)
 			(effects
 				(font
@@ -2327,7 +2337,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Net tie, 2 pins"
 			(at 173.99 129.54 0)
 			(effects
 				(font
@@ -2407,7 +2417,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Net tie, 2 pins"
 			(at 148.59 129.54 0)
 			(effects
 				(font
@@ -2484,7 +2494,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RES 1.1k Ohm 1% 1/4W 1206"
+		(property "Description" "Resistor, US symbol"
 			(at 177.8 33.02 90)
 			(effects
 				(font
@@ -2582,7 +2592,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Net tie, 2 pins"
 			(at 167.64 129.54 0)
 			(effects
 				(font
@@ -2660,7 +2670,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Mbed CE Logo"
 			(at 30.48 180.34 0)
 			(effects
 				(font
@@ -2734,7 +2744,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Net tie, 2 pins"
 			(at 154.94 129.54 0)
 			(effects
 				(font
@@ -2811,7 +2821,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RES 1.1k Ohm 1% 1/4W 1206"
+		(property "Description" "Resistor, US symbol"
 			(at 172.72 33.02 90)
 			(effects
 				(font
@@ -2930,7 +2940,7 @@
 				(justify left top)
 			)
 		)
-		(pin "~SD_CARD_ENABLE" input
+		(pin "SD_CARD_ENABLE" input
 			(at 204.47 120.65 180)
 			(effects
 				(font
@@ -3018,7 +3028,7 @@
 				(justify left top)
 			)
 		)
-		(pin "UART{MCU_TX MCU_RX RTS CTS}" bidirectional
+		(pin "UART{MCU_TX MCU_RX RTS}" bidirectional
 			(at 196.85 62.23 180)
 			(effects
 				(font
@@ -3068,7 +3078,7 @@
 			)
 			(uuid "68f20c23-e450-4b85-b8e0-839e6251cec6")
 		)
-		(pin "~SD_CARD_ENABLE" output
+		(pin "SD_CARD_ENABLE" output
 			(at 196.85 71.12 180)
 			(effects
 				(font
@@ -3126,7 +3136,7 @@
 			)
 			(uuid "caf56a87-6517-47b9-8299-0b31d8607341")
 		)
-		(pin "~SD_CARD_ENABLE" input
+		(pin "SD_CARD_ENABLE" input
 			(at 212.09 95.25 180)
 			(effects
 				(font
@@ -3242,7 +3252,7 @@
 			)
 			(uuid "f6162369-ff3f-4095-a00d-0f3229c552d7")
 		)
-		(pin "CAN_BUS" output
+		(pin "MCP_CAN_RX" output
 			(at 245.11 140.97 180)
 			(effects
 				(font
@@ -3300,7 +3310,7 @@
 			)
 			(uuid "50352751-d6e2-46ce-b674-d1b77578d38a")
 		)
-		(pin "UART{MCU_TX MCU_RX RTS CTS}" bidirectional
+		(pin "UART{MCU_TX MCU_RX RTS}" bidirectional
 			(at 142.24 62.23 0)
 			(effects
 				(font

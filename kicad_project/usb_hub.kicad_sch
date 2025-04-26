@@ -584,7 +584,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" " ~"
+			(property "Datasheet" "~"
 				(at 5.08 1.27 0)
 				(effects
 					(font
@@ -1011,7 +1011,7 @@
 				)
 			)
 		)
-		(symbol "Connector:USB_C_Receptacle_USB2.0"
+		(symbol "Connector:USB_C_Receptacle_USB2.0_16P"
 			(pin_names
 				(offset 1.016)
 			)
@@ -1019,21 +1019,19 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "J"
-				(at -10.16 19.05 0)
+				(at 0 22.225 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Value" "USB_C_Receptacle_USB2.0"
-				(at 19.05 19.05 0)
+			(property "Value" "USB_C_Receptacle_USB2.0_16P"
+				(at 0 19.685 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify right)
 				)
 			)
 			(property "Footprint" ""
@@ -1054,7 +1052,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "USB 2.0-only Type-C Receptacle connector"
+			(property "Description" "USB 2.0-only 16P Type-C Receptacle connector"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1081,7 +1079,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "USB_C_Receptacle_USB2.0_0_0"
+			(symbol "USB_C_Receptacle_USB2.0_16P_0_0"
 				(rectangle
 					(start -0.254 -17.78)
 					(end 0.254 -16.764)
@@ -1193,7 +1191,7 @@
 					)
 				)
 			)
-			(symbol "USB_C_Receptacle_USB2.0_0_1"
+			(symbol "USB_C_Receptacle_USB2.0_16P_0_1"
 				(rectangle
 					(start -10.16 17.78)
 					(end 10.16 -17.78)
@@ -1394,7 +1392,7 @@
 					)
 				)
 			)
-			(symbol "USB_C_Receptacle_USB2.0_1_1"
+			(symbol "USB_C_Receptacle_USB2.0_16P_1_1"
 				(pin passive line
 					(at 0 -22.86 90)
 					(length 5.08)
@@ -2484,7 +2482,7 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "X"
+			(property "Reference" "Y"
 				(at -5.08 6.35 0)
 				(effects
 					(font
@@ -2654,7 +2652,7 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "U"
-				(at 2.54 8.89 0)
+				(at 0.635 5.715 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2663,7 +2661,7 @@
 				)
 			)
 			(property "Value" "USBLC6-2SC6"
-				(at 2.54 -8.89 0)
+				(at 0.635 3.81 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2672,20 +2670,23 @@
 				)
 			)
 			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
-				(at 0 -12.7 0)
+				(at 1.27 -6.35 0)
 				(effects
 					(font
 						(size 1.27 1.27)
+						(italic yes)
 					)
+					(justify left)
 					(hide yes)
 				)
 			)
 			(property "Datasheet" "https://www.st.com/resource/en/datasheet/usblc6-2.pdf"
-				(at 5.08 8.89 0)
+				(at 1.27 -8.255 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 					(hide yes)
 				)
 			)
@@ -2716,10 +2717,237 @@
 					(hide yes)
 				)
 			)
+			(symbol "USBLC6-2SC6_0_0"
+				(circle
+					(center -1.524 0)
+					(radius 0.0001)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -0.508 -4.572)
+					(radius 0.0001)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -0.508 2.032)
+					(radius 0.0001)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0.508 -4.572)
+					(radius 0.0001)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0.508 2.032)
+					(radius 0.0001)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.524 -2.54)
+					(radius 0.0001)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
 			(symbol "USBLC6-2SC6_0_1"
+				(polyline
+					(pts
+						(xy -2.54 -2.54) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 0) (xy 2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -3.048) (xy -1.016 -3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.016 1.524) (xy -2.032 1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 -3.048) (xy 2.032 -3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 1.524) (xy 2.032 1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.508 -1.143) (xy -0.508 -0.762) (xy 0.508 -0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 0.508) (xy -1.016 0.508) (xy -1.524 1.524) (xy -2.032 0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.016 -4.064) (xy -2.032 -4.064) (xy -1.524 -3.048) (xy -1.016 -4.064)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.508 -1.778) (xy -0.508 -1.778) (xy 0 -0.762) (xy 0.508 -1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.032 -4.064) (xy 1.016 -4.064) (xy 1.524 -3.048) (xy 2.032 -4.064)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.032 0.508) (xy 1.016 0.508) (xy 1.524 1.524) (xy 2.032 0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy -0.508 2.032) (xy 0.508 2.032) (xy 0 1.524) (xy 0 -4.064) (xy -0.508 -4.572) (xy 0.508 -4.572)
+						(xy 0 -5.08)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "USBLC6-2SC6_1_1"
 				(rectangle
-					(start -7.62 -7.62)
-					(end 7.62 7.62)
+					(start -2.54 2.794)
+					(end 2.54 -5.334)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -2728,53 +2956,9 @@
 						(type background)
 					)
 				)
-				(circle
-					(center -5.08 0)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center -2.54 0)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start -2.54 6.35)
-					(end 2.54 -6.35)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 -6.35)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
 				(polyline
 					(pts
-						(xy -5.08 -2.54) (xy -7.62 -2.54)
+						(xy -0.508 2.032) (xy -1.524 2.032) (xy -1.524 -4.572) (xy -0.508 -4.572)
 					)
 					(stroke
 						(width 0)
@@ -2786,7 +2970,7 @@
 				)
 				(polyline
 					(pts
-						(xy -5.08 0) (xy -5.08 -2.54)
+						(xy 0.508 -4.572) (xy 1.524 -4.572) (xy 1.524 2.032) (xy 0.508 2.032)
 					)
 					(stroke
 						(width 0)
@@ -2796,283 +2980,8 @@
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy -5.08 2.54) (xy -7.62 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.524 -2.794) (xy -3.556 -2.794)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.524 4.826) (xy -3.556 4.826)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -7.62) (xy 0 -6.35)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -6.35) (xy 0 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 1.27) (xy 0 6.35)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 6.35) (xy 0 7.62)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.524 -2.794) (xy 3.556 -2.794)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.524 4.826) (xy 3.556 4.826)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 -2.54) (xy 7.62 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 0) (xy 5.08 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 2.54) (xy 7.62 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 0) (xy -5.08 0) (xy -5.08 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 0) (xy 5.08 0) (xy 5.08 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.556 -4.826) (xy -1.524 -4.826) (xy -2.54 -2.794) (xy -3.556 -4.826)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.556 2.794) (xy -1.524 2.794) (xy -2.54 4.826) (xy -3.556 2.794)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.016 -1.016) (xy 1.016 -1.016) (xy 0 1.016) (xy -1.016 -1.016)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.016 1.016) (xy 0.762 1.016) (xy -1.016 1.016) (xy -1.016 0.508)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.556 -4.826) (xy 1.524 -4.826) (xy 2.54 -2.794) (xy 3.556 -4.826)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.556 2.794) (xy 1.524 2.794) (xy 2.54 4.826) (xy 3.556 2.794)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 6.35)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 2.54 0)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 5.08 0)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-			)
-			(symbol "USBLC6-2SC6_1_1"
 				(pin passive line
-					(at -10.16 -2.54 0)
+					(at -5.08 0 0)
 					(length 2.54)
 					(name "I/O1"
 						(effects
@@ -3090,7 +2999,7 @@
 					)
 				)
 				(pin passive line
-					(at 0 -10.16 90)
+					(at 0 -7.62 90)
 					(length 2.54)
 					(name "GND"
 						(effects
@@ -3108,7 +3017,7 @@
 					)
 				)
 				(pin passive line
-					(at 10.16 -2.54 180)
+					(at -5.08 -2.54 0)
 					(length 2.54)
 					(name "I/O2"
 						(effects
@@ -3126,7 +3035,7 @@
 					)
 				)
 				(pin passive line
-					(at 10.16 2.54 180)
+					(at 5.08 -2.54 180)
 					(length 2.54)
 					(name "I/O2"
 						(effects
@@ -3144,7 +3053,7 @@
 					)
 				)
 				(pin passive line
-					(at 0 10.16 270)
+					(at 0 5.08 270)
 					(length 2.54)
 					(name "VBUS"
 						(effects
@@ -3162,7 +3071,7 @@
 					)
 				)
 				(pin passive line
-					(at -10.16 2.54 0)
+					(at 5.08 0 180)
 					(length 2.54)
 					(name "I/O1"
 						(effects
@@ -5428,7 +5337,7 @@
 	)
 	(wire
 		(pts
-			(xy 323.85 49.53) (xy 323.85 41.91)
+			(xy 323.85 41.91) (xy 323.85 54.61)
 		)
 		(stroke
 			(width 0)
@@ -5458,16 +5367,6 @@
 	)
 	(wire
 		(pts
-			(xy 314.96 96.52) (xy 314.96 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "062cfc7d-cc12-4469-a860-0ea5efc07621")
-	)
-	(wire
-		(pts
 			(xy 233.68 93.98) (xy 233.68 92.71)
 		)
 		(stroke
@@ -5485,6 +5384,16 @@
 			(type default)
 		)
 		(uuid "08dea330-2be2-4b67-9bae-7377af8cba59")
+	)
+	(wire
+		(pts
+			(xy 330.2 151.13) (xy 341.63 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "09dfa520-5d61-498f-aede-6e964093e5a8")
 	)
 	(wire
 		(pts
@@ -5758,6 +5667,16 @@
 	)
 	(wire
 		(pts
+			(xy 328.93 62.23) (xy 349.25 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "226edfcd-bb02-4e6a-9cfe-4ee511a8bbf3")
+	)
+	(wire
+		(pts
 			(xy 335.28 214.63) (xy 335.28 219.71)
 		)
 		(stroke
@@ -5998,7 +5917,7 @@
 	)
 	(wire
 		(pts
-			(xy 323.85 69.85) (xy 323.85 72.39)
+			(xy 323.85 67.31) (xy 323.85 72.39)
 		)
 		(stroke
 			(width 0)
@@ -6168,6 +6087,16 @@
 	)
 	(wire
 		(pts
+			(xy 330.2 118.11) (xy 335.28 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5212551a-10f8-4f4a-a9ac-78d0628ee9d7")
+	)
+	(wire
+		(pts
 			(xy 218.44 245.11) (xy 218.44 246.38)
 		)
 		(stroke
@@ -6245,6 +6174,16 @@
 			(type default)
 		)
 		(uuid "5a30d427-3191-4efd-8f2f-a9f62ca38c87")
+	)
+	(wire
+		(pts
+			(xy 314.96 96.52) (xy 314.96 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a998a94-7612-4263-9fa7-7562fbe388b6")
 	)
 	(wire
 		(pts
@@ -6358,7 +6297,7 @@
 	)
 	(wire
 		(pts
-			(xy 325.12 168.91) (xy 325.12 158.75)
+			(xy 325.12 156.21) (xy 325.12 168.91)
 		)
 		(stroke
 			(width 0)
@@ -6405,6 +6344,16 @@
 			(type default)
 		)
 		(uuid "63ec05ba-e540-4e35-a9e0-22cf047d04a7")
+	)
+	(wire
+		(pts
+			(xy 325.12 105.41) (xy 325.12 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63fb63d1-7432-422f-84b3-e8bfca280d3f")
 	)
 	(wire
 		(pts
@@ -6495,16 +6444,6 @@
 			(type default)
 		)
 		(uuid "685c56b0-180f-41ba-b280-68f6c3e00551")
-	)
-	(wire
-		(pts
-			(xy 335.28 151.13) (xy 341.63 151.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "696f6b78-5047-4ca5-9537-372758009f55")
 	)
 	(wire
 		(pts
@@ -6718,6 +6657,16 @@
 	)
 	(wire
 		(pts
+			(xy 330.2 148.59) (xy 337.82 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b76f022-06f4-4bf2-9235-0629dcb614a7")
+	)
+	(wire
+		(pts
 			(xy 360.68 105.41) (xy 360.68 118.11)
 		)
 		(stroke
@@ -6748,7 +6697,7 @@
 	)
 	(wire
 		(pts
-			(xy 337.82 135.89) (xy 337.82 146.05)
+			(xy 337.82 135.89) (xy 337.82 148.59)
 		)
 		(stroke
 			(width 0)
@@ -6848,16 +6797,6 @@
 	)
 	(wire
 		(pts
-			(xy 335.28 99.06) (xy 335.28 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "84a2d1ef-719c-4c89-a72b-412f7fc02a46")
-	)
-	(wire
-		(pts
 			(xy 62.23 62.23) (xy 58.42 62.23)
 		)
 		(stroke
@@ -6908,13 +6847,33 @@
 	)
 	(wire
 		(pts
-			(xy 334.01 46.99) (xy 334.01 57.15)
+			(xy 335.28 99.06) (xy 335.28 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "899cfb18-502f-4d9b-8337-6508b82da518")
+	)
+	(wire
+		(pts
+			(xy 334.01 46.99) (xy 334.01 59.69)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "8cc34ccf-0ce2-4a5a-a4a7-0c9488d2a8ba")
+	)
+	(wire
+		(pts
+			(xy 314.96 118.11) (xy 320.04 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e92af46-1037-4b9d-9492-3b2cacc68e18")
 	)
 	(wire
 		(pts
@@ -6988,26 +6947,6 @@
 	)
 	(wire
 		(pts
-			(xy 335.28 146.05) (xy 337.82 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9668e1df-f630-400d-a464-c4b471fc79a7")
-	)
-	(wire
-		(pts
-			(xy 334.01 62.23) (xy 349.25 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9679c102-b3d6-483e-aaf3-e9d7549be125")
-	)
-	(wire
-		(pts
 			(xy 93.98 125.73) (xy 96.52 125.73)
 		)
 		(stroke
@@ -7055,6 +6994,16 @@
 			(type default)
 		)
 		(uuid "9fea18ca-7ea9-4365-aece-5ed973da61a0")
+	)
+	(wire
+		(pts
+			(xy 328.93 59.69) (xy 334.01 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a01e1278-c3c1-421c-9f1a-ef528b17f9a8")
 	)
 	(bus
 		(pts
@@ -7128,7 +7077,7 @@
 	)
 	(wire
 		(pts
-			(xy 313.69 49.53) (xy 313.69 57.15)
+			(xy 313.69 49.53) (xy 313.69 59.69)
 		)
 		(stroke
 			(width 0)
@@ -7188,7 +7137,7 @@
 	)
 	(wire
 		(pts
-			(xy 312.42 151.13) (xy 314.96 151.13)
+			(xy 312.42 151.13) (xy 320.04 151.13)
 		)
 		(stroke
 			(width 0)
@@ -7378,6 +7327,16 @@
 	)
 	(wire
 		(pts
+			(xy 320.04 115.57) (xy 314.96 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c0408a37-a264-489d-a569-784aa0739ef5")
+	)
+	(wire
+		(pts
 			(xy 92.71 43.18) (xy 90.17 43.18)
 		)
 		(stroke
@@ -7438,7 +7397,7 @@
 	)
 	(wire
 		(pts
-			(xy 325.12 125.73) (xy 325.12 129.54)
+			(xy 325.12 123.19) (xy 325.12 129.54)
 		)
 		(stroke
 			(width 0)
@@ -7598,6 +7557,16 @@
 	)
 	(wire
 		(pts
+			(xy 314.96 148.59) (xy 320.04 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d86175c0-903c-4d72-89cd-835fc2612b4c")
+	)
+	(wire
+		(pts
 			(xy 71.12 48.26) (xy 69.85 48.26)
 		)
 		(stroke
@@ -7625,6 +7594,16 @@
 			(type default)
 		)
 		(uuid "dccc1585-49a7-4678-8f95-d1cd184b4f04")
+	)
+	(wire
+		(pts
+			(xy 313.69 62.23) (xy 318.77 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd70fd10-1421-46d3-9cd5-fb79d57d4931")
 	)
 	(wire
 		(pts
@@ -7758,6 +7737,26 @@
 	)
 	(wire
 		(pts
+			(xy 325.12 134.62) (xy 325.12 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e963172e-8461-4709-b98d-81a4ebae1766")
+	)
+	(wire
+		(pts
+			(xy 318.77 59.69) (xy 313.69 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea1c4d93-626e-4551-829a-0fb8c6bc35c8")
+	)
+	(wire
+		(pts
 			(xy 78.74 227.33) (xy 78.74 217.17)
 		)
 		(stroke
@@ -7765,16 +7764,6 @@
 			(type default)
 		)
 		(uuid "ebce4a28-781f-413a-b2c7-586234294f44")
-	)
-	(wire
-		(pts
-			(xy 325.12 134.62) (xy 325.12 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ec524fa0-8dd8-473c-983c-da7e3c699ef8")
 	)
 	(wire
 		(pts
@@ -7978,7 +7967,7 @@
 	)
 	(wire
 		(pts
-			(xy 314.96 133.35) (xy 314.96 146.05)
+			(xy 314.96 133.35) (xy 314.96 148.59)
 		)
 		(stroke
 			(width 0)
@@ -8095,6 +8084,16 @@
 			(type default)
 		)
 		(uuid "fe07fb68-60a6-4a37-8c40-98aaf06a72c8")
+	)
+	(wire
+		(pts
+			(xy 330.2 115.57) (xy 335.28 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff972fc0-b10f-481e-b10c-ba3847b090bb")
 	)
 	(text_box "Hub Active LED:\nLights up when hub is active (NOT in suspend mode).  \n100k pulldown is a strapping setting to set that the PWR pins can act independently."
 		(exclude_from_sim no)
@@ -8828,7 +8827,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "CAP CER 2.2uF 50V X7R 1206"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 218.44 97.79 0)
 			(effects
 				(font
@@ -8925,7 +8924,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 241.3 219.71 0)
 			(effects
 				(font
@@ -9022,7 +9021,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RES SMD 270 Ohm 1% 1/4W 1206"
+		(property "Description" "Resistor, US symbol"
 			(at 302.26 223.52 0)
 			(effects
 				(font
@@ -9117,7 +9116,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Current Limit IC 0.5-1.0A, SOT-23-5"
 			(at 177.8 57.15 0)
 			(effects
 				(font
@@ -9289,7 +9288,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "4 Port USB Hub Controller USB 2.0 48-TQFP"
 			(at 99.06 101.6 0)
 			(effects
 				(font
@@ -9524,7 +9523,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 53.34 58.42 0)
 			(effects
 				(font
@@ -9618,7 +9617,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "4 Port USB Hub Controller USB 2.0 48-TQFP"
 			(at 262.89 129.54 0)
 			(effects
 				(font
@@ -9853,7 +9852,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 205.74 60.96 0)
 			(effects
 				(font
@@ -9947,7 +9946,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RES 5.1k Ohm 1% 1/4W 1206"
+		(property "Description" "Resistor, US symbol"
 			(at 351.79 49.53 0)
 			(effects
 				(font
@@ -10242,7 +10241,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 24.13 176.53 0)
 			(effects
 				(font
@@ -10339,7 +10338,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RES SMD 300 Ohm 1% 1/4W 1206"
+		(property "Description" "Resistor, US symbol"
 			(at 351.79 223.52 0)
 			(effects
 				(font
@@ -10436,7 +10435,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 69.85 58.42 0)
 			(effects
 				(font
@@ -10731,7 +10730,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Red LED 100mcd 20mA Vf=1.95V"
 			(at 68.58 223.52 0)
 			(effects
 				(font
@@ -10894,7 +10893,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "CAP ALUM POLY 100uF 20% 35V T/H"
+		(property "Description" "Polarized capacitor, US symbol"
 			(at 232.41 52.07 0)
 			(effects
 				(font
@@ -11057,7 +11056,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 29.21 137.16 0)
 			(effects
 				(font
@@ -11151,7 +11150,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 90.17 125.73 0)
 			(effects
 				(font
@@ -11312,7 +11311,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "4 Port USB Hub Controller USB 2.0 48-TQFP"
 			(at 262.89 92.71 0)
 			(effects
 				(font
@@ -11547,7 +11546,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RES SMD 300 Ohm 1% 1/4W 1206"
+		(property "Description" "Resistor, US symbol"
 			(at 318.77 223.52 0)
 			(effects
 				(font
@@ -11643,7 +11642,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "CAP CER 2.2uF 50V X7R 1206"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 24.13 137.16 0)
 			(effects
 				(font
@@ -11901,7 +11900,7 @@
 		(dnp no)
 		(uuid "5c865b30-f689-46ed-b5bb-f6bac5a41d4a")
 		(property "Reference" "U4"
-			(at 326.7711 102.87 0)
+			(at 325.628 108.458 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11910,7 +11909,7 @@
 			)
 		)
 		(property "Value" "USBLC6-2SC6"
-			(at 326.7711 105.41 0)
+			(at 325.628 110.998 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11936,7 +11935,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Very low capacitance ESD protection diode, 2 data-line, SOT-23-6"
 			(at 325.12 115.57 0)
 			(effects
 				(font
@@ -12267,7 +12266,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "CAP CER 2.2uF 50V X7R 1206"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 218.44 52.07 0)
 			(effects
 				(font
@@ -12364,7 +12363,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 76.2 71.12 0)
 			(effects
 				(font
@@ -12527,7 +12526,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 66.04 53.34 0)
 			(effects
 				(font
@@ -12624,7 +12623,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 158.75 97.79 0)
 			(effects
 				(font
@@ -12712,7 +12711,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RES SMD 300 Ohm 1% 1/4W 1206"
+		(property "Description" "Resistor, US symbol"
 			(at 68.58 236.22 0)
 			(effects
 				(font
@@ -12806,7 +12805,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "FERRITE BEAD 300 OHM 1206 1LN"
+		(property "Description" "Ferrite bead, small symbol"
 			(at 226.06 46.99 0)
 			(effects
 				(font
@@ -12903,7 +12902,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "CAP ALUM POLY 100uF 20% 35V T/H"
+		(property "Description" "Polarized capacitor, US symbol"
 			(at 233.68 97.79 0)
 			(effects
 				(font
@@ -13021,7 +13020,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:USB_C_Receptacle_USB2.0")
+		(lib_id "Connector:USB_C_Receptacle_USB2.0_16P")
 		(at 375.92 57.15 0)
 		(mirror y)
 		(unit 1)
@@ -13066,7 +13065,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "USB 2.0-only 16P Type-C Receptacle connector"
 			(at 375.92 57.15 0)
 			(effects
 				(font
@@ -13339,7 +13338,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 213.36 247.65 0)
 			(effects
 				(font
@@ -13434,7 +13433,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "4 Port USB Hub Controller USB 2.0 48-TQFP"
 			(at 148.59 232.41 0)
 			(effects
 				(font
@@ -13668,7 +13667,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 212.09 214.63 0)
 			(effects
 				(font
@@ -13764,7 +13763,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "FERRITE BEAD 300 OHM 1206 1LN"
+		(property "Description" "Ferrite bead, small symbol"
 			(at 58.42 43.18 0)
 			(effects
 				(font
@@ -13861,7 +13860,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 77.47 58.42 0)
 			(effects
 				(font
@@ -14014,7 +14013,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Green LED 100mcd 20mA Vf=2.1V"
 			(at 335.28 210.82 0)
 			(effects
 				(font
@@ -14141,7 +14140,7 @@
 		(dnp no)
 		(uuid "86c8b03b-c6c1-48db-a4b1-57f8f5793db7")
 		(property "Reference" "U5"
-			(at 320.04 137.16 0)
+			(at 321.818 140.462 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14150,7 +14149,7 @@
 			)
 		)
 		(property "Value" "USBLC6-2SC6"
-			(at 308.61 139.7 0)
+			(at 310.388 143.002 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14176,7 +14175,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Very low capacitance ESD protection diode, 2 data-line, SOT-23-6"
 			(at 325.12 148.59 0)
 			(effects
 				(font
@@ -14285,7 +14284,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 58.42 53.34 0)
 			(effects
 				(font
@@ -14445,7 +14444,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RES 649 Ohm 1% 1/4W 1206"
+		(property "Description" "Resistor, US symbol"
 			(at 83.82 120.65 0)
 			(effects
 				(font
@@ -14540,7 +14539,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "4 Port USB Hub Controller USB 2.0 48-TQFP"
 			(at 148.59 199.39 0)
 			(effects
 				(font
@@ -14775,7 +14774,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 205.74 106.68 0)
 			(effects
 				(font
@@ -14869,7 +14868,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RES 5.1k Ohm 1% 1/4W 1206"
+		(property "Description" "Resistor, US symbol"
 			(at 351.79 46.99 0)
 			(effects
 				(font
@@ -14966,7 +14965,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 78.74 231.14 0)
 			(effects
 				(font
@@ -15129,7 +15128,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 73.66 53.34 0)
 			(effects
 				(font
@@ -15217,7 +15216,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 24.13 121.92 0)
 			(effects
 				(font
@@ -15380,7 +15379,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 218.44 241.3 0)
 			(effects
 				(font
@@ -15607,7 +15606,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "4 Port USB Hub Controller USB 2.0 48-TQFP"
 			(at 95.25 31.75 0)
 			(effects
 				(font
@@ -15907,7 +15906,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Green LED 100mcd 20mA Vf=2.1V"
 			(at 302.26 210.82 0)
 			(effects
 				(font
@@ -16132,7 +16131,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "FERRITE BEAD 300 OHM 1206 1LN"
+		(property "Description" "Ferrite bead, small symbol"
 			(at 226.06 92.71 0)
 			(effects
 				(font
@@ -16229,7 +16228,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 217.17 208.28 0)
 			(effects
 				(font
@@ -16291,7 +16290,7 @@
 		(dnp no)
 		(uuid "d1d4536b-507c-4696-937e-56502f916280")
 		(property "Reference" "U3"
-			(at 326.39 48.26 0)
+			(at 326.644 52.578 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16300,7 +16299,7 @@
 			)
 		)
 		(property "Value" "USBLC6-2SC6"
-			(at 337.82 50.8 0)
+			(at 338.074 55.118 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16326,7 +16325,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Very low capacitance ESD protection diode, 2 data-line, SOT-23-6"
 			(at 323.85 59.69 0)
 			(effects
 				(font
@@ -16435,7 +16434,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Yellow LED 200mcd 20mA Vf=2V"
 			(at 351.79 210.82 0)
 			(effects
 				(font
@@ -16529,7 +16528,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "12 MHz HCMOS Oscillator 3.3V 4-SMD"
+		(property "Description" "3.3V HCMOS SMD Crystal Clock Oscillator, Abracon"
 			(at 39.37 176.53 0)
 			(effects
 				(font
@@ -17027,7 +17026,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 154.94 52.07 0)
 			(effects
 				(font
@@ -17113,7 +17112,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "4 Port USB Hub Controller USB 2.0 48-TQFP"
 			(at 259.08 43.18 0)
 			(effects
 				(font
@@ -17348,7 +17347,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 62.23 58.42 0)
 			(effects
 				(font
@@ -17443,7 +17442,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Current Limit IC 0.5-1.0A, SOT-23-5"
 			(at 177.8 102.87 0)
 			(effects
 				(font
@@ -17549,7 +17548,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Yellow LED 200mcd 20mA Vf=2V"
 			(at 318.77 210.82 0)
 			(effects
 				(font
@@ -17712,7 +17711,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RES SMD 270 Ohm 1% 1/4W 1206"
+		(property "Description" "Resistor, US symbol"
 			(at 335.28 223.52 0)
 			(effects
 				(font
@@ -17806,7 +17805,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "FERRITE BEAD 300 OHM 1206 1LN"
+		(property "Description" "Ferrite bead, small symbol"
 			(at 50.8 68.58 0)
 			(effects
 				(font
@@ -17903,7 +17902,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 67.31 71.12 0)
 			(effects
 				(font
@@ -18068,7 +18067,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "USB Type A connector, stacked"
 			(at 370.84 128.27 0)
 			(effects
 				(font

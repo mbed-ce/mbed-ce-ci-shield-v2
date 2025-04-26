@@ -1672,15 +1672,6 @@
 		(uuid "edf18ee6-27ad-49ca-8130-7f0f1c3f45ed")
 	)
 	(bus_entry
-		(at 240.03 100.33)
-		(size -2.54 -2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f415283e-c7b0-422d-bb55-7b5aecc8ae81")
-	)
-	(bus_entry
 		(at 240.03 110.49)
 		(size -2.54 -2.54)
 		(stroke
@@ -1868,16 +1859,6 @@
 			(type default)
 		)
 		(uuid "5e714921-e37a-4f97-9ce6-d60feb3a6fed")
-	)
-	(bus
-		(pts
-			(xy 240.03 97.79) (xy 240.03 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5e739de8-718d-46f7-8326-3d697daf5dfe")
 	)
 	(bus
 		(pts
@@ -2071,16 +2052,6 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 97.79) (xy 237.49 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ae29555a-32bd-45c0-a43b-a2291c481dd0")
-	)
-	(wire
-		(pts
 			(xy 118.11 100.33) (xy 121.92 100.33)
 		)
 		(stroke
@@ -2088,16 +2059,6 @@
 			(type default)
 		)
 		(uuid "aefbe3b0-4157-437b-8e2e-38002c8d937a")
-	)
-	(bus
-		(pts
-			(xy 240.03 100.33) (xy 240.03 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b0044a96-50d0-4e05-82ef-6897bc39358a")
 	)
 	(wire
 		(pts
@@ -2118,16 +2079,6 @@
 			(type default)
 		)
 		(uuid "b96bef6b-3ca1-4f09-b29d-4974dc04da49")
-	)
-	(wire
-		(pts
-			(xy 215.9 97.79) (xy 219.71 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c22f2034-ef97-4a08-a6c3-ac314cab5aba")
 	)
 	(wire
 		(pts
@@ -2319,7 +2270,7 @@
 		)
 		(uuid "fe685f66-b284-4e00-a682-c08e9b12335e")
 	)
-	(text_box "On boards where A0 is a DAC pin, it may be jumpered to A3 to enable DAC tests."
+	(text_box "On boards where A0 is a DAC pin, it may be jumpered to A2 to enable DAC tests."
 		(exclude_from_sim no)
 		(at 135.89 96.52 0)
 		(size 24.13 12.7)
@@ -2880,16 +2831,6 @@
 		)
 		(uuid "862ed9ea-9f50-4b27-83ef-36d2eaef9863")
 	)
-	(label "UART.CTS"
-		(at 229.87 97.79 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "9794b8de-15d5-4f04-8e23-877c9b78fbd7")
-	)
 	(label "UART.MCU_TX"
 		(at 181.61 113.03 0)
 		(effects
@@ -3032,7 +2973,7 @@
 		)
 		(uuid "20b90cd3-8706-4a0c-a515-1b39ec2821c5")
 	)
-	(hierarchical_label "UART{MCU_TX MCU_RX RTS CTS}"
+	(hierarchical_label "UART{MCU_TX MCU_RX RTS}"
 		(shape bidirectional)
 		(at 240.03 130.81 270)
 		(effects
@@ -3065,7 +3006,7 @@
 		)
 		(uuid "dacd606a-3640-40b8-969e-f91417fb5216")
 	)
-	(hierarchical_label "~SD_CARD_ENABLE"
+	(hierarchical_label "SD_CARD_ENABLE"
 		(shape output)
 		(at 118.11 100.33 180)
 		(effects
@@ -3119,7 +3060,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Female Pin Header 0.1\" 6 Pin 10mm Leads"
+		(property "Description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 127 102.87 0)
 			(effects
 				(font
@@ -3183,85 +3124,6 @@
 			(project "Arduino Uno Template"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "J3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:NetTie_2")
-		(at 222.25 97.79 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0dbf78fc-9309-4a7e-bb57-d775b8569d8f")
-		(property "Reference" "NT11"
-			(at 222.25 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "NetTie_2"
-			(at 223.52 96.52 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "NetTie:NetTie-2_SMD_Pad0.5mm"
-			(at 222.25 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 222.25 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 222.25 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LibRef" ""
-			(at 222.25 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "cb956f6a-d429-4244-b922-a041d705d372")
-		)
-		(pin "2"
-			(uuid "ca83a2f3-a60c-4989-9b49-9680f29fc65f")
-		)
-		(instances
-			(project "mbed-ce-ci-shield-v2"
-				(path "/a0f40274-9469-4bcf-885c-e8b8a490ea54/1e471c6e-a872-4398-8c30-01f0a30d79ce"
-					(reference "NT11")
 					(unit 1)
 				)
 			)
@@ -3373,7 +3235,7 @@
 				)
 			)
 		)
-		(property "Description" "Female Pin Header 0.1\" 8 Pin 10mm Leads"
+		(property "Description" "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 176.53 105.41 0)
 			(effects
 				(font
@@ -3494,7 +3356,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 83.82 107.95 0)
 			(effects
 				(font
@@ -3582,7 +3444,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Net tie, 2 pins"
 			(at 222.25 107.95 0)
 			(effects
 				(font
@@ -3658,7 +3520,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 207.01 105.41 0)
 			(effects
 				(font
@@ -3755,7 +3617,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Net tie, 2 pins"
 			(at 222.25 102.87 0)
 			(effects
 				(font
@@ -3899,7 +3761,7 @@
 				)
 			)
 		)
-		(property "Description" "Female Pin Header 0.1\" 8 Pin 10mm Leads"
+		(property "Description" "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 127 72.39 0)
 			(effects
 				(font
@@ -4018,7 +3880,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RES 1.5k Ohm 1% 1/4W 1206"
+		(property "Description" "Resistor, US symbol"
 			(at 77.47 102.87 0)
 			(effects
 				(font
@@ -4112,7 +3974,7 @@
 				)
 			)
 		)
-		(property "Description" "Female Pin Header 0.1\" 10 Pin 10mm Leads"
+		(property "Description" "Generic connector, single row, 01x10, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 176.53 69.85 0)
 			(effects
 				(font
@@ -4236,7 +4098,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 207.01 110.49 0)
 			(effects
 				(font
@@ -4399,7 +4261,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 207.01 100.33 0)
 			(effects
 				(font

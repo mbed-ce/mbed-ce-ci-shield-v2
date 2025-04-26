@@ -5746,7 +5746,7 @@
 		)
 		(uuid "b1edf5e8-5e05-4f92-ac0c-863c0bd753f4")
 	)
-	(hierarchical_label "UART{MCU_TX MCU_RX RTS CTS}"
+	(hierarchical_label "UART{MCU_TX MCU_RX RTS}"
 		(shape bidirectional)
 		(at 295.91 105.41 0)
 		(effects
@@ -5803,7 +5803,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 29.21 110.49 0)
 			(effects
 				(font
@@ -5966,7 +5966,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "CMOS DPQT analog multiplexer/demultiplexer, TSSOP-16"
 			(at 242.57 93.98 0)
 			(effects
 				(font
@@ -6170,7 +6170,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 297.18 139.7 0)
 			(effects
 				(font
@@ -6398,7 +6398,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 304.8 205.74 0)
 			(effects
 				(font
@@ -6626,7 +6626,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 41.91 111.76 0)
 			(effects
 				(font
@@ -6778,7 +6778,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 299.72 205.74 0)
 			(effects
 				(font
@@ -6875,7 +6875,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 25.4 110.49 0)
 			(effects
 				(font
@@ -6973,7 +6973,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "CMOS DPQT analog multiplexer/demultiplexer, TSSOP-16"
 			(at 242.57 144.78 0)
 			(effects
 				(font
@@ -7175,7 +7175,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Full Speed USB to Serial (UART/SPI/I2C) Bridge, 3MHz Max Speed, With GPIOs, 24-QFN"
 			(at 86.36 99.06 0)
 			(effects
 				(font

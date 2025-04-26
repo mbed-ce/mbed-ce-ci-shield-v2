@@ -1155,7 +1155,7 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "X"
+			(property "Reference" "Y"
 				(at -5.08 6.35 0)
 				(effects
 					(font
@@ -1832,6 +1832,12 @@
 		(color 0 0 0 0)
 		(uuid "d3194272-6bc0-4a5c-b066-d232d3d9c04d")
 	)
+	(junction
+		(at 73.66 140.97)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e34e143e-afde-4f64-a5e0-52be2d009866")
+	)
 	(no_connect
 		(at 99.06 69.85)
 		(uuid "0d27309d-7796-4f09-958a-813f1d375a03")
@@ -1906,7 +1912,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 140.97) (xy 105.41 140.97)
+			(xy 72.39 140.97) (xy 73.66 140.97)
 		)
 		(stroke
 			(width 0)
@@ -1966,7 +1972,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 143.51) (xy 105.41 143.51)
+			(xy 72.39 143.51) (xy 105.41 143.51)
 		)
 		(stroke
 			(width 0)
@@ -2123,6 +2129,16 @@
 			(type default)
 		)
 		(uuid "4291e452-b6fa-423d-9b73-ccbc4fddce98")
+	)
+	(wire
+		(pts
+			(xy 73.66 160.02) (xy 73.66 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "436338f6-6197-448a-a93c-211611d49a73")
 	)
 	(bus
 		(pts
@@ -2336,6 +2352,16 @@
 	)
 	(wire
 		(pts
+			(xy 73.66 140.97) (xy 105.41 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99136d9a-702a-42da-89f2-b36aa8c6d45c")
+	)
+	(wire
+		(pts
 			(xy 53.34 85.09) (xy 53.34 74.93)
 		)
 		(stroke
@@ -2353,6 +2379,16 @@
 			(type default)
 		)
 		(uuid "9d2d3725-4fdb-401d-9e42-15d749959f68")
+	)
+	(wire
+		(pts
+			(xy 73.66 140.97) (xy 73.66 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d75d611-8f5b-4e11-bfb8-894e45db2e50")
 	)
 	(wire
 		(pts
@@ -2957,6 +2993,16 @@
 		)
 		(uuid "67cb47c5-7d57-4770-a268-75c31f6ee23f")
 	)
+	(label "SPI.CAN_CS"
+		(at 48.26 57.15 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "70d8f7cc-713c-43d5-a15c-2de57c52a51b")
+	)
 	(label "SPI.SCLK"
 		(at 48.26 59.69 0)
 		(effects
@@ -2966,16 +3012,6 @@
 			(justify left bottom)
 		)
 		(uuid "93dcc4c9-d024-4f03-959d-ea3b063eaa61")
-	)
-	(label "SPI.CAN_CS"
-		(at 48.26 57.15 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "b628b870-0915-4547-8817-e1e393e9f151")
 	)
 	(label "CANL"
 		(at 166.37 62.23 270)
@@ -3009,7 +3045,7 @@
 		)
 		(uuid "5028b71f-e68b-4bbe-a6aa-c021a67eafd0")
 	)
-	(hierarchical_label "CAN_BUS"
+	(hierarchical_label "MCP_CAN_RX"
 		(shape output)
 		(at 119.38 27.94 0)
 		(effects
@@ -3104,7 +3140,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x02_Pin")
-		(at 71.12 140.97 0)
+		(at 67.31 140.97 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3113,7 +3149,7 @@
 		(fields_autoplaced yes)
 		(uuid "1732374c-d157-4b5a-843c-4c1713d91ee6")
 		(property "Reference" "J9"
-			(at 71.755 135.89 0)
+			(at 67.945 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3121,7 +3157,7 @@
 			)
 		)
 		(property "Value" "1x2"
-			(at 71.755 138.43 0)
+			(at 67.945 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3129,7 +3165,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 71.12 140.97 0)
+			(at 67.31 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3138,7 +3174,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 71.12 140.97 0)
+			(at 67.31 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3147,7 +3183,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 71.12 140.97 0)
+			(at 67.31 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3156,7 +3192,7 @@
 			)
 		)
 		(property "LibRef" "HEADER_2x1"
-			(at 71.12 140.97 0)
+			(at 67.31 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3165,7 +3201,7 @@
 			)
 		)
 		(property "SKU" "732-5315-ND"
-			(at 71.12 140.97 0)
+			(at 67.31 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3174,7 +3210,7 @@
 			)
 		)
 		(property "Supplier" "Digi-Key"
-			(at 71.12 140.97 0)
+			(at 67.31 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3324,6 +3360,72 @@
 			(project "mbed-ce-ci-shield-v2"
 				(path "/a0f40274-9469-4bcf-885c-e8b8a490ea54/6c93a008-184c-4fde-8753-4c70ee31e968"
 					(reference "#PWR061")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 73.66 162.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "406e7dbb-b473-4afe-9295-f635ab960b72")
+		(property "Reference" "#PWR0107"
+			(at 73.66 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 73.66 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 73.66 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 73.66 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 73.66 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cd503124-b11c-4567-950a-6526a9d3910e")
+		)
+		(instances
+			(project "mbed-ce-ci-shield-v2"
+				(path "/a0f40274-9469-4bcf-885c-e8b8a490ea54/6c93a008-184c-4fde-8753-4c70ee31e968"
+					(reference "#PWR0107")
 					(unit 1)
 				)
 			)
@@ -3516,7 +3618,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 171.45 49.53 0)
 			(effects
 				(font
@@ -3746,7 +3848,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 100.33 157.48 0)
 			(effects
 				(font
@@ -3843,7 +3945,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 71.12 34.29 0)
 			(effects
 				(font
@@ -4083,6 +4185,103 @@
 			(project "mbed-ce-ci-shield-v2"
 				(path "/a0f40274-9469-4bcf-885c-e8b8a490ea54/6c93a008-184c-4fde-8753-4c70ee31e968"
 					(reference "U19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 73.66 156.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "74c29cd8-08fb-461e-8f17-abcdca0305f4")
+		(property "Reference" "R45"
+			(at 76.2 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 76.2 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+			(at 74.676 156.464 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 73.66 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 73.66 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier" "Digi-Key"
+			(at 73.66 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LibRef" "ERJ-8ENF1002V"
+			(at 73.66 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" "P10.0KFCT-ND"
+			(at 73.66 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "77b38bdb-b199-421f-a9ba-a48fc308ddc7")
+		)
+		(pin "2"
+			(uuid "40f09fae-1129-4269-a27c-64019ded0e46")
+		)
+		(instances
+			(project "mbed-ce-ci-shield-v2"
+				(path "/a0f40274-9469-4bcf-885c-e8b8a490ea54/6c93a008-184c-4fde-8753-4c70ee31e968"
+					(reference "R45")
 					(unit 1)
 				)
 			)
@@ -4332,7 +4531,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 121.92 68.58 0)
 			(effects
 				(font
@@ -4427,7 +4626,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 171.45 156.21 0)
 			(effects
 				(font
@@ -4524,7 +4723,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 128.27 38.1 0)
 			(effects
 				(font
@@ -4933,7 +5132,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 109.22 125.73 0)
 			(effects
 				(font
@@ -5220,7 +5419,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 90.17 157.48 0)
 			(effects
 				(font
@@ -5401,7 +5600,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "12 MHz HCMOS Oscillator 3.3V 4-SMD"
+		(property "Description" "3.3V HCMOS SMD Crystal Clock Oscillator, Abracon"
 			(at 38.1 85.09 0)
 			(effects
 				(font
@@ -5504,7 +5703,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 114.3 66.04 0)
 			(effects
 				(font
@@ -5724,7 +5923,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 19.05 83.82 0)
 			(effects
 				(font
