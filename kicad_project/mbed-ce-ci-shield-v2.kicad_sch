@@ -883,6 +883,16 @@
 	)
 	(wire
 		(pts
+			(xy 21.59 135.89) (xy 21.59 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a4c67df-57b0-4313-a2f7-2a8a1941d377")
+	)
+	(wire
+		(pts
 			(xy 173.99 132.08) (xy 173.99 144.78)
 		)
 		(stroke
@@ -1141,6 +1151,16 @@
 		)
 		(uuid "566a742c-b2f7-4ffd-b7a6-cba09ff16495")
 	)
+	(wire
+		(pts
+			(xy 21.59 106.68) (xy 26.67 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "599ad096-7753-432b-9062-dd17200da461")
+	)
 	(bus
 		(pts
 			(xy 185.42 85.09) (xy 185.42 97.79)
@@ -1270,6 +1290,16 @@
 			(type default)
 		)
 		(uuid "6ca39d71-278b-43b6-ad19-b72e26335230")
+	)
+	(wire
+		(pts
+			(xy 222.25 148.59) (xy 245.11 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "724e0db0-033d-492a-bcb3-9e1d0ed73473")
 	)
 	(wire
 		(pts
@@ -1623,6 +1653,16 @@
 	)
 	(wire
 		(pts
+			(xy 66.04 142.24) (xy 88.9 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db20a37a-5090-460a-bf68-79c26b215c07")
+	)
+	(wire
+		(pts
 			(xy 180.34 132.08) (xy 180.34 144.78)
 		)
 		(stroke
@@ -1690,6 +1730,16 @@
 			(type default)
 		)
 		(uuid "ebcbdac3-5b44-4f8d-84de-2d8f5f16072b")
+	)
+	(wire
+		(pts
+			(xy 29.21 135.89) (xy 21.59 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa0cdbea-a2fc-40e5-be66-da468c3fb387")
 	)
 	(wire
 		(pts
@@ -1803,6 +1853,16 @@
 			(justify right bottom)
 		)
 		(uuid "28b6000a-bd54-4907-903b-5e291086ca0f")
+	)
+	(label "12MHZ_CLK"
+		(at 21.59 123.19 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "30453c46-30bd-4b5e-a5b5-183c92547014")
 	)
 	(label "GPOUT0"
 		(at 180.34 127 90)
@@ -1933,6 +1993,16 @@
 			(justify left bottom)
 		)
 		(uuid "a7e9474a-7ff5-49f9-a591-30168e7e628d")
+	)
+	(label "12MHZ_CLK"
+		(at 222.25 148.59 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ceb08e3c-c061-4537-887d-4ed24910609c")
 	)
 	(label "GPOUT2"
 		(at 193.04 120.65 90)
@@ -2873,7 +2943,7 @@
 		)
 	)
 	(sheet
-		(at 81.28 162.56)
+		(at 104.14 165.1)
 		(size 62.23 24.13)
 		(fields_autoplaced yes)
 		(stroke
@@ -2885,7 +2955,7 @@
 		)
 		(uuid "059ba0d2-25a2-4040-8fdd-1e25fcedcad8")
 		(property "Sheetname" "PowerUSBPort"
-			(at 81.28 161.8484 0)
+			(at 104.14 164.3884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2894,7 +2964,7 @@
 			)
 		)
 		(property "Sheetfile" "PowerUSBPort.kicad_sch"
-			(at 81.28 187.2746 0)
+			(at 104.14 189.8146 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3262,6 +3332,16 @@
 			)
 			(uuid "8290b662-53cb-43e2-87c4-a57f00c6c0a5")
 		)
+		(pin "12MHZ_CLK" input
+			(at 245.11 148.59 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "1947bbce-6403-4e3c-a7ef-05784c7249fe")
+		)
 		(instances
 			(project "mbed-ce-ci-shield-v2"
 				(path "/a0f40274-9469-4bcf-885c-e8b8a490ea54"
@@ -3379,6 +3459,64 @@
 		)
 	)
 	(sheet
+		(at 29.21 132.08)
+		(size 36.83 20.32)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "afb13bad-f815-4420-a8e2-616c627fc38e")
+		(property "Sheetname" "Oscillators"
+			(at 29.21 131.3684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Oscillators.kicad_sch"
+			(at 29.21 152.9846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "12MHZ_CLK" output
+			(at 29.21 135.89 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "4485a62d-c6f3-42e7-bf22-2196a6601a38")
+		)
+		(pin "24MHZ_CLK" output
+			(at 66.04 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "60ef4b82-7f89-48a1-a454-e89668bb6bd2")
+		)
+		(instances
+			(project "mbed-ce-ci-shield-v2"
+				(path "/a0f40274-9469-4bcf-885c-e8b8a490ea54"
+					(page "11")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 26.67 83.82)
 		(size 39.37 26.67)
 		(fields_autoplaced yes)
@@ -3438,6 +3576,16 @@
 			)
 			(uuid "80052629-f5ed-4530-b7e9-2df6e00f9f85")
 		)
+		(pin "12MHZ_CLK" input
+			(at 26.67 106.68 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "97a19775-0b75-47ed-8033-52bc94d45b68")
+		)
 		(instances
 			(project "mbed-ce-ci-shield-v2"
 				(path "/a0f40274-9469-4bcf-885c-e8b8a490ea54"
@@ -3495,6 +3643,16 @@
 				(justify left)
 			)
 			(uuid "9261233f-3071-4b99-a988-b8aaa2e95e5b")
+		)
+		(pin "24MHZ_CLK" input
+			(at 88.9 142.24 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "e21eaf6f-0b72-4f7c-947d-1d81c1aa2a5b")
 		)
 		(instances
 			(project "mbed-ce-ci-shield-v2"

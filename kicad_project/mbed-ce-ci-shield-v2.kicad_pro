@@ -601,7 +601,7 @@
           "group_by": false,
           "label": "Description",
           "name": "Description",
-          "show": false
+          "show": true
         }
       ],
       "filter_string": "",
@@ -689,6 +689,10 @@
     [
       "065d8c94-aeac-493b-9604-8ed7e7ad7af2",
       "CAN - SD Mux"
+    ],
+    [
+      "afb13bad-f815-4420-a8e2-616c627fc38e",
+      "Oscillators"
     ]
   ],
   "text_variables": {
