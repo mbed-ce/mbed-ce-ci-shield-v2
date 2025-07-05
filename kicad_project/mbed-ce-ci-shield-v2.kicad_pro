@@ -553,7 +553,7 @@
           "group_by": false,
           "label": "Datasheet",
           "name": "Datasheet",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
@@ -602,6 +602,12 @@
           "label": "Description",
           "name": "Description",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Supplier Part Number",
+          "name": "Supplier Part Number",
+          "show": false
         }
       ],
       "filter_string": "",

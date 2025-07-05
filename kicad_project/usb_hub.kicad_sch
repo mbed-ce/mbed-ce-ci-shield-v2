@@ -3373,7 +3373,7 @@
 				)
 			)
 			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-				(at 0 -7.62 0)
+				(at 11.43 -13.97 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -3382,7 +3382,7 @@
 				)
 			)
 			(property "Datasheet" "https://www.digikey.com/htmldatasheets/production/1836544/0/0/1/bd2220g-lb-bd2221g-lb.pdf"
-				(at -1.27 -11.43 0)
+				(at 10.16 -17.78 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -3391,7 +3391,7 @@
 				)
 			)
 			(property "Description" "Current Limit IC 0.5-1.0A, SOT-23-5"
-				(at 0 0 0)
+				(at 11.43 -6.35 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -3400,7 +3400,7 @@
 				)
 			)
 			(property "SKU" "BD2221G-LBTRCT-ND"
-				(at 0 -3.81 0)
+				(at 11.43 -10.16 0)
 				(effects
 					(font
 						(size 1.27 1.27)

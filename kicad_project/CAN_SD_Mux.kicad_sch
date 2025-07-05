@@ -3,9 +3,9 @@
 	(generator "eeschema")
 	(generator_version "8.0")
 	(uuid "22625af4-f8a1-4575-8a76-58cba1edabc6")
-	(paper "A5")
+	(paper "A4")
 	(title_block
-		(comment 1 "Mux for selecting CAN signals.")
+		(comment 1 "Mux for selecting CAN or SD signals.")
 	)
 	(lib_symbols
 		(symbol "Analog_Switch:ADG733BRU"
@@ -1230,6 +1230,176 @@
 				)
 			)
 		)
+		(symbol "Device:R_US"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.54 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R_US"
+				(at -2.54 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 1.016 -0.254 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor, US symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_US_0_1"
+				(polyline
+					(pts
+						(xy 0 -2.286) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.286) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -0.762) (xy 1.016 -1.143) (xy 0 -1.524) (xy -1.016 -1.905) (xy 0 -2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0.762) (xy 1.016 0.381) (xy 0 0) (xy -1.016 -0.381) (xy 0 -0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.286) (xy 1.016 1.905) (xy 0 1.524) (xy -1.016 1.143) (xy 0 0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_US_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "power:+3.3V"
 			(power)
 			(pin_numbers hide)
@@ -1448,55 +1618,80 @@
 		)
 	)
 	(junction
-		(at 137.16 86.36)
+		(at 199.39 116.84)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1e728459-c11e-496d-9b8b-bad86e2eaab6")
 	)
 	(junction
-		(at 54.61 97.79)
+		(at 80.01 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3388d447-52d5-4c58-bd36-49e44f89a0bf")
+	)
+	(junction
+		(at 105.41 118.11)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "58ebdb9a-4c31-4ad3-9607-2a3bb0d07549")
+	)
+	(junction
+		(at 116.84 128.27)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "60b8ff1a-f763-4b2d-8a38-1e010edfe711")
 	)
 	(junction
-		(at 118.11 57.15)
+		(at 180.34 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "669bdbee-9947-480f-b3c3-267f5cc912e8")
 	)
 	(junction
-		(at 118.11 86.36)
+		(at 180.34 116.84)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6c04716d-5474-41e1-bbfc-4ca30071b58e")
 	)
 	(junction
-		(at 46.99 72.39)
+		(at 101.6 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "992787f6-b2e5-4e8a-8404-5e525ff4fe72")
+		(uuid "77e115a8-d31b-41aa-ab97-09c00139aff2")
 	)
 	(junction
-		(at 124.46 86.36)
+		(at 105.41 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "83dec9e2-9696-47d8-81dd-31f62c3906b0")
+	)
+	(junction
+		(at 186.69 116.84)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b669b8cf-18d2-473a-9655-373bf0427203")
 	)
-	(no_connect
-		(at 80.01 114.3)
-		(uuid "65a3d6ab-2631-4afe-905a-b97e7cc18ff7")
+	(junction
+		(at 107.95 113.03)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fe905bd9-5846-48ee-bba4-49c0a9c12c79")
 	)
 	(no_connect
-		(at 80.01 109.22)
-		(uuid "9f5f1c0c-edaf-4d34-b441-713ade69217c")
-	)
-	(no_connect
-		(at 64.77 111.76)
-		(uuid "d405cf05-0a9f-4daa-89f1-d88b2a001d02")
+		(at 111.76 143.51)
+		(uuid "914612b6-7520-439e-84f9-2d11acd43544")
 	)
 	(bus_entry
-		(at 96.52 82.55)
+		(at 80.01 138.43)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "274e0f40-1937-4d55-83d4-170a5df39e3d")
+	)
+	(bus_entry
+		(at 157.48 113.03)
 		(size -2.54 2.54)
 		(stroke
 			(width 0)
@@ -1505,7 +1700,16 @@
 		(uuid "53cb634c-abaa-4633-b980-e1d3db069786")
 	)
 	(bus_entry
-		(at 46.99 80.01)
+		(at 144.78 135.89)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8585fa33-46a0-4c23-b3d8-d600a2bcfb37")
+	)
+	(bus_entry
+		(at 101.6 110.49)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -1513,9 +1717,28 @@
 		)
 		(uuid "d5245440-e716-44e3-868f-4cdb6fc5d603")
 	)
+	(bus_entry
+		(at 101.6 115.57)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ebf6d802-0bef-4ac9-b0cf-37d69f49de67")
+	)
+	(wire
+		(pts
+			(xy 82.55 140.97) (xy 96.52 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "060d4077-1122-432e-969b-bf5e5efc6ac8")
+	)
 	(bus
 		(pts
-			(xy 46.99 80.01) (xy 46.99 85.09)
+			(xy 101.6 110.49) (xy 101.6 115.57)
 		)
 		(stroke
 			(width 0)
@@ -1523,9 +1746,19 @@
 		)
 		(uuid "0c31d1d1-ec6e-48c2-b109-78881e6278b4")
 	)
+	(bus
+		(pts
+			(xy 144.78 118.11) (xy 144.78 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28ffe972-5204-4797-9dc4-0ea276be7e02")
+	)
 	(wire
 		(pts
-			(xy 115.57 55.88) (xy 115.57 57.15)
+			(xy 177.8 86.36) (xy 177.8 87.63)
 		)
 		(stroke
 			(width 0)
@@ -1535,17 +1768,27 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 63.5) (xy 54.61 63.5)
+			(xy 105.41 88.9) (xy 105.41 91.44)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "33dd91c6-4f78-4404-97af-42946e597429")
+		(uuid "32fad1b3-699f-458f-b1f8-23732a37a70a")
 	)
 	(wire
 		(pts
-			(xy 118.11 57.15) (xy 137.16 57.15)
+			(xy 107.95 91.44) (xy 107.95 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3587743f-093a-432a-9ca6-8471a55402bb")
+	)
+	(wire
+		(pts
+			(xy 180.34 87.63) (xy 199.39 87.63)
 		)
 		(stroke
 			(width 0)
@@ -1553,9 +1796,19 @@
 		)
 		(uuid "3d43f9bd-7552-43b1-9c63-8c08a7120d65")
 	)
+	(bus
+		(pts
+			(xy 80.01 102.87) (xy 101.6 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "43fc1103-88d4-4a2e-a3c0-b0938dfecec7")
+	)
 	(wire
 		(pts
-			(xy 81.28 85.09) (xy 93.98 85.09)
+			(xy 135.89 115.57) (xy 154.94 115.57)
 		)
 		(stroke
 			(width 0)
@@ -1565,7 +1818,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 97.79) (xy 73.66 92.71)
+			(xy 128.27 128.27) (xy 128.27 123.19)
 		)
 		(stroke
 			(width 0)
@@ -1575,7 +1828,7 @@
 	)
 	(bus
 		(pts
-			(xy 46.99 72.39) (xy 96.52 72.39)
+			(xy 101.6 102.87) (xy 157.48 102.87)
 		)
 		(stroke
 			(width 0)
@@ -1585,7 +1838,7 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 86.36) (xy 118.11 86.36)
+			(xy 186.69 116.84) (xy 180.34 116.84)
 		)
 		(stroke
 			(width 0)
@@ -1595,7 +1848,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 53.34) (xy 66.04 53.34)
+			(xy 102.87 71.12) (xy 109.22 71.12)
 		)
 		(stroke
 			(width 0)
@@ -1605,7 +1858,17 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 72.39) (xy 124.46 86.36)
+			(xy 107.95 99.06) (xy 107.95 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "57cd2430-f404-464e-89df-e2681d947c26")
+	)
+	(wire
+		(pts
+			(xy 186.69 102.87) (xy 186.69 116.84)
 		)
 		(stroke
 			(width 0)
@@ -1615,7 +1878,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 119.38) (xy 54.61 119.38)
+			(xy 104.14 148.59) (xy 116.84 148.59)
 		)
 		(stroke
 			(width 0)
@@ -1623,9 +1886,19 @@
 		)
 		(uuid "5b63549f-4f74-4bb5-b1e6-6fff3d1d61e6")
 	)
+	(bus
+		(pts
+			(xy 80.01 138.43) (xy 80.01 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c7909fc-2ab5-4b28-808a-0fe32145eaa7")
+	)
 	(wire
 		(pts
-			(xy 115.57 57.15) (xy 118.11 57.15)
+			(xy 177.8 87.63) (xy 180.34 87.63)
 		)
 		(stroke
 			(width 0)
@@ -1633,19 +1906,19 @@
 		)
 		(uuid "5e3fc142-daa1-4a53-bdf5-10a861140962")
 	)
-	(wire
+	(bus
 		(pts
-			(xy 58.42 93.98) (xy 58.42 91.44)
+			(xy 80.01 102.87) (xy 80.01 138.43)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "62e5e8af-e81e-4248-a530-72d569646187")
+		(uuid "5efc02ef-4493-4b22-a490-7d6320e58305")
 	)
 	(bus
 		(pts
-			(xy 44.45 72.39) (xy 46.99 72.39)
+			(xy 73.66 102.87) (xy 80.01 102.87)
 		)
 		(stroke
 			(width 0)
@@ -1655,7 +1928,7 @@
 	)
 	(bus
 		(pts
-			(xy 96.52 72.39) (xy 96.52 82.55)
+			(xy 157.48 102.87) (xy 157.48 113.03)
 		)
 		(stroke
 			(width 0)
@@ -1665,7 +1938,17 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 57.15) (xy 137.16 59.69)
+			(xy 111.76 138.43) (xy 120.65 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ed843cf-ef51-4812-953c-210ceaa74cf4")
+	)
+	(wire
+		(pts
+			(xy 199.39 87.63) (xy 199.39 90.17)
 		)
 		(stroke
 			(width 0)
@@ -1675,7 +1958,17 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 58.42) (xy 66.04 58.42)
+			(xy 107.95 88.9) (xy 105.41 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "76a2f8e6-62da-45e9-b274-2b3036bbdec2")
+	)
+	(wire
+		(pts
+			(xy 102.87 76.2) (xy 109.22 76.2)
 		)
 		(stroke
 			(width 0)
@@ -1685,17 +1978,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 93.98) (xy 63.5 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "79d69f5a-f95a-4ae6-b3c6-3102b3c4e0ec")
-	)
-	(wire
-		(pts
-			(xy 49.53 82.55) (xy 66.04 82.55)
+			(xy 104.14 113.03) (xy 107.95 113.03)
 		)
 		(stroke
 			(width 0)
@@ -1705,7 +1988,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 97.79) (xy 54.61 97.79)
+			(xy 111.76 128.27) (xy 116.84 128.27)
 		)
 		(stroke
 			(width 0)
@@ -1715,7 +1998,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 55.88) (xy 90.17 55.88)
+			(xy 124.46 73.66) (xy 133.35 73.66)
 		)
 		(stroke
 			(width 0)
@@ -1725,7 +2008,7 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 119.38) (xy 54.61 97.79)
+			(xy 116.84 148.59) (xy 116.84 128.27)
 		)
 		(stroke
 			(width 0)
@@ -1735,7 +2018,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 72.39) (xy 124.46 72.39)
+			(xy 191.77 102.87) (xy 186.69 102.87)
 		)
 		(stroke
 			(width 0)
@@ -1745,17 +2028,17 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 87.63) (xy 66.04 87.63)
+			(xy 105.41 118.11) (xy 120.65 118.11)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ac030a66-dfa8-4726-98ff-3a61111839f6")
+		(uuid "a79b92a6-d464-4295-b37a-f553eae7f84d")
 	)
 	(wire
 		(pts
-			(xy 118.11 86.36) (xy 115.57 86.36)
+			(xy 180.34 116.84) (xy 177.8 116.84)
 		)
 		(stroke
 			(width 0)
@@ -1765,7 +2048,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 85.09) (xy 139.7 86.36)
+			(xy 201.93 115.57) (xy 201.93 116.84)
 		)
 		(stroke
 			(width 0)
@@ -1775,17 +2058,37 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 93.98) (xy 58.42 93.98)
+			(xy 107.95 113.03) (xy 120.65 113.03)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c96f63ec-5b89-4edb-b41f-413122b43a46")
+		(uuid "c6bba116-d01e-4657-b7cb-3d9a91669887")
+	)
+	(bus
+		(pts
+			(xy 101.6 102.87) (xy 101.6 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7d1db8b-a29b-4273-9422-300e83cd3b3f")
+	)
+	(bus
+		(pts
+			(xy 157.48 118.11) (xy 144.78 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c92d047b-3e80-4f7a-81ba-004705a5cc5e")
 	)
 	(wire
 		(pts
-			(xy 54.61 97.79) (xy 73.66 97.79)
+			(xy 116.84 128.27) (xy 128.27 128.27)
 		)
 		(stroke
 			(width 0)
@@ -1793,9 +2096,29 @@
 		)
 		(uuid "ca193b4f-d79a-423d-b7e3-7d67bdad408c")
 	)
+	(bus
+		(pts
+			(xy 144.78 135.89) (xy 144.78 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce2c5e10-4bc4-4d0e-8f65-59b156e3581d")
+	)
 	(wire
 		(pts
-			(xy 118.11 67.31) (xy 118.11 86.36)
+			(xy 105.41 99.06) (xy 105.41 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d02dd930-0a77-485a-a3be-4a6a329fc719")
+	)
+	(wire
+		(pts
+			(xy 180.34 97.79) (xy 180.34 116.84)
 		)
 		(stroke
 			(width 0)
@@ -1805,7 +2128,7 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 86.36) (xy 115.57 87.63)
+			(xy 177.8 116.84) (xy 177.8 118.11)
 		)
 		(stroke
 			(width 0)
@@ -1815,7 +2138,7 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 63.5) (xy 54.61 97.79)
+			(xy 116.84 81.28) (xy 116.84 128.27)
 		)
 		(stroke
 			(width 0)
@@ -1825,7 +2148,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 86.36) (xy 137.16 86.36)
+			(xy 201.93 116.84) (xy 199.39 116.84)
 		)
 		(stroke
 			(width 0)
@@ -1835,7 +2158,7 @@
 	)
 	(bus
 		(pts
-			(xy 96.52 82.55) (xy 96.52 87.63)
+			(xy 157.48 113.03) (xy 157.48 118.11)
 		)
 		(stroke
 			(width 0)
@@ -1845,7 +2168,7 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 86.36) (xy 124.46 86.36)
+			(xy 199.39 116.84) (xy 186.69 116.84)
 		)
 		(stroke
 			(width 0)
@@ -1855,7 +2178,17 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 57.15) (xy 118.11 62.23)
+			(xy 104.14 118.11) (xy 105.41 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea14958f-f14f-4de9-903e-a9bb4025bede")
+	)
+	(wire
+		(pts
+			(xy 180.34 87.63) (xy 180.34 92.71)
 		)
 		(stroke
 			(width 0)
@@ -1863,19 +2196,19 @@
 		)
 		(uuid "ec24ab2e-9142-4514-993b-0f4eecf9aa9f")
 	)
-	(bus
+	(wire
 		(pts
-			(xy 46.99 72.39) (xy 46.99 80.01)
+			(xy 128.27 138.43) (xy 142.24 138.43)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "fba8f478-11c5-4976-99a3-3c87e17fefd5")
+		(uuid "f30f3da1-946c-4118-a03b-e7cafb23506e")
 	)
 	(wire
 		(pts
-			(xy 137.16 85.09) (xy 137.16 86.36)
+			(xy 199.39 115.57) (xy 199.39 116.84)
 		)
 		(stroke
 			(width 0)
@@ -1883,10 +2216,10 @@
 		)
 		(uuid "ff3e64dc-bbf7-438c-a492-5a3c8ea6471b")
 	)
-	(text_box "This sheet is responsible for:\n* Creating CAN_CS based on CAN_SD_CS\n* Creating input 7 of the logic analyzer by switching between GPOUT2 and CAN_LISTEN"
+	(text_box "This sheet is responsible for:\n* Switching CAN_SD_CS to connect to either the SD card or the CAN transceiver CS line\n* Creating input 7 of the logic analyzer by switching between GPOUT2 and CAN_LISTEN\n* Switching SPI.MISO to connect to the mirror resistor"
 		(exclude_from_sim no)
-		(at 21.59 19.05 0)
-		(size 39.37 16.51)
+		(at 83.82 49.53 0)
+		(size 104.14 12.7)
 		(stroke
 			(width 0)
 			(type default)
@@ -1902,8 +2235,56 @@
 		)
 		(uuid "4c649abd-f514-42e1-8550-215db7ade766")
 	)
-	(label "SPI.CAN_SD_CS"
-		(at 50.8 82.55 0)
+	(text_box "Pullups to ensure that if the CS line is not being driven by the MCU, it goes high"
+		(exclude_from_sim no)
+		(at 119.38 91.44 0)
+		(size 29.21 8.89)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "59acd203-bf00-40fc-8c97-8d96c9708ecd")
+	)
+	(text_box "Weak connection between MISO and MOSI on the SPI bus.  This means that if the SD card is disabled and no device is driving MISO, it will tend to be a \"mirror\" of MOSI.  This way, we can do basic tests of sending out SPI data and seeing if we get the same data back."
+		(exclude_from_sim no)
+		(at 121.92 147.32 0)
+		(size 45.72 17.78)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "8896282c-b1cc-4323-9ca2-6e96c95bc1cb")
+	)
+	(label "SPI.MISO"
+		(at 83.82 140.97 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "08d07ec8-acb7-4895-9301-ef957bdec014")
+	)
+	(label "SPI.CAN_CS"
+		(at 110.49 113.03 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1912,8 +2293,28 @@
 		)
 		(uuid "13e030fb-73ac-488b-a06c-ac300bbee86b")
 	)
-	(label "SPI.CAN_CS"
-		(at 83.82 85.09 0)
+	(label "SPI.SD_CS"
+		(at 110.49 118.11 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "53a63aeb-2a22-4f27-b212-2a0bf1c33b7b")
+	)
+	(label "SPI.MOSI"
+		(at 130.81 138.43 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "da37aa71-43e2-4b6e-8ae4-4b5e8f36228b")
+	)
+	(label "SPI.CAN_SD_CS"
+		(at 138.43 115.57 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1924,7 +2325,7 @@
 	)
 	(hierarchical_label "SD_CARD_ENABLE"
 		(shape input)
-		(at 49.53 97.79 180)
+		(at 111.76 128.27 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1933,9 +2334,9 @@
 		)
 		(uuid "99a1a1d8-2c25-4106-b6d7-5d2d50fa579b")
 	)
-	(hierarchical_label "SPI{CAN_SD_CS CAN_CS}"
+	(hierarchical_label "SPI{CAN_SD_CS CAN_CS SD_CS MOSI MISO}"
 		(shape bidirectional)
-		(at 44.45 72.39 180)
+		(at 73.66 102.87 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1946,7 +2347,7 @@
 	)
 	(hierarchical_label "GPOUT2"
 		(shape input)
-		(at 59.69 58.42 180)
+		(at 102.87 76.2 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1957,7 +2358,7 @@
 	)
 	(hierarchical_label "LOGIC_IN7"
 		(shape output)
-		(at 90.17 55.88 0)
+		(at 133.35 73.66 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1968,7 +2369,7 @@
 	)
 	(hierarchical_label "CAN_BUS"
 		(shape input)
-		(at 59.69 53.34 180)
+		(at 102.87 71.12 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1979,7 +2380,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 115.57 87.63 0)
+		(at 177.8 118.11 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1988,7 +2389,7 @@
 		(fields_autoplaced yes)
 		(uuid "2289519d-7865-42e3-8586-3736dda34f06")
 		(property "Reference" "#PWR0105"
-			(at 115.57 93.98 0)
+			(at 177.8 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1997,7 +2398,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 115.57 92.71 0)
+			(at 177.8 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2005,7 +2406,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 115.57 87.63 0)
+			(at 177.8 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2014,7 +2415,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 115.57 87.63 0)
+			(at 177.8 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2023,7 +2424,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 115.57 87.63 0)
+			(at 177.8 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2045,7 +2446,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 118.11 64.77 180)
+		(at 180.34 95.25 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2054,7 +2455,7 @@
 		(fields_autoplaced yes)
 		(uuid "2f1cee06-8778-4829-9c41-6188de2a2799")
 		(property "Reference" "C32"
-			(at 120.65 63.4936 0)
+			(at 182.88 93.9736 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2063,7 +2464,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 120.65 66.0336 0)
+			(at 182.88 96.5136 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2072,7 +2473,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
-			(at 118.11 64.77 0)
+			(at 180.34 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2081,7 +2482,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 118.11 64.77 0)
+			(at 180.34 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2090,7 +2491,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 118.11 64.77 0)
+			(at 180.34 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2099,7 +2500,7 @@
 			)
 		)
 		(property "SKU" ""
-			(at 118.11 64.77 0)
+			(at 180.34 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2108,7 +2509,7 @@
 			)
 		)
 		(property "Supplier" "Digi-Key"
-			(at 118.11 64.77 0)
+			(at 180.34 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2117,7 +2518,7 @@
 			)
 		)
 		(property "LibRef" "GRM319R72A104KA01D"
-			(at 118.11 64.77 0)
+			(at 180.34 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2141,74 +2542,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 58.42 91.44 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3308156c-689e-4770-87ba-c8d50939c0b4")
-		(property "Reference" "#PWR0106"
-			(at 58.42 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 58.42 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 58.42 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 58.42 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 58.42 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e6b54a62-728e-4584-a6a1-50d1e9191506")
-		)
-		(instances
-			(project "mbed-ce-ci-shield-v2"
-				(path "/a0f40274-9469-4bcf-885c-e8b8a490ea54/065d8c94-aeac-493b-9604-8ed7e7ad7af2"
-					(reference "#PWR0106")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Analog_Switch:ADG733BRU")
-		(at 72.39 111.76 0)
+		(at 104.14 140.97 0)
 		(unit 3)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2216,7 +2551,7 @@
 		(dnp no)
 		(uuid "4004ae33-1f15-424c-9b97-b7755a1ab4c9")
 		(property "Reference" "U13"
-			(at 65.532 105.918 0)
+			(at 97.282 135.128 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2224,7 +2559,7 @@
 			)
 		)
 		(property "Value" "ADG733BRU"
-			(at 62.484 108.458 0)
+			(at 94.234 137.668 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2232,7 +2567,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:TSSOP-16_4.4x5mm_P0.65mm"
-			(at 72.39 111.76 0)
+			(at 104.14 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2241,7 +2576,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ADG733_734.pdf"
-			(at 72.39 111.76 0)
+			(at 104.14 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2250,7 +2585,7 @@
 			)
 		)
 		(property "Description" "Triple SPDT CMOS Analog Switch, 2.5Ohm Ron, TSSOP-16"
-			(at 72.39 111.76 0)
+			(at 104.14 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2259,7 +2594,7 @@
 			)
 		)
 		(property "SKU" "ADG733BRUZ-REEL7CT-ND"
-			(at 72.39 111.76 0)
+			(at 104.14 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2268,7 +2603,7 @@
 			)
 		)
 		(property "Supplier" "Digi-Key"
-			(at 72.39 111.76 0)
+			(at 104.14 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2334,42 +2669,32 @@
 		)
 	)
 	(symbol
-		(lib_id "Analog_Switch:ADG733BRU")
-		(at 73.66 55.88 0)
-		(mirror y)
+		(lib_id "Device:R_US")
+		(at 124.46 138.43 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "7c1210c2-f3ff-48bc-b3fe-ce2f8e145b0e")
-		(property "Reference" "U13"
-			(at 81.28 50.8 0)
+		(uuid "532c74dc-77ab-4580-9473-55982bd5d9ec")
+		(property "Reference" "R25"
+			(at 124.206 133.35 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "ADG733BRU"
-			(at 83.82 53.34 0)
+		(property "Value" "4.7k"
+			(at 124.46 135.636 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:TSSOP-16_4.4x5mm_P0.65mm"
-			(at 73.66 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ADG733_734.pdf"
-			(at 73.66 55.88 0)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+			(at 124.714 137.414 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2377,8 +2702,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Triple SPDT CMOS Analog Switch, 2.5Ohm Ron, TSSOP-16"
-			(at 73.66 55.88 0)
+		(property "Datasheet" "~"
+			(at 124.46 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2386,8 +2711,8 @@
 				(hide yes)
 			)
 		)
-		(property "SKU" "ADG733BRUZ-REEL7CT-ND"
-			(at 73.66 55.88 0)
+		(property "Description" "Resistor, US symbol"
+			(at 124.46 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2396,7 +2721,272 @@
 			)
 		)
 		(property "Supplier" "Digi-Key"
-			(at 73.66 55.88 0)
+			(at 124.46 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LibRef" "ERJ-8ENF4702V"
+			(at 124.46 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" "P4.70KFCT-ND"
+			(at 124.46 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3ee1ed5d-aa63-4c66-9529-d45d5c4af1ba")
+		)
+		(pin "2"
+			(uuid "5d2e9553-32bf-42ad-88d5-0ac76df633d6")
+		)
+		(instances
+			(project "mbed-ce-ci-shield-v2"
+				(path "/a0f40274-9469-4bcf-885c-e8b8a490ea54/065d8c94-aeac-493b-9604-8ed7e7ad7af2"
+					(reference "R25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 105.41 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "68cb73fa-c546-4d0c-af55-43f3c92a1f5a")
+		(property "Reference" "#PWR069"
+			(at 105.41 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 105.41 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 105.41 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 105.41 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 105.41 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8ca17a36-e666-41da-a7ce-d1e44b6de517")
+		)
+		(instances
+			(project "mbed-ce-ci-shield-v2"
+				(path "/a0f40274-9469-4bcf-885c-e8b8a490ea54/065d8c94-aeac-493b-9604-8ed7e7ad7af2"
+					(reference "#PWR069")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 105.41 95.25 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "78c8f236-d02a-4fd1-a7b9-0a958267a383")
+		(property "Reference" "R35"
+			(at 101.346 93.472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 101.346 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+			(at 106.426 94.996 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 105.41 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 105.41 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier" "Digi-Key"
+			(at 105.41 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LibRef" "ERJ-8ENF1002V"
+			(at 105.41 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" "P10.0KFCT-ND"
+			(at 105.41 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fc032427-0367-4c6a-9965-1d6456b425ac")
+		)
+		(pin "2"
+			(uuid "255a7a64-29e3-44f5-9406-b0f5976c318b")
+		)
+		(instances
+			(project "mbed-ce-ci-shield-v2"
+				(path "/a0f40274-9469-4bcf-885c-e8b8a490ea54/065d8c94-aeac-493b-9604-8ed7e7ad7af2"
+					(reference "R35")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Analog_Switch:ADG733BRU")
+		(at 116.84 73.66 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7c1210c2-f3ff-48bc-b3fe-ce2f8e145b0e")
+		(property "Reference" "U13"
+			(at 124.46 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ADG733BRU"
+			(at 127 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:TSSOP-16_4.4x5mm_P0.65mm"
+			(at 116.84 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ADG733_734.pdf"
+			(at 116.84 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Triple SPDT CMOS Analog Switch, 2.5Ohm Ron, TSSOP-16"
+			(at 116.84 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" "ADG733BRUZ-REEL7CT-ND"
+			(at 116.84 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier" "Digi-Key"
+			(at 116.84 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2463,7 +3053,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 115.57 55.88 0)
+		(at 177.8 86.36 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2472,7 +3062,7 @@
 		(fields_autoplaced yes)
 		(uuid "ba909cf3-a026-4c59-80b8-c33c289890a7")
 		(property "Reference" "#PWR051"
-			(at 115.57 59.69 0)
+			(at 177.8 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2481,7 +3071,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 115.57 50.8 0)
+			(at 177.8 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2489,7 +3079,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 115.57 55.88 0)
+			(at 177.8 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2498,7 +3088,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 115.57 55.88 0)
+			(at 177.8 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2507,7 +3097,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 115.57 55.88 0)
+			(at 177.8 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2529,7 +3119,7 @@
 	)
 	(symbol
 		(lib_id "Analog_Switch:ADG733BRU")
-		(at 137.16 72.39 0)
+		(at 199.39 102.87 0)
 		(unit 4)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2538,7 +3128,7 @@
 		(fields_autoplaced yes)
 		(uuid "cd6e7bc3-3dce-4e20-96d8-54ff791a9f1d")
 		(property "Reference" "U13"
-			(at 146.05 71.12 0)
+			(at 208.28 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2547,7 +3137,7 @@
 			)
 		)
 		(property "Value" "ADG733BRU"
-			(at 146.05 73.66 0)
+			(at 208.28 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2556,7 +3146,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:TSSOP-16_4.4x5mm_P0.65mm"
-			(at 137.16 72.39 0)
+			(at 199.39 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2565,7 +3155,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ADG733_734.pdf"
-			(at 137.16 72.39 0)
+			(at 199.39 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2574,7 +3164,7 @@
 			)
 		)
 		(property "Description" "Triple SPDT CMOS Analog Switch, 2.5Ohm Ron, TSSOP-16"
-			(at 137.16 72.39 0)
+			(at 199.39 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2583,7 +3173,7 @@
 			)
 		)
 		(property "SKU" "ADG733BRUZ-REEL7CT-ND"
-			(at 137.16 72.39 0)
+			(at 199.39 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2592,7 +3182,7 @@
 			)
 		)
 		(property "Supplier" "Digi-Key"
-			(at 137.16 72.39 0)
+			(at 199.39 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2659,7 +3249,7 @@
 	)
 	(symbol
 		(lib_id "Analog_Switch:ADG733BRU")
-		(at 73.66 85.09 0)
+		(at 128.27 115.57 0)
 		(mirror y)
 		(unit 2)
 		(exclude_from_sim no)
@@ -2668,7 +3258,7 @@
 		(dnp no)
 		(uuid "ebf37a7b-fc76-4647-b4b4-5c5f259bc24c")
 		(property "Reference" "U13"
-			(at 71.12 77.216 0)
+			(at 125.73 107.696 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2676,7 +3266,7 @@
 			)
 		)
 		(property "Value" "ADG733BRU"
-			(at 74.422 78.994 0)
+			(at 129.032 109.474 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2684,7 +3274,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:TSSOP-16_4.4x5mm_P0.65mm"
-			(at 73.66 85.09 0)
+			(at 128.27 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2693,7 +3283,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ADG733_734.pdf"
-			(at 73.66 85.09 0)
+			(at 128.27 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2702,7 +3292,7 @@
 			)
 		)
 		(property "Description" "Triple SPDT CMOS Analog Switch, 2.5Ohm Ron, TSSOP-16"
-			(at 73.66 85.09 0)
+			(at 128.27 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2711,7 +3301,7 @@
 			)
 		)
 		(property "SKU" "ADG733BRUZ-REEL7CT-ND"
-			(at 73.66 85.09 0)
+			(at 128.27 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2720,7 +3310,7 @@
 			)
 		)
 		(property "Supplier" "Digi-Key"
-			(at 73.66 85.09 0)
+			(at 128.27 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2781,6 +3371,101 @@
 				(path "/a0f40274-9469-4bcf-885c-e8b8a490ea54/065d8c94-aeac-493b-9604-8ed7e7ad7af2"
 					(reference "U13")
 					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 107.95 95.25 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f457c9cb-b47c-44b5-81fa-a9d056addd10")
+		(property "Reference" "R57"
+			(at 111.76 93.472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 111.76 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+			(at 108.966 94.996 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 107.95 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 107.95 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier" "Digi-Key"
+			(at 107.95 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LibRef" "ERJ-8ENF1002V"
+			(at 107.95 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" "P10.0KFCT-ND"
+			(at 107.95 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5aef038b-7f77-46cb-8be8-df39665240f8")
+		)
+		(pin "2"
+			(uuid "2e0860a8-eb65-48cf-b84d-3a92e903be83")
+		)
+		(instances
+			(project "mbed-ce-ci-shield-v2"
+				(path "/a0f40274-9469-4bcf-885c-e8b8a490ea54/065d8c94-aeac-493b-9604-8ed7e7ad7af2"
+					(reference "R57")
+					(unit 1)
 				)
 			)
 		)

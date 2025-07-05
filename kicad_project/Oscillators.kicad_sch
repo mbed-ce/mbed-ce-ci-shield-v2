@@ -1019,6 +1019,102 @@
 				)
 			)
 		)
+		(symbol "power:PWR_FLAG"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
 	)
 	(junction
 		(at 71.12 92.71)
@@ -1051,10 +1147,20 @@
 		(uuid "96782f50-3cc2-4fc5-a3a1-c643f437fc23")
 	)
 	(junction
+		(at 74.93 92.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b16ab9f5-be36-491b-a73a-2080ae7b1014")
+	)
+	(junction
 		(at 130.81 118.11)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "eff540bb-3345-4212-8178-f93220c207fa")
+	)
+	(no_connect
+		(at 105.41 101.6)
+		(uuid "d8096ffa-2d81-4161-ba00-f27c12c2bda5")
 	)
 	(wire
 		(pts
@@ -1258,7 +1364,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 92.71) (xy 78.74 92.71)
+			(xy 71.12 92.71) (xy 74.93 92.71)
 		)
 		(stroke
 			(width 0)
@@ -1305,6 +1411,16 @@
 			(type default)
 		)
 		(uuid "db8b47bc-ff5b-4da9-8c71-5eae7e26e171")
+	)
+	(wire
+		(pts
+			(xy 74.93 92.71) (xy 78.74 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e29baf49-1da6-47f7-bf74-443af0d9adb6")
 	)
 	(wire
 		(pts
@@ -1412,6 +1528,16 @@
 			(justify left top)
 		)
 		(uuid "db833677-a433-4d9a-bfdf-0f4149c2710c")
+	)
+	(label "+3.3V@OSC"
+		(at 82.55 92.71 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "679e235b-4dd1-45a9-87f8-ad0cebe97e68")
 	)
 	(hierarchical_label "12MHZ_CLK"
 		(shape output)
@@ -1820,6 +1946,72 @@
 			(project "mbed-ce-ci-shield-v2"
 				(path "/a0f40274-9469-4bcf-885c-e8b8a490ea54/afb13bad-f815-4420-a8e2-616c627fc38e"
 					(reference "#PWR0111")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 74.93 92.71 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "734371f1-5f7b-43d2-b0f1-62dd7e129d22")
+		(property "Reference" "#FLG02"
+			(at 74.93 90.805 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 74.93 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 74.93 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 74.93 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 74.93 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "04948458-30bd-46d2-aa1f-ad25703b84a5")
+		)
+		(instances
+			(project "mbed-ce-ci-shield-v2"
+				(path "/a0f40274-9469-4bcf-885c-e8b8a490ea54/afb13bad-f815-4420-a8e2-616c627fc38e"
+					(reference "#FLG02")
 					(unit 1)
 				)
 			)
