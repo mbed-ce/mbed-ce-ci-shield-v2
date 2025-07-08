@@ -1,0 +1,23 @@
+G04 #@! TF.GenerationSoftware,KiCad,Pcbnew,8.0.8+1*
+G04 #@! TF.CreationDate,2025-07-08T07:12:23+00:00*
+G04 #@! TF.ProjectId,mbed-ce-ci-shield-v2,6d626564-2d63-4652-9d63-692d73686965,0*
+G04 #@! TF.SameCoordinates,Original*
+G04 #@! TF.FileFunction,Profile,NP*
+%FSLAX46Y46*%
+G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
+G04 Created by KiCad (PCBNEW 8.0.8+1) date 2025-07-08 07:12:23*
+%MOMM*%
+%LPD*%
+G01*
+G04 APERTURE LIST*
+G04 #@! TA.AperFunction,Profile*
+%ADD10C,0.100000*%
+G04 #@! TD*
+G04 APERTURE END LIST*
+D10*
+X54500000Y-26000000D02*
+X159000000Y-26000000D01*
+X159000000Y-117000000D01*
+X54500000Y-117000000D01*
+X54500000Y-26000000D01*
+M02*

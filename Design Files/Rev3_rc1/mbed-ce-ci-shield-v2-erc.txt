@@ -1,0 +1,23 @@
+ERC report (2025-04-26T20:07:39+0000, Encoding UTF8)
+
+***** Sheet /
+
+***** Sheet /USB Hub/
+
+***** Sheet /USBSerialAdapter/
+
+***** Sheet /Logic Analyzer/
+
+***** Sheet /ArduinoConnector/
+
+***** Sheet /MicroSDCard/
+
+***** Sheet /I2CEEPROM/
+
+***** Sheet /PowerUSBPort/
+
+***** Sheet /CAN Transceiver/
+
+***** Sheet /CAN - SD Mux/
+
+ ** ERC messages: 0  Errors 0  Warnings 0
