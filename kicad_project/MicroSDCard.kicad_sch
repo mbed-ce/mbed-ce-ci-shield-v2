@@ -5250,6 +5250,15 @@
 				(hide yes)
 			)
 		)
+		(property "SKU" "296-SN74AXC4T774PWRCT-ND"
+			(at 165.1 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "6"
 			(uuid "034417c7-2137-4595-8f8b-062e52da1bb4")
 		)

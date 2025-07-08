@@ -4329,7 +4329,7 @@
 				(hide yes)
 			)
 		)
-		(property "LibRef" "P1.0RCT-ND"
+		(property "LibRef" "ERJ-8RQF1R0V"
 			(at 143.51 88.9 0)
 			(effects
 				(font
@@ -4338,7 +4338,7 @@
 				(hide yes)
 			)
 		)
-		(property "SKU" "P120FCT-ND"
+		(property "SKU" "P1.0RCT-ND"
 			(at 143.51 88.9 0)
 			(effects
 				(font
@@ -4632,7 +4632,7 @@
 				(hide yes)
 			)
 		)
-		(property "LibRef" "P1.0RCT-ND"
+		(property "LibRef" "ERJ-8RQF1R0V"
 			(at 135.89 88.9 0)
 			(effects
 				(font
@@ -4641,7 +4641,7 @@
 				(hide yes)
 			)
 		)
-		(property "SKU" "P120FCT-ND"
+		(property "SKU" "P1.0RCT-ND"
 			(at 135.89 88.9 0)
 			(effects
 				(font
