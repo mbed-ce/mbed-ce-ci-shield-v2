@@ -4750,6 +4750,12 @@
 		(uuid "101539ab-80e7-4704-98f4-eaff84ee4ffc")
 	)
 	(junction
+		(at 58.42 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "168b44e9-335a-4d10-9768-7f363753d0c0")
+	)
+	(junction
 		(at 72.39 48.26)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4832,6 +4838,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3da6b145-3b6a-410a-9ba8-15a1f152c0dc")
+	)
+	(junction
+		(at 63.5 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "419a3208-3433-435f-94c6-44fda571f1a5")
 	)
 	(junction
 		(at 63.5 48.26)
@@ -5105,6 +5117,16 @@
 	)
 	(wire
 		(pts
+			(xy 58.42 62.23) (xy 58.42 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02c34d5b-d06a-4d2d-a9ac-9bb25b431860")
+	)
+	(wire
+		(pts
 			(xy 337.82 115.57) (xy 330.2 115.57)
 		)
 		(stroke
@@ -5182,16 +5204,6 @@
 			(type default)
 		)
 		(uuid "0ba9cf66-0f3b-4208-8f87-7f61f1f09afc")
-	)
-	(wire
-		(pts
-			(xy 54.61 67.31) (xy 54.61 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0e8713e4-433e-43f4-b6f6-60b225fbfccf")
 	)
 	(wire
 		(pts
@@ -5605,7 +5617,7 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 57.15) (xy 54.61 62.23)
+			(xy 52.07 58.42) (xy 52.07 63.5)
 		)
 		(stroke
 			(width 0)
@@ -6295,6 +6307,16 @@
 	)
 	(wire
 		(pts
+			(xy 58.42 48.26) (xy 63.5 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ffc68a7-a8c2-4605-b3e2-1bbd642cc26a")
+	)
+	(wire
+		(pts
 			(xy 355.6 49.53) (xy 360.68 49.53)
 		)
 		(stroke
@@ -6875,7 +6897,7 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 68.58) (xy 58.42 68.58)
+			(xy 52.07 68.58) (xy 58.42 68.58)
 		)
 		(stroke
 			(width 0)
@@ -7145,7 +7167,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 48.26) (xy 63.5 48.26)
+			(xy 39.37 48.26) (xy 58.42 48.26)
 		)
 		(stroke
 			(width 0)
@@ -7415,6 +7437,16 @@
 	)
 	(wire
 		(pts
+			(xy 58.42 48.26) (xy 58.42 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee272aea-b1ee-4c92-8b73-2f5c8628c150")
+	)
+	(wire
+		(pts
 			(xy 335.28 118.11) (xy 335.28 125.73)
 		)
 		(stroke
@@ -7662,6 +7694,16 @@
 			(type default)
 		)
 		(uuid "fb22c34f-e1b4-43a6-a3a8-4a05f18d741f")
+	)
+	(wire
+		(pts
+			(xy 63.5 62.23) (xy 58.42 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb74db00-4eda-4144-a687-bbd1c7b77d42")
 	)
 	(wire
 		(pts
@@ -12075,6 +12117,103 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small")
+		(at 58.42 53.34 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "64846ac8-87cb-4b01-970a-8300536ce779")
+		(property "Reference" "C46"
+			(at 60.96 52.0636 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "100nF"
+			(at 60.96 54.6036 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+			(at 58.42 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 58.42 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 58.42 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SKU" ""
+			(at 58.42 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier" "Digi-Key"
+			(at 58.42 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LibRef" "GRM319R72A104KA01D"
+			(at 58.42 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5606346e-080f-472f-a832-69cee9558816")
+		)
+		(pin "2"
+			(uuid "9e8089e1-a7f5-4611-a96f-8e7cd6768c6a")
+		)
+		(instances
+			(project "mbed-ce-ci-shield-v2"
+				(path "/a0f40274-9469-4bcf-885c-e8b8a490ea54/d2cb7c4f-a03f-4f1c-8cab-0427a0ad2909"
+					(reference "C46")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 156.21 105.41 0)
 		(unit 1)
@@ -14886,7 +15025,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 54.61 57.15 0)
+		(at 52.07 58.42 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14895,7 +15034,7 @@
 		(fields_autoplaced yes)
 		(uuid "b43f0061-d296-46c3-822a-2ac41a68152a")
 		(property "Reference" "#PWR031"
-			(at 54.61 60.96 0)
+			(at 52.07 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14904,7 +15043,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 54.61 52.07 0)
+			(at 52.07 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14912,7 +15051,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 54.61 57.15 0)
+			(at 52.07 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14921,7 +15060,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 54.61 57.15 0)
+			(at 52.07 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14930,7 +15069,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 54.61 57.15 0)
+			(at 52.07 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17181,7 +17320,7 @@
 	)
 	(symbol
 		(lib_id "Device:FerriteBead_Small")
-		(at 54.61 64.77 0)
+		(at 52.07 66.04 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17189,7 +17328,7 @@
 		(dnp no)
 		(uuid "f71b027c-86fb-48b5-a6bd-560d5e88aabc")
 		(property "Reference" "FB2"
-			(at 53.34 60.96 90)
+			(at 50.8 62.23 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17197,7 +17336,7 @@
 			)
 		)
 		(property "Value" "300@100MHz"
-			(at 50.8 59.944 90)
+			(at 48.26 61.214 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17205,7 +17344,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
-			(at 52.832 64.77 90)
+			(at 50.292 66.04 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17214,7 +17353,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 54.61 64.77 0)
+			(at 52.07 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17223,7 +17362,7 @@
 			)
 		)
 		(property "Description" "Ferrite bead, small symbol"
-			(at 54.61 64.77 0)
+			(at 52.07 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17232,7 +17371,7 @@
 			)
 		)
 		(property "SKU" "732-4654-1-ND"
-			(at 54.61 64.77 0)
+			(at 52.07 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17241,7 +17380,7 @@
 			)
 		)
 		(property "Supplier" "Digi-Key"
-			(at 54.61 64.77 0)
+			(at 52.07 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17250,7 +17389,7 @@
 			)
 		)
 		(property "LibRef" "742792121"
-			(at 54.61 64.77 0)
+			(at 52.07 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)

@@ -56,7 +56,7 @@ Logic analyzer inputs are muxed by the FUNC_SEL[0..2] pins.
 
 ## Board Bringup and Testing
 ### Initial Testing
-Before powering on a board, check that the resistance across the 5V rail is at least 10kOhms and the resistance across the 3V3 rail is at least 600 ohms.  These rails can be found on the LD1117S33 voltage regulator pins.  If these resistance checks fail, you almost certainly have a short somewhere.
+Before powering on a board, check that the resistance across the 5V rail is at least 10kOhms and the resistance across the 3V3 rail is at least 600 ohms.  These rails can be found on the LD1117S33 voltage regulator pins. For ground, use the outside of the double USB-A port (NOT the USB-C ports, their shields are not grounded). If these resistance checks fail, you almost certainly have a short somewhere.
 
 When you first plug in a board, you should see three USB devices enumerate:
 - One "Cypress Semiconductor Corp. Unprogrammed CY7C65632/34 hub HX2VL"
