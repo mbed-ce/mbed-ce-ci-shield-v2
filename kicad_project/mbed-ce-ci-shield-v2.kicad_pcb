@@ -4546,6 +4546,19 @@
 				)
 			)
 		)
+		(property "SKU" "296-SN74AXC4T774PWRCT-ND"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "85c8247d-275f-46fe-a176-4ef19e0c2974")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/25f8559c-e7f1-47b3-be11-aaa166453322/9386783b-a0e6-4aa0-92c4-6027d3a9d184")
 		(sheetname "MicroSDCard")
 		(sheetfile "MicroSDCard.kicad_sch")
@@ -13608,7 +13621,7 @@
 				)
 			)
 		)
-		(property "LibRef" "P1.0RCT-ND"
+		(property "LibRef" "ERJ-8RQF1R0V"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -13621,7 +13634,7 @@
 				)
 			)
 		)
-		(property "SKU" "P120FCT-ND"
+		(property "SKU" "P1.0RCT-ND"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -15908,7 +15921,7 @@
 				)
 			)
 		)
-		(property "LibRef" "P1.0RCT-ND"
+		(property "LibRef" "ERJ-8RQF1R0V"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -15921,7 +15934,7 @@
 				)
 			)
 		)
-		(property "SKU" "P120FCT-ND"
+		(property "SKU" "P1.0RCT-ND"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -17018,7 +17031,7 @@
 				)
 			)
 		)
-		(property "LibRef" "P1.0RCT-ND"
+		(property "LibRef" "ERJ-8RQF1R0V"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -17031,7 +17044,7 @@
 				)
 			)
 		)
-		(property "SKU" "P120FCT-ND"
+		(property "SKU" "P1.0RCT-ND"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -23390,7 +23403,7 @@
 				)
 			)
 		)
-		(path "/d2cb7c4f-a03f-4f1c-8cab-0427a0ad2909/e967968a-3d63-4ed5-ad01-9f33df36c6ac")
+		(path "/d2cb7c4f-a03f-4f1c-8cab-0427a0ad2909/98b298da-921d-4b53-ad4e-33316984f526")
 		(sheetname "USB Hub")
 		(sheetfile "usb_hub.kicad_sch")
 		(attr smd)
@@ -25011,7 +25024,7 @@
 				)
 			)
 		)
-		(property "LibRef" "P1.0RCT-ND"
+		(property "LibRef" "ERJ-8RQF1R0V"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -25024,7 +25037,7 @@
 				)
 			)
 		)
-		(property "SKU" "P120FCT-ND"
+		(property "SKU" "P1.0RCT-ND"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -27088,7 +27101,7 @@
 				)
 			)
 		)
-		(property "LibRef" "P1.0RCT-ND"
+		(property "LibRef" "ERJ-8RQF1R0V"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -27101,7 +27114,7 @@
 				)
 			)
 		)
-		(property "SKU" "P120FCT-ND"
+		(property "SKU" "P1.0RCT-ND"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -32946,7 +32959,7 @@
 				)
 			)
 		)
-		(property "LibRef" "P1.0RCT-ND"
+		(property "LibRef" "ERJ-8RQF1R0V"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -32959,7 +32972,7 @@
 				)
 			)
 		)
-		(property "SKU" "P120FCT-ND"
+		(property "SKU" "P1.0RCT-ND"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -35326,7 +35339,7 @@
 				)
 			)
 		)
-		(property "LibRef" "P1.0RCT-ND"
+		(property "LibRef" "ERJ-8RQF1R0V"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -35339,7 +35352,7 @@
 				)
 			)
 		)
-		(property "SKU" "P120FCT-ND"
+		(property "SKU" "P1.0RCT-ND"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -50137,7 +50150,7 @@
 				)
 			)
 		)
-		(property "LibRef" "P1.0RCT-ND"
+		(property "LibRef" "ERJ-8RQF1R0V"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -50150,7 +50163,7 @@
 				)
 			)
 		)
-		(property "SKU" "P120FCT-ND"
+		(property "SKU" "P1.0RCT-ND"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
