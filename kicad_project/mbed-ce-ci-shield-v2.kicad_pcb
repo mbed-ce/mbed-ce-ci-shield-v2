@@ -28047,7 +28047,7 @@
 				)
 			)
 		)
-		(property "LibRef" "ERJ-8ENF4702V"
+		(property "LibRef" "ERJ-8ENF4701V"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -39294,7 +39294,7 @@
 				)
 			)
 		)
-		(property "LibRef" "ERJ-8ENF4702V"
+		(property "LibRef" "ERJ-8ENF4701V"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
