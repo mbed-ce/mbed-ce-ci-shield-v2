@@ -1,0 +1,51 @@
+References,Description,Part,Value,Supplier,SKU,Footprint,LibRef,Qty
+C1 C3 C4 C6 C7 C10 C11 C16 C23 C24 C32 C35 C38 C39 C41 C44 C45 C46 C47 C48 C49 C50 C51,"Unpolarized capacitor, small symbol",C_Small,100nF,Digi-Key,,C_1206_3216Metric,GRM319R72A104KA01D,23
+C14 C15 C22 C25 C26 C28 C29 C30 C31 C36 C40 C42,"Unpolarized capacitor, small symbol",C_Small,1u,Digi-Key,,C_1206_3216Metric,CL31B105KBHNNNE,12
+C2 C5 C8 C9 C12 C13 C19 C21 C27 C33 C34,"Unpolarized capacitor, small symbol",C_Small,2.2uF,Digi-Key,1276-1291-1-ND,C_1206_3216Metric,CL31B225KBHNNNE,11
+C17 C37 C43,"Unpolarized capacitor, small symbol",C_Small,10u,Digi-Key,,C_1206_3216Metric,CL31B106KLHNNNE,3
+C18 C20,"Polarized capacitor, US symbol",C_Polarized_US,100u,Digi-Key,493-6630-1-ND,CP_Radial_D8.0mm_P3.50mm,RL81V101MDN1KX,2
+D1 D2,Green LED 100mcd 20mA Vf=2.1V,AA3528CGSK,AA3528CGSK,Digi-Key,754-1528-1-ND,AA3528,,2
+D5 D6,Red LED 100mcd 20mA Vf=1.95V,AA3528SURSK,AA3528SURSK,Digi-Key,754-1537-1-ND,AA3528,,2
+D3 D4,Yellow LED 200mcd 20mA Vf=2V,AA3528SYSK,AA3528SYSK,Digi-Key,754-1539-1-ND,AA3528,,2
+D7 D8,"Schottky barrier diode, SOT-323",BAT54W,BAT54W,Digi-Key,4878-BAT54WCT-ND,SOT-323_SC-70,,2
+FB1 FB2 FB3 FB4 FB5 FB6 FB7,"Ferrite bead, small symbol",FerriteBead_Small,300@100MHz,Digi-Key,732-4654-1-ND,R_1206_3216Metric,742792121,7
+J7,"Generic connector, single row, 01x10, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x10,1x10,Digi-Key,SSW-110-03-T-S-ND,PinSocket_1x10_P2.54mm_Vertical,HEADER_10x1_LONG_TAIL,1
+J9 J10 J11,"Generic connector, single row, 01x02, script generated",Conn_01x02_Pin,1x2,Digi-Key,732-5315-ND,PinHeader_1x02_P2.54mm_Vertical,HEADER_2x1,3
+J6,"Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x06,1x6,Digi-Key,SAM8865-ND,PinSocket_1x06_P2.54mm_Vertical,HEADER_6x1_LONG_TAIL,1
+J4 J5,"Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x08,1x8,Digi-Key,SAM8866-ND,PinSocket_1x08_P2.54mm_Vertical,HEADER_8x1_LONG_TAIL,2
+J8,Micro SD Card Socket with card detection pins,Micro_SD_Card_Det_Hirose_DM3AT,DM3AT,Digi-Key,HR1964CT-ND,microSD_HC_Hirose_DM3AT-SF-PEJM5,,1
+J2,"USB Type A connector, stacked",USB_A_Stacked,UJ2-ADH-3-TH,Digi-Key,102-5876-ND,USB_A_CUI_UJ2-ADH-TH_Horizontal_Stacked,,1
+J1 J3,USB 2.0-only 16P Type-C Receptacle connector,USB_C_Receptacle_USB2.0_16P,USB4105-GF-A,Digi-Key,2073-USB4105-GF-ACT-ND,USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal-ExtraHoleClearance,,2
+M1 M2,"0.1"" Jumper / Shunt",Jumper,QPC02SXGN-RC,Digi-Key,S9337-ND,,,2
+R46 R47 R48 R49 R50 R51 R54 R55,"Resistor, US symbol",R_US,1,Digi-Key,P1.0RCT-ND,R_1206_3216Metric,ERJ-8RQF1R0V,8
+R52 R53,"Resistor, US symbol",R_US,33,Digi-Key,541-CRCW120633R0FKEACCT-ND,R_1206_3216Metric,CRCW120633R0FKEAC,2
+R32 R44,"Resistor, US symbol",R_US,120,Digi-Key,P120FCT-ND,R_1206_3216Metric,ERJ-8ENF1200V,2
+R17 R18,"Resistor, US symbol",R_US,270,Digi-Key,P270FCT-ND,R_1206_3216Metric,ERJ-8ENF2700V,2
+R19 R20 R21,"Resistor, US symbol",R_US,300,Digi-Key,P300FCT-ND,R_1206_3216Metric,P300FCT-ND,3
+R1,"Resistor, US symbol",R_US,649,Digi-Key,311-649FRCT-ND,R_1206_3216Metric,RC1206FR-07649RL,1
+R41,"Resistor, US symbol",R_US,820,Digi-Key,311-820FRCT-ND,R_1206_3216Metric,RC1206FR-07820RL,1
+R27 R28 R30 R62,"Resistor, US symbol",R_US,1k,Digi-Key,P1.00KFCT-ND,R_1206_3216Metric,ERJ-8ENF1001V,4
+R33 R34,"Resistor, US symbol",R_US,1.1k,Digi-Key,311-1.10KFRCT-ND,R_1206_3216Metric,RC1206FR-071K1L,2
+R29,"Resistor, US symbol",R_US,1.5k,Digi-Key,311-1.50KFRCT-ND,R_1206_3216Metric,RC1206FR-071K5L,1
+R37 R38,"Resistor, US symbol",R_US,2.2k,Digi-Key,311-2.20KFRCT-ND,R_1206_3216Metric,RC1206FR-072K2L,2
+R14 R25,"Resistor, US symbol",R_US,4.7k,Digi-Key,P4.70KFCT-ND,R_1206_3216Metric,ERJ-8ENF4701V,2
+R2 R3 R11 R12,"Resistor, US symbol",R_US,5.1k,Digi-Key,311-5.10KFRCT-ND,R_1206_3216Metric,RC1206FR-075K1L,4
+R13,"Resistor, US symbol",R_US,9.1k,Digi-Key,P9.10KFCT-ND,R_1206_3216Metric,ERJ-8ENF9101V,1
+R15 R22 R23 R24 R26 R31 R35 R36 R39 R42 R43 R45 R56 R57 R58 R59 R60 R61 R63 R64,"Resistor, US symbol",R_US,10k,Digi-Key,P10.0KFCT-ND,R_1206_3216Metric,ERJ-8ENF1002V,20
+R4 R5 R6 R7 R8 R9 R10 R16 R40,"Resistor, US symbol",R_US,100k,Digi-Key,P100KFCT-ND,R_1206_3216Metric,ERJ-8ENF1003V,9
+U15 U16,"I2C Serial EEPROM, 2Kb, DIP-8/SOIC-8/TSSOP-8/DFN-8",24LC02,24FC64-I/SN,Digi-Key,24FC64T-I/SNCT-ND,SOIC-8_3.9x4.9mm_P1.27mm,,2
+U14,"Single NOT Gate, Low-Voltage CMOS",74AHC1G04,74AHC1G04,Digi-Key,296-1089-1-ND,SOT-23-5,SN74AHC1G04DBVR,1
+U20,"Single D Flip-Flop, Inverted Output, Low-Voltage CMOS",74LVC1G80,74LVC1G80,Digi-Key,296-9851-1-ND,SOT-23-5,SN74LVC1G80DBVR,1
+U13,"Triple SPDT CMOS Analog Switch, 2.5Ohm Ron, TSSOP-16",ADG733BRU,ADG733BRU,Digi-Key,ADG733BRUZ-REEL7CT-ND,TSSOP-16_4.4x5mm_P0.65mm,,1
+U22,Load Switch w/ Discharge Resistor,AP22913W6-7,AP22913W6-7,Digi-Key,AP22913W6-7DICT-ND,SOT-23-6,,1
+U6 U7,"Current Limit IC 0.5-1.0A, SOT-23-5",BD2221G-LBTR,BD2221G-LBTR,Digi-Key,BD2221G-LBTRCT-ND,SOT-23-5,,2
+U10,"Full Speed USB to Serial (UART/SPI/I2C) Bridge, 3MHz Max Speed, With GPIOs, 24-QFN",CY7C65211A,CY7C65211A,Digi-Key,448-CY7C65211A-24LTXI-ND,QFN-24-1EP_4x4mm_P0.5mm_EP2.65x2.65mm-LengthenedPads,,1
+U2,4 Port USB Hub Controller USB 2.0 48-TQFP,CY7C65632-48AXCT,CY7C65632-48AXCT,Digi-Key,448-CY7C65632-48AXCT-ND,LQFP-48_7x7mm_P0.5mm,,1
+U1,"CYPRESS FX2LP USB Microcontroller, 48MHz 8051, 16KB RAM, USB 2.0, I2C, SSOP-56",CY7C68013A-56PVX,CY7C68013A-56PVX,Digi-Key,448-CY7C68013A-56PVXCT-ND,SSOP-56_7.5x18.5mm_P0.635mm,,1
+U9,"800mA Fixed Low Drop Positive Voltage Regulator, Fixed Output 3.3V, SOT-223",LD1117S33TR_SOT223,LD1117S33TR,Digi-Key,497-1242-1-ND,SOT-223-3_TabPin2,,1
+U17,"Stand-Alone CAN Controller with SPI Interface, TSSOP-20",MCP2515-xST,MCP2515-xST,Digi-Key,MCP2515T-I/STCT-ND,TSSOP-20_4.4x6.5mm_P0.65mm,,1
+U21,"4 Channel Bidirectional Level Shifter with Selectable Direction, TSSOP-16",SN74AXC4T774,SN74AXC4T774,Digi-Key,296-SN74AXC4T774PWRCT-ND,TSSOP-16_4.4x5mm_P0.65mm,,1
+U11 U12,"CMOS DPQT analog multiplexer/demultiplexer, TSSOP-16",SN74CB3Q3253PWR,SN74CB3Q3253PWR,Digi-Key,296-19135-1-ND,TSSOP-16_4.4x5mm_P0.65mm,,2
+U18 U19,"High-Speed CAN Transceiver, separate VIO, silent mode, SOIC-8",TJA1051T-3,TJA1051T-3,Digi-Key,568-8684-1-ND,SOIC-8_3.9x4.9mm_P1.27mm,,2
+U3 U4 U5 U8,"Very low capacitance ESD protection diode, 2 data-line, SOT-23-6",USBLC6-2SC6,USBLC6-2SC6,Digi-Key,497-5235-1-ND,SOT-23-6,,4
+X1,"3.3V HCMOS SMD Crystal Clock Oscillator, Abracon",ASV-xxxMHz,24.000MHz,Digi-Key,535-9317-1-ND,Oscillator_SMD_Abracon_ASV-4Pin_7.0x5.1mm,ASV-24.000MHZ-EJ-T,1
