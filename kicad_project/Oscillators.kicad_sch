@@ -5,181 +5,6 @@
 	(uuid "56aa4a8b-6d1e-4777-9b42-34bd56d1fa3f")
 	(paper "A4")
 	(lib_symbols
-		(symbol "74xGxx:74LVC1G80"
-			(pin_names
-				(offset 1.016)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at -5.08 10.16 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "74LVC1G80"
-				(at 7.62 -10.16 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Single D Flip-Flop, Inverted Output, Low-Voltage CMOS"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "Single D Flip-Flop CMOS"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "SOT* SG*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "74LVC1G80_0_1"
-				(rectangle
-					(start -7.62 7.62)
-					(end 7.62 -7.62)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "74LVC1G80_1_1"
-				(pin input line
-					(at -12.7 5.08 0)
-					(length 5.08)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input clock
-					(at -12.7 -5.08 0)
-					(length 5.08)
-					(name "C"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 12.7 270)
-					(length 5.08)
-					(name "VCC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -12.7 90)
-					(length 5.08)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 12.7 5.08 180)
-					(length 5.08)
-					(name "~{Q}"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:C_Small"
 			(pin_numbers
 				(hide yes)
@@ -1164,26 +989,6 @@
 		)
 		(uuid "26ca27f9-16d0-4223-97e0-db68011bdd54")
 	)
-	(text_box "D-flip-flop used to divide clock by 2"
-		(exclude_from_sim no)
-		(at 139.7 140.97 0)
-		(size 25.4 8.89)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "b463f920-dd14-4a04-8832-d67c2c8c0655")
-	)
 	(text_box "Filter network to prevent the crystal oscillator from putting noise onto the power rail"
 		(exclude_from_sim no)
 		(at 45.72 121.92 0)
@@ -1211,18 +1016,6 @@
 		(uuid "0dc4982b-0485-4422-a213-3668000c0ada")
 	)
 	(junction
-		(at 113.03 92.71)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "254ceeab-9b85-42f9-96b9-247ac9e81147")
-	)
-	(junction
-		(at 138.43 132.08)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3e2feebc-e758-4a13-9b51-1fef19f00afc")
-	)
-	(junction
 		(at 78.74 92.71)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1240,45 +1033,19 @@
 		(color 0 0 0 0)
 		(uuid "b16ab9f5-be36-491b-a73a-2080ae7b1014")
 	)
-	(junction
-		(at 130.81 118.11)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "eff540bb-3345-4212-8178-f93220c207fa")
-	)
 	(no_connect
 		(at 105.41 101.6)
 		(uuid "d8096ffa-2d81-4161-ba00-f27c12c2bda5")
 	)
 	(wire
 		(pts
-			(xy 125.73 124.46) (xy 125.73 92.71)
+			(xy 120.65 101.6) (xy 129.54 101.6)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "01470a61-7d00-45c9-837b-140b5ca08c85")
-	)
-	(wire
-		(pts
-			(xy 113.03 121.92) (xy 113.03 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2a35d94a-9a97-4a97-bbb2-d4748fed3ea3")
-	)
-	(wire
-		(pts
-			(xy 138.43 132.08) (xy 138.43 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3c02618e-25cf-40df-aec2-3f678fc8cef5")
+		(uuid "38a27044-12f0-4e7d-a744-5133329e623d")
 	)
 	(wire
 		(pts
@@ -1302,16 +1069,6 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 118.11) (xy 101.6 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5366ea06-5487-44e9-9cf7-9048734ac090")
-	)
-	(wire
-		(pts
 			(xy 91.44 92.71) (xy 113.03 92.71)
 		)
 		(stroke
@@ -1319,36 +1076,6 @@
 			(type default)
 		)
 		(uuid "5ef096b2-47f1-4694-b0e7-bfe573ef5d94")
-	)
-	(wire
-		(pts
-			(xy 101.6 142.24) (xy 113.03 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "65cc6d46-1198-43b1-b219-6cc6678f84b3")
-	)
-	(wire
-		(pts
-			(xy 148.59 132.08) (xy 151.13 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "73c741d4-e4d1-4b17-9feb-9e4ccf750786")
-	)
-	(wire
-		(pts
-			(xy 138.43 132.08) (xy 140.97 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "74213fd9-6064-49e9-9f9c-2daf03f48ab4")
 	)
 	(wire
 		(pts
@@ -1369,16 +1096,6 @@
 			(type default)
 		)
 		(uuid "7cc42def-2f5a-44c1-82c9-ba5aef2c9e5d")
-	)
-	(wire
-		(pts
-			(xy 138.43 121.92) (xy 113.03 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7e4d1e7e-9ec9-4684-814a-689f43fc1119")
 	)
 	(wire
 		(pts
@@ -1422,36 +1139,6 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 149.86) (xy 125.73 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a45a9f3f-ed10-4276-8d1d-0ba91bef19e6")
-	)
-	(wire
-		(pts
-			(xy 130.81 118.11) (xy 143.51 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a47c763e-34a2-4f43-b0ba-7409397eefdf")
-	)
-	(wire
-		(pts
-			(xy 130.81 101.6) (xy 120.65 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a8450097-e288-4b42-b034-6f5b2853e8b7")
-	)
-	(wire
-		(pts
 			(xy 71.12 92.71) (xy 74.93 92.71)
 		)
 		(stroke
@@ -1469,26 +1156,6 @@
 			(type default)
 		)
 		(uuid "b851f6fd-66fa-4872-a3c2-21e733c147fd")
-	)
-	(wire
-		(pts
-			(xy 101.6 118.11) (xy 130.81 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c050d00f-4e73-49e1-b3f6-de6c7519eb4f")
-	)
-	(wire
-		(pts
-			(xy 130.81 110.49) (xy 130.81 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cb608519-0ce1-4d95-9226-d9271f799e7c")
 	)
 	(wire
 		(pts
@@ -1522,13 +1189,13 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 92.71) (xy 113.03 92.71)
+			(xy 137.16 101.6) (xy 143.51 101.6)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "eac9933e-b623-4cb2-9727-fa083818c536")
+		(uuid "e469a709-4995-491e-bcdc-9317b97c9e95")
 	)
 	(wire
 		(pts
@@ -1572,7 +1239,7 @@
 	)
 	(hierarchical_label "12MHZ_CLK"
 		(shape output)
-		(at 143.51 118.11 0)
+		(at 143.51 101.6 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1580,17 +1247,6 @@
 			(justify left)
 		)
 		(uuid "3cbb3d46-7d38-4041-9237-0cfc375d6419")
-	)
-	(hierarchical_label "24MHZ_CLK"
-		(shape output)
-		(at 151.13 132.08 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "efea936b-c825-4da6-a797-2d248489d8c9")
 	)
 	(symbol
 		(lib_id "Device:C_Small")
@@ -1683,168 +1339,6 @@
 			(project "mbed-ce-ci-shield-v2"
 				(path "/a0f40274-9469-4bcf-885c-e8b8a490ea54/afb13bad-f815-4420-a8e2-616c627fc38e"
 					(reference "C2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 125.73 153.67 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "39bc64b4-ee2e-4bbb-84ba-74c4a957870a")
-		(property "Reference" "#PWR043"
-			(at 125.73 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 129.286 154.432 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 125.73 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 125.73 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 125.73 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "98c2d9f5-2a22-4728-b6a0-71e9ac2b5691")
-		)
-		(instances
-			(project "mbed-ce-ci-shield-v2"
-				(path "/a0f40274-9469-4bcf-885c-e8b8a490ea54/afb13bad-f815-4420-a8e2-616c627fc38e"
-					(reference "#PWR043")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 144.78 132.08 270)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "48586452-430b-44d5-95df-426a7c0b201d")
-		(property "Reference" "R53"
-			(at 142.748 126.492 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "33"
-			(at 144.78 127.762 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
-			(at 144.526 131.064 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 144.78 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 144.78 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier" "Digi-Key"
-			(at 144.78 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LibRef" "CRCW120633R0FKEAC"
-			(at 144.78 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SKU" "541-CRCW120633R0FKEACCT-ND"
-			(at 144.78 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "811b8ca0-2472-4ee6-97a8-cdd5bb38e248")
-		)
-		(pin "2"
-			(uuid "fab9d133-18b8-4a2e-addc-007003b01639")
-		)
-		(instances
-			(project "mbed-ce-ci-shield-v2"
-				(path "/a0f40274-9469-4bcf-885c-e8b8a490ea54/afb13bad-f815-4420-a8e2-616c627fc38e"
-					(reference "R53")
 					(unit 1)
 				)
 			)
@@ -2310,7 +1804,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 130.81 114.3 0)
+		(at 133.35 101.6 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2319,7 +1813,7 @@
 		(dnp no)
 		(uuid "907c7d38-3bf5-4e5f-8e92-a4cc0e05fc1d")
 		(property "Reference" "R52"
-			(at 136.398 112.268 0)
+			(at 131.318 96.012 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2328,7 +1822,7 @@
 			)
 		)
 		(property "Value" "33"
-			(at 135.128 114.3 0)
+			(at 133.35 97.282 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2337,7 +1831,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
-			(at 131.826 114.046 90)
+			(at 133.096 100.584 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2346,7 +1840,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 130.81 114.3 0)
+			(at 133.35 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2355,7 +1849,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 130.81 114.3 0)
+			(at 133.35 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2364,7 +1858,7 @@
 			)
 		)
 		(property "Supplier" "Digi-Key"
-			(at 130.81 114.3 0)
+			(at 133.35 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2373,7 +1867,7 @@
 			)
 		)
 		(property "LibRef" "CRCW120633R0FKEAC"
-			(at 130.81 114.3 0)
+			(at 133.35 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2382,7 +1876,7 @@
 			)
 		)
 		(property "SKU" "541-CRCW120633R0FKEACCT-ND"
-			(at 130.81 114.3 0)
+			(at 133.35 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2661,109 +2155,6 @@
 		)
 	)
 	(symbol
-		(lib_id "74xGxx:74LVC1G80")
-		(at 125.73 137.16 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ce7d73f5-ea1f-416b-81c1-0b284287fd30")
-		(property "Reference" "U20"
-			(at 112.522 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "74LVC1G80"
-			(at 115.57 149.606 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-			(at 125.73 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf"
-			(at 125.73 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Single D Flip-Flop, Inverted Output, Low-Voltage CMOS"
-			(at 125.73 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LibRef" "SN74LVC1G80DBVR"
-			(at 125.73 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SKU" "296-9851-1-ND"
-			(at 125.73 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier" "Digi-Key"
-			(at 125.73 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "5"
-			(uuid "b7f6bc6e-1411-4e5c-a73d-15301fa878cd")
-		)
-		(pin "2"
-			(uuid "7a5b0cd9-7289-4346-be8e-4b31b872cc2a")
-		)
-		(pin "3"
-			(uuid "1720d00f-f698-4e06-bd5d-374b49d3c961")
-		)
-		(pin "1"
-			(uuid "07f42af4-c057-463d-90de-6560dfa280ec")
-		)
-		(pin "4"
-			(uuid "cc51e227-c9a7-429b-88f1-1451fa56e004")
-		)
-		(instances
-			(project "mbed-ce-ci-shield-v2"
-				(path "/a0f40274-9469-4bcf-885c-e8b8a490ea54/afb13bad-f815-4420-a8e2-616c627fc38e"
-					(reference "U20")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Oscillator:ASV-xxxMHz")
 		(at 113.03 101.6 0)
 		(unit 1)
@@ -2780,7 +2171,7 @@
 				)
 			)
 		)
-		(property "Value" "24.000MHz"
+		(property "Value" "12.000MHz"
 			(at 112.522 91.186 0)
 			(effects
 				(font
@@ -2815,7 +2206,7 @@
 				(hide yes)
 			)
 		)
-		(property "SKU" "535-9317-1-ND"
+		(property "SKU" "535-9309-1-ND"
 			(at 113.03 101.6 0)
 			(effects
 				(font
@@ -2833,7 +2224,7 @@
 				(hide yes)
 			)
 		)
-		(property "LibRef" "ASV-24.000MHZ-EJ-T"
+		(property "LibRef" "ASV-12.000MHZ-EJ-T"
 			(at 113.03 101.6 0)
 			(effects
 				(font
