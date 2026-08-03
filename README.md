@@ -93,8 +93,10 @@ Note: The python script run in step 2 works by modifying one of the fx2lafw sour
 
 To configure the USB-serial adapter (the CY7C65211), you will need to use Mbed CE's [cy_serial_bridge](https://github.com/mbed-ce/cy_serial_bridge) library.  This can be installed using `python3 -m pip install cy_serial_bridge`.  Then, we can use the following commands to load a configuration and program the serial number.
 
+Note: If you have any other CI shields connected to the computer, you must unplug them before running these commands.
+
 ```
-$ cy_serial_cli --pid 0x00fb load Firmware\CY7C65211-Configs\mbed_ce_cy7c65211a_cdc_base_config.bin
+$ cy_serial_cli --pid 0x00fb load Firmware/CY7C65211-Configs/mbed_ce_cy7c65211a_cdc_base_config.bin
 $ cy_serial_cli reconfigure --set-serno ShieldSN001 <replace 001 with the serial number you want to give this board>
 $ cy_serial_cli change-type I2C # Change to I2C initially so it will not drive any lines on the board
 ```
@@ -103,7 +105,7 @@ $ cy_serial_cli change-type I2C # Change to I2C initially so it will not drive a
 The logic analyzer integrated into this board runs firmware from the Sigrok project, and is designed to be used with the sigrok CLI and the PulseView GUI.  This provides a complete set of open-source tools for capturing and decoding traffic moving across the board.
 
 ### Side Note: Sigrok Windows Issues
-There is currently no Sigrok/Pulseview release that is compatible with Windows 10; neither the nightlies nor the official releases.  I have contributed a [patch](https://github.com/sigrokproject/libsigrok/pull/242) that allows it to work, but to use it, you must install MSYS2 and compile libsigrok, libsigrok-decode, and pulseview from source.
+There is currently no Sigrok/Pulseview release that is compatible with Windows 10 and fx2lafw; neither the nightlies nor the official releases.  I have contributed a [patch](https://github.com/sigrokproject/libsigrok/pull/242) that allows it to work, but to use it, you must install MSYS2 and compile libsigrok, libsigrok-decode, and pulseview from source.
 
 ### Using the Logic Analyzer via WSL2 on Windows
 If you have Windows 11 and WSL2, you can proxy USB devices to WSL using `usbipd`.  I found that this worked perfectly fine for the FX2 logic analyzer on the board.  First install usbipd using [these instructions](https://github.com/dorssel/usbipd-win/wiki/WSL-support).  Then, follow the linux instructions which follow.
