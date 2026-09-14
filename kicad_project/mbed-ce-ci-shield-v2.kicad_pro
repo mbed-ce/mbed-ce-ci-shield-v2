@@ -60,10 +60,10 @@
           "hatch_smoothing_level": 0,
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
-          "min_clearance": 0.5,
+          "min_clearance": 0.1,
           "min_island_area": 10.0,
-          "min_thickness": 0.25,
-          "pad_connection": 1,
+          "min_thickness": 0.1,
+          "pad_connection": 2,
           "remove_islands": 0,
           "thermal_relief_gap": 0.5,
           "thermal_relief_spoke_width": 0.5
@@ -686,6 +686,12 @@
           "label": "Supplier Part Number",
           "name": "Supplier Part Number",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Mating Connector",
+          "name": "Mating Connector",
+          "show": false
         }
       ],
       "filter_string": "",
@@ -744,7 +750,7 @@
         "uuid": "a0f40274-9469-4bcf-885c-e8b8a490ea54"
       }
     ],
-    "used_designators": "U13,D6,#PWR87-91,#PWR97,C27,C35,C41,C44-45,C47-51,C55,R41,J14",
+    "used_designators": "U13,L1,#PWR87-97,D6,C27,C35,C41,C44-45,C47-56,J14,R41,R54",
     "variants": []
   },
   "sheets": [
