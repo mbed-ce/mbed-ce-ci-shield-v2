@@ -2865,6 +2865,26 @@
 		)
 		(uuid "d1af8c7b-1a39-4e2b-9ac8-c55f310eab89")
 	)
+	(text_box "Note: Decoupling capacitor not physically possible to fit on pin 53"
+		(exclude_from_sim no)
+		(at 73.66 40.64 0)
+		(size 22.86 10.0822)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "05f18fe6-0c30-4bbe-b14d-4c028830a7f4")
+	)
 	(text_box "Per the RPi Pico Hardware Design Guide, the CS pin should be pulled up to VCC to meet the flash power-on specifications (see \"Power-up Timing\" in the W25Q80 datasheet).\n\nAlso, a button/jumper should be connected to CS as forcing this pin to ground causes the pico to enter the bootrom USB bootloader. "
 		(exclude_from_sim no)
 		(at 43.18 53.34 0)
@@ -3718,6 +3738,16 @@
 	)
 	(wire
 		(pts
+			(xy 140.97 57.15) (xy 140.97 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4026566f-af60-40f6-a59a-0ba008659e10")
+	)
+	(wire
+		(pts
 			(xy 200.66 87.63) (xy 220.98 87.63)
 		)
 		(stroke
@@ -3808,16 +3838,6 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 73.66) (xy 144.78 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "50ad9d06-6ced-49ac-b5d2-ace103869d87")
-	)
-	(wire
-		(pts
 			(xy 214.63 48.26) (xy 214.63 55.88)
 		)
 		(stroke
@@ -3875,6 +3895,16 @@
 			(type default)
 		)
 		(uuid "55a8c447-c769-48fa-af42-4f5286350b59")
+	)
+	(wire
+		(pts
+			(xy 104.14 74.93) (xy 104.14 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5748f785-b3cd-4951-970f-a8f883b428b7")
 	)
 	(wire
 		(pts
@@ -3985,6 +4015,16 @@
 			(type default)
 		)
 		(uuid "6fed737f-a456-4122-847a-96276304f57a")
+	)
+	(wire
+		(pts
+			(xy 140.97 50.8) (xy 140.97 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7051bffa-029d-439d-ba75-a311c55e6819")
 	)
 	(wire
 		(pts
@@ -4518,16 +4558,6 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 55.88) (xy 140.97 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dbf867ba-7bb0-40fe-aa0c-e1c5f08ae416")
-	)
-	(wire
-		(pts
 			(xy 116.84 171.45) (xy 116.84 173.99)
 		)
 		(stroke
@@ -4827,7 +4857,7 @@
 		(uuid "8a86a73d-f76c-409b-b8c1-6398c819f349")
 	)
 	(label "RP2_VCORE"
-		(at 133.35 50.8 0)
+		(at 130.81 50.8 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4969,84 +4999,6 @@
 			(justify left)
 		)
 		(uuid "f7279669-e20c-4c82-9da4-b838a3c500bf")
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 144.78 77.47 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "0dca8b25-63ac-4e1c-8739-5ab5a6ff6ef3")
-		(property "Reference" "#PWR090"
-			(at 144.78 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 148.082 78.994 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 144.78 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 144.78 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 144.78 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "48db00c0-4f47-4d7e-86a7-b263b530ebbe")
-		)
-		(instances
-			(project "mbed-ce-ci-shield-v2"
-				(path "/a0f40274-9469-4bcf-885c-e8b8a490ea54/f4546d92-79b2-49d8-a7ba-866a7f1f353e"
-					(reference "#PWR090")
-					(unit 1)
-				)
-			)
-		)
 	)
 	(symbol
 		(lib_id "Device:C_Small")
@@ -5926,7 +5878,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 140.97 53.34 0)
+		(at 140.97 54.61 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -5935,9 +5887,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "339aef57-8d64-44c4-a588-63f74183a95d")
+		(uuid "375665ae-8043-435f-8181-adbc8a641cba")
 		(property "Reference" "C54"
-			(at 147.066 52.324 0)
+			(at 147.066 53.594 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5948,7 +5900,7 @@
 			)
 		)
 		(property "Value" "4.7μF"
-			(at 148.336 55.118 0)
+			(at 148.336 56.388 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5959,7 +5911,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 140.97 53.34 0)
+			(at 140.97 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5970,7 +5922,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 140.97 53.34 0)
+			(at 140.97 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5981,7 +5933,7 @@
 			)
 		)
 		(property "Description" "0603 X7R 4.7μF 10% 6.3V AEC-Q200"
-			(at 140.97 53.34 0)
+			(at 140.97 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5992,7 +5944,7 @@
 			)
 		)
 		(property "Supplier" "Digi-Key"
-			(at 140.97 53.34 0)
+			(at 140.97 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6003,7 +5955,7 @@
 			)
 		)
 		(property "SKU" "478-KAM15CR70J475KTCT-ND"
-			(at 140.97 53.34 0)
+			(at 140.97 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6014,7 +5966,7 @@
 			)
 		)
 		(property "Mating Connector" ""
-			(at 140.97 53.34 0)
+			(at 140.97 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6025,7 +5977,7 @@
 			)
 		)
 		(property "LibRef" "KAM15CR70J475KT"
-			(at 140.97 53.34 0)
+			(at 140.97 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6036,10 +5988,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "6210e453-59d0-44f2-8fe8-e34037d485b3")
+			(uuid "6a544152-d76e-49b6-95a1-cd9a552df3cd")
 		)
 		(pin "2"
-			(uuid "6c5e181a-cc28-489a-bc90-b6154e2be224")
+			(uuid "e0d014cf-030c-4aa4-b7b3-3dee24d06fb5")
 		)
 		(instances
 			(project "mbed-ce-ci-shield-v2"
@@ -7008,6 +6960,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 104.14 74.93 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "86cc2b5b-feaa-4cb7-9623-e2595a040f6d")
+		(property "Reference" "#PWR0122"
+			(at 104.14 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 104.14 69.85 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 104.14 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 104.14 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 104.14 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "de7da4d6-43c9-4d31-a152-6bb8ff521069")
+		)
+		(instances
+			(project "mbed-ce-ci-shield-v2"
+				(path "/a0f40274-9469-4bcf-885c-e8b8a490ea54/f4546d92-79b2-49d8-a7ba-866a7f1f353e"
+					(reference "#PWR0122")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 60.96 109.22 180)
 		(unit 1)
@@ -7623,132 +7653,6 @@
 			(project "mbed-ce-ci-shield-v2"
 				(path "/a0f40274-9469-4bcf-885c-e8b8a490ea54/f4546d92-79b2-49d8-a7ba-866a7f1f353e"
 					(reference "U23")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 144.78 71.12 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "b5d9be60-d10e-47bb-8074-c4716bc18762")
-		(property "Reference" "C52"
-			(at 143.002 70.612 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "4.7μF"
-			(at 144.526 73.152 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 144.78 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 144.78 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "0603 X7R 4.7μF 10% 6.3V AEC-Q200"
-			(at 144.78 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Supplier" "Digi-Key"
-			(at 144.78 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "SKU" "478-KAM15CR70J475KTCT-ND"
-			(at 144.78 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Mating Connector" ""
-			(at 144.78 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LibRef" "KAM15CR70J475KT"
-			(at 144.78 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "2977ab12-0380-45b8-b414-3d222a0a3f45")
-		)
-		(pin "2"
-			(uuid "8a8f0de1-7ec7-489d-8cc8-c6c87fb7d875")
-		)
-		(instances
-			(project "mbed-ce-ci-shield-v2"
-				(path "/a0f40274-9469-4bcf-885c-e8b8a490ea54/f4546d92-79b2-49d8-a7ba-866a7f1f353e"
-					(reference "C52")
 					(unit 1)
 				)
 			)
