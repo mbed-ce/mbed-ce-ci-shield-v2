@@ -712,7 +712,7 @@
 							)
 						)
 					)
-					(number "S1"
+					(number "SH"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -781,7 +781,7 @@
 				)
 			)
 			(property "Description" "Unpolarized capacitor, small symbol"
-				(at 0 0 0)
+				(at 0 -10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -831,7 +831,7 @@
 						(xy -1.524 -0.508) (xy 1.524 -0.508)
 					)
 					(stroke
-						(width 0.3302)
+						(width 0.3048)
 						(type default)
 					)
 					(fill
@@ -5016,7 +5016,7 @@
 		(pin "B9"
 			(uuid "89ed364f-9f34-4184-8d69-8cbbb806fa44")
 		)
-		(pin "S1"
+		(pin "SH"
 			(uuid "37d7579b-7e9e-4bd2-89b8-f18200f2a6e0")
 		)
 		(instances

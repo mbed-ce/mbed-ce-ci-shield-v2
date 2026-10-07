@@ -1087,7 +1087,7 @@
 							)
 						)
 					)
-					(number "9"
+					(number "SH"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1800,7 +1800,7 @@
 							)
 						)
 					)
-					(number "S1"
+					(number "SH"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2049,7 +2049,7 @@
 				)
 			)
 			(property "Description" "Unpolarized capacitor, small symbol"
-				(at 0 0 0)
+				(at 0 -10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -2099,7 +2099,7 @@
 						(xy -1.524 -0.508) (xy 1.524 -0.508)
 					)
 					(stroke
-						(width 0.3302)
+						(width 0.3048)
 						(type default)
 					)
 					(fill
@@ -14042,7 +14042,7 @@
 		(pin "B9"
 			(uuid "cf2a2f66-1e93-48ab-b5c8-7098d0d12221")
 		)
-		(pin "S1"
+		(pin "SH"
 			(uuid "18adb327-dbc9-4ff4-a7e1-e15779fe9b2a")
 		)
 		(instances
@@ -19658,7 +19658,7 @@
 		(pin "8"
 			(uuid "ad2af5e4-bd96-4cec-a7d5-ad64558f99bd")
 		)
-		(pin "9"
+		(pin "SH"
 			(uuid "0536cd52-7742-49e4-9cd0-80e289a33d85")
 		)
 		(instances
