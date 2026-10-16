@@ -9,7 +9,7 @@ outputs:
       output: '%f-top.%x'
       ray_tracing: true
       view: top
-      zoom: 2
+      zoom: 0
       rotate_x: 1
       rotate_y: 1
       auto_crop: true

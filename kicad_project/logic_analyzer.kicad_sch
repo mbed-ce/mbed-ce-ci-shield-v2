@@ -2596,7 +2596,7 @@
 				)
 			)
 			(property "Value" "3.3u"
-				(at 0 0 0)
+				(at 3.302 -0.254 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -2651,6 +2651,17 @@
 			)
 			(property "SKU" "535-AOTA-B201610S3R3-101-TCT-ND"
 				(at 3.81 11.938 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LibRef" "AOTA-B201610S3R3-101-T"
+				(at 20.32 8.382 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -7324,7 +7335,7 @@
 				)
 			)
 		)
-		(property "Description" "A microcontroller by Raspberry Pi, dual CPU architecture (ARM Cortex-M33 / RISC-V Hazard3), 150MHz, no flash, 520KB SRAM, 12 PIO state machines, VQFN-60"
+		(property "Description" "MCU, ARM Cortex-M33 / RISC-V Hazard3, 150MHz, no flash, 520KB SRAM, VQFN-60"
 			(at 107.95 130.81 0)
 			(hide yes)
 			(show_name no)
@@ -9063,6 +9074,17 @@
 		)
 		(property "SKU" "535-AOTA-B201610S3R3-101-TCT-ND"
 			(at 130.048 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LibRef" "AOTA-B201610S3R3-101-T"
+			(at 126.492 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
