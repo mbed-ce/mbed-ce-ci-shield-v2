@@ -1,0 +1,192 @@
+ERC report (2026-10-16T12:52:57, Encoding UTF8)
+
+***** Sheet /
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(0.2413 mm, 1.3716 mm): Symbol C21 [C_Small]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(0.3175 mm, 0.5588 mm): Symbol C33 [C_Small]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(0.3937 mm, 0.5588 mm): Symbol C34 [C_Small]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(0.5842 mm, 0.5334 mm): Symbol C46 [C_Small]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(0.635 mm, 0.5842 mm): Symbol C7 [C_Small]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(0.6731 mm, 0.7112 mm): Symbol C10 [C_Small]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(0.6858 mm, 0.5334 mm): Symbol C3 [C_Small]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(0.7239 mm, 0.5842 mm): Symbol C6 [C_Small]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(0.762 mm, 0.5334 mm): Symbol C4 [C_Small]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(0.762 mm, 0.7112 mm): Symbol C11 [C_Small]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(1.5494 mm, 0.5207 mm): Symbol C14 [C_Small]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(1.5875 mm, 0.9779 mm): Symbol C15 [C_Small]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(2.1844 mm, 0.5207 mm): Symbol C9 [C_Small]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(2.1844 mm, 0.9779 mm): Symbol C19 [C_Small]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(0.7112 mm, 0.9779 mm): Symbol C2 [C_Small]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(0.7874 mm, 0.9779 mm): Symbol C5 [C_Small]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(0.9144 mm, 1.0287 mm): Symbol C1 [C_Small]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(0.254 mm, 1.1049 mm): Symbol C24 [C_Small]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(0.2921 mm, 1.1049 mm): Symbol C23 [C_Small]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(0.4191 mm, 1.1176 mm): Symbol C22 [C_Small]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(0.4953 mm, 0.4318 mm): Symbol C50 [C_Small]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(0.5207 mm, 1.143 mm): Symbol C49 [C_Small]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(0.5334 mm, 0.3683 mm): Symbol C27 [C_Small]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(0.5842 mm, 0.4318 mm): Symbol C35 [C_Small]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(0.635 mm, 0.3683 mm): Symbol C41 [C_Small]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(0.6731 mm, 0.4318 mm): Symbol C44 [C_Small]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(0.7239 mm, 0.3683 mm): Symbol C45 [C_Small]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(0.7747 mm, 0.4318 mm): Symbol C47 [C_Small]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(0.8382 mm, 0.8128 mm): Symbol C56 [C_Small]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(0.9271 mm, 0.5969 mm): Symbol C48 [C_Small]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(1.1938 mm, 0.4318 mm): Symbol C53 [C_Small]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(1.2954 mm, 0.7874 mm): Symbol C52 [C_Small]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(1.3208 mm, 0.5969 mm): Symbol C54 [C_Small]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(1.3462 mm, 0.7874 mm): Symbol C57 [C_Small]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(1.397 mm, 0.7874 mm): Symbol C58 [C_Small]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(1.3589 mm, 0.8001 mm): Symbol C12 [C_Small]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(1.4351 mm, 0.8001 mm): Symbol C13 [C_Small]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(1.5621 mm, 0.8509 mm): Symbol C16 [C_Small]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(1.9304 mm, 0.7874 mm): Symbol C17 [C_Small]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(1.2446 mm, 0.7747 mm): Symbol C32 [C_Small]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(0.8382 mm, 1.0795 mm): Symbol C26 [C_Small]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(1.2192 mm, 0.5207 mm): Symbol C43 [C_Small]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(1.3716 mm, 0.7366 mm): Symbol C36 [C_Small]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(1.4478 mm, 0.4191 mm): Symbol C40 [C_Small]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(1.7526 mm, 0.6731 mm): Symbol C42 [C_Small]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(1.778 mm, 0.4699 mm): Symbol C37 [C_Small]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(2.2987 mm, 0.6985 mm): Symbol C38 [C_Small]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(0.6731 mm, 0.5715 mm): Symbol C39 [C_Small]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(0.7112 mm, 0.3429 mm): Symbol C28 [C_Small]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(0.9017 mm, 1.5748 mm): Symbol C31 [C_Small]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(1.0922 mm, 1.2573 mm): Symbol C30 [C_Small]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(1.143 mm, 0.6604 mm): Symbol C25 [C_Small]
+[lib_symbol_mismatch]: Symbol 'C_Small' doesn't match copy in library 'Device'
+    ; warning
+    @(1.2827 mm, 0.381 mm): Symbol C29 [C_Small]
+
+***** Sheet /USB Hub/
+
+***** Sheet /USBSerialAdapter/
+
+***** Sheet /Logic Analyzer/
+
+***** Sheet /ArduinoConnector/
+
+***** Sheet /MicroSDCard/
+
+***** Sheet /I2CEEPROM/
+
+***** Sheet /PowerUSBPort/
+
+***** Sheet /CAN Transceiver/
+
+***** Sheet /CAN - SD Mux/
+[pin_to_pin]: Pins of type Bidirectional and Power output are connected
+    ; warning
+    @(1.3843 mm, 1.143 mm): Symbol U24 Pin 14 [4B1, Bidirectional, Line]
+    @(0.8763 mm, 1.143 mm): Symbol #FLG01 Pin 1 [Power output, Line]
+[pin_to_pin]: Pins of type Bidirectional and Power output are connected
+    ; warning
+    @(1.3843 mm, 1.1684 mm): Symbol U24 Pin 13 [4B2, Bidirectional, Line]
+    @(0.8763 mm, 1.143 mm): Symbol #FLG01 Pin 1 [Power output, Line]
+
+***** Sheet /Oscillators/
+
+ ** ERC messages: 55  Errors 0  Warnings 55
