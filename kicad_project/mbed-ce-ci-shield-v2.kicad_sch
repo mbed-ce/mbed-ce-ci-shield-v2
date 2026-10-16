@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20260306)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "10.0")
 	(uuid "a0f40274-9469-4bcf-885c-e8b8a490ea54")
 	(paper "A4")
 	(title_block
@@ -9,14 +9,22 @@
 	)
 	(lib_symbols
 		(symbol "Device:NetTie_2"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom no)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "NT"
 				(at 0 1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -25,6 +33,8 @@
 			)
 			(property "Value" "NetTie_2"
 				(at 0 -1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -33,47 +43,57 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Net tie, 2 pins"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "net tie short"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "Net*Tie*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "NetTie_2_0_1"
@@ -128,17 +148,24 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:R_US"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "R"
 				(at 2.54 0 90)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -147,6 +174,8 @@
 			)
 			(property "Value" "R_US"
 				(at -2.54 0 90)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -155,62 +184,60 @@
 			)
 			(property "Footprint" ""
 				(at 1.016 -0.254 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Resistor, US symbol"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "R res resistor"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "R_*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "R_US_0_1"
-				(polyline
-					(pts
-						(xy 0 -2.286) (xy 0 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 				(polyline
 					(pts
 						(xy 0 2.286) (xy 0 2.54)
@@ -225,7 +252,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 -0.762) (xy 1.016 -1.143) (xy 0 -1.524) (xy -1.016 -1.905) (xy 0 -2.286)
+						(xy 0 2.286) (xy 1.016 1.905) (xy 0 1.524) (xy -1.016 1.143) (xy 0 0.762)
 					)
 					(stroke
 						(width 0)
@@ -249,7 +276,19 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.286) (xy 1.016 1.905) (xy 0 1.524) (xy -1.016 1.143) (xy 0 0.762)
+						(xy 0 -0.762) (xy 1.016 -1.143) (xy 0 -1.524) (xy -1.016 -1.905) (xy 0 -2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.286) (xy 0 -2.54)
 					)
 					(stroke
 						(width 0)
@@ -264,7 +303,7 @@
 				(pin passive line
 					(at 0 3.81 270)
 					(length 1.27)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -282,7 +321,7 @@
 				(pin passive line
 					(at 0 -3.81 90)
 					(length 1.27)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -298,26 +337,37 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+3.3V"
-			(power)
-			(pin_numbers hide)
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "#PWR"
 				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Value" "+3.3V"
 				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -326,56 +376,52 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "global power"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "+3.3V_0_1"
 				(polyline
 					(pts
 						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -397,12 +443,24 @@
 						(type none)
 					)
 				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 			)
 			(symbol "+3.3V_1_1"
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -418,6 +476,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "project libraries:MbedCELogo"
 			(pin_names
@@ -426,8 +485,12 @@
 			(exclude_from_sim no)
 			(in_bom no)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "LG"
 				(at 0 11.43 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -436,94 +499,84 @@
 			)
 			(property "Value" "MbedCELogo"
 				(at 0 -12.6896 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Footprint" "project libraries:Mbed CE Logo"
 				(at 0 13.97 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Mbed CE Logo"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "Mbed CE Logo"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "MbedCELogo_0_0"
 				(polyline
 					(pts
-						(xy 5.8101 3.253) (xy 5.7775 3.5914) (xy 4.4502 3.6205) (xy 3.123 3.6496) (xy 3.123 4.8957) (xy 3.123 6.1418)
-						(xy 4.4242 6.1418) (xy 5.7255 6.1418) (xy 5.7255 6.5061) (xy 5.7255 6.8705) (xy 4.4242 6.8705)
-						(xy 3.123 6.8705) (xy 3.123 7.8594) (xy 3.123 8.8483) (xy 4.4763 8.8483) (xy 5.8295 8.8483) (xy 5.8295 9.2127)
-						(xy 5.8295 9.577) (xy 4.0599 9.577) (xy 2.2902 9.577) (xy 2.2902 6.2459) (xy 2.2902 2.9147) (xy 4.0665 2.9147)
-						(xy 5.8427 2.9147) (xy 5.8101 3.253)
-					)
-					(stroke
-						(width 0.01)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.2869 -8.432) (xy 7.2869 -7.391) (xy 5.5173 -7.391) (xy 3.7476 -7.391) (xy 3.7476 -6.35)
-						(xy 3.7476 -5.3091) (xy 5.5173 -5.3091) (xy 7.2869 -5.3091) (xy 7.2869 -4.2681) (xy 7.2869 -3.2271)
-						(xy 5.5173 -3.2271) (xy 3.7476 -3.2271) (xy 3.7476 -2.1861) (xy 3.7476 -1.1451) (xy 5.5173 -1.1451)
-						(xy 7.2869 -1.1451) (xy 7.2869 -0.1041) (xy 7.2869 0.9368) (xy 4.3722 0.9368) (xy 1.4574 0.9368)
-						(xy 1.4574 -4.2681) (xy 1.4574 -9.473) (xy 4.3722 -9.473) (xy 7.2869 -9.473) (xy 7.2869 -8.432)
-					)
-					(stroke
-						(width 0.01)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 8.6461 2.9258) (xy 9.3253 2.9897) (xy 9.8808 3.1217) (xy 10.3601 3.3345) (xy 10.8107 3.6409)
-						(xy 10.928 3.7381) (xy 11.3327 4.1756) (xy 11.6695 4.7419) (xy 11.8313 5.0914) (xy 11.945 5.4297)
-						(xy 11.9972 5.7823) (xy 12.0097 6.2459) (xy 12.0013 6.6434) (xy 11.9571 7.0084) (xy 11.8551 7.3422)
-						(xy 11.6739 7.741) (xy 11.6474 7.7938) (xy 11.1957 8.482) (xy 10.6233 9.0036) (xy 9.9198 9.368)
-						(xy 9.9028 9.3743) (xy 9.5796 9.4732) (xy 9.221 9.5355) (xy 8.7695 9.5678) (xy 8.1679 9.577) (xy 6.9746 9.577)
-						(xy 6.9746 6.2459) (xy 6.9746 3.6434) (xy 7.8074 3.6434) (xy 7.8074 6.2569) (xy 7.8074 8.8704)
-						(xy 8.6142 8.8296) (xy 9.2285 8.7566) (xy 9.9277 8.533) (xy 10.4755 8.1677) (xy 10.8694 7.6632)
-						(xy 11.1072 7.0218) (xy 11.1865 6.2459) (xy 11.1806 6.0277) (xy 11.0581 5.309) (xy 10.772 4.7155)
-						(xy 10.3154 4.2362) (xy 9.6812 3.86) (xy 9.1797 3.7036) (xy 8.5101 3.6457) (xy 7.8074 3.6434)
-						(xy 6.9746 3.6434) (xy 6.9746 2.9147) (xy 8.1008 2.9147) (xy 8.6461 2.9258)
+						(xy -7.882 2.7874) (xy -7.8376 2.8739) (xy -7.4407 3.7394) (xy -6.9706 4.7562) (xy -6.5785 5.5926)
+						(xy -6.2615 6.2547) (xy -6.0167 6.7485) (xy -5.8411 7.0802) (xy -5.7317 7.2557) (xy -5.6856 7.2811)
+						(xy -5.6818 7.2667) (xy -5.6486 7.0825) (xy -5.5943 6.7325) (xy -5.5239 6.2501) (xy -5.4421 5.669)
+						(xy -5.3541 5.0227) (xy -5.0713 2.9147) (xy -4.6649 2.9147) (xy -4.5431 2.9153) (xy -4.3489 2.9391)
+						(xy -4.2914 3.0348) (xy -4.3191 3.253) (xy -4.3254 3.2896) (xy -4.364 3.5335) (xy -4.4272 3.9457)
+						(xy -4.5106 4.4973) (xy -4.6099 5.1595) (xy -4.7207 5.9033) (xy -4.8387 6.7) (xy -4.8824 6.9951)
+						(xy -4.9967 7.7525) (xy -5.1019 8.4321) (xy -5.1939 9.0084) (xy -5.2685 9.4556) (xy -5.3217 9.7481)
+						(xy -5.3493 9.8602) (xy -5.3604 9.8639) (xy -5.4418 9.7757) (xy -5.5511 9.5622) (xy -5.5566 9.5496)
+						(xy -5.6534 9.3332) (xy -5.8151 8.979) (xy -6.0278 8.5169) (xy -6.2777 7.9764) (xy -6.5509 7.3872)
+						(xy -6.8337 6.7792) (xy -7.1122 6.1819) (xy -7.3725 5.6252) (xy -7.6009 5.1386) (xy -7.7835 4.7519)
+						(xy -7.9064 4.4949) (xy -7.9559 4.3971) (xy -7.9595 4.4) (xy -8.0249 4.5223) (xy -8.1624 4.8057)
+						(xy -8.3611 5.227) (xy -8.6101 5.7625) (xy -8.8982 6.3889) (xy -9.2145 7.0827) (xy -9.28 7.2269)
+						(xy -9.5943 7.9141) (xy -9.8802 8.5327) (xy -10.1263 9.0584) (xy -10.3213 9.4671) (xy -10.4537 9.7344)
+						(xy -10.512 9.8361) (xy -10.5237 9.8176) (xy -10.5687 9.6385) (xy -10.6384 9.2896) (xy -10.7283 8.7951)
+						(xy -10.8343 8.1795) (xy -10.9518 7.4671) (xy -11.0765 6.682) (xy -11.1288 6.3472) (xy -11.2518 5.5629)
+						(xy -11.3649 4.8456) (xy -11.4637 4.2229) (xy -11.5437 3.7228) (xy -11.6007 3.3729) (xy -11.6301 3.201)
+						(xy -11.6417 3.1371) (xy -11.642 2.9856) (xy -11.5377 2.9254) (xy -11.2771 2.9147) (xy -10.8692 2.9147)
+						(xy -10.5724 5.0748) (xy -10.5454 5.2699) (xy -10.456 5.902) (xy -10.3745 6.455) (xy -10.3059 6.8972)
+						(xy -10.2551 7.1967) (xy -10.227 7.3216) (xy -10.1831 7.2716) (xy -10.0636 7.0569) (xy -9.8813 6.6974)
+						(xy -9.6482 6.2172) (xy -9.3761 5.6403) (xy -9.0769 4.9907) (xy -8.8638 4.5234) (xy -8.5742 3.8921)
+						(xy -8.3528 3.4201) (xy -8.1885 3.0885) (xy -8.0704 2.8783) (xy -7.9873 2.7707) (xy -7.9282 2.7467)
+						(xy -7.882 2.7874)
 					)
 					(stroke
 						(width 0.01)
@@ -583,28 +636,48 @@
 				)
 				(polyline
 					(pts
-						(xy -7.882 2.7874) (xy -7.8376 2.8739) (xy -7.4407 3.7394) (xy -6.9706 4.7562) (xy -6.5785 5.5926)
-						(xy -6.2615 6.2547) (xy -6.0167 6.7485) (xy -5.8411 7.0802) (xy -5.7317 7.2557) (xy -5.6856 7.2811)
-						(xy -5.6818 7.2667) (xy -5.6486 7.0825) (xy -5.5943 6.7325) (xy -5.5239 6.2501) (xy -5.4421 5.669)
-						(xy -5.3541 5.0227) (xy -5.0713 2.9147) (xy -4.6649 2.9147) (xy -4.5431 2.9153) (xy -4.3489 2.9391)
-						(xy -4.2914 3.0348) (xy -4.3191 3.253) (xy -4.3254 3.2896) (xy -4.364 3.5335) (xy -4.4272 3.9457)
-						(xy -4.5106 4.4973) (xy -4.6099 5.1595) (xy -4.7207 5.9033) (xy -4.8387 6.7) (xy -4.8824 6.9951)
-						(xy -4.9967 7.7525) (xy -5.1019 8.4321) (xy -5.1939 9.0084) (xy -5.2685 9.4556) (xy -5.3217 9.7481)
-						(xy -5.3493 9.8602) (xy -5.3604 9.8639) (xy -5.4418 9.7757) (xy -5.5511 9.5622) (xy -5.5566 9.5496)
-						(xy -5.6534 9.3332) (xy -5.8151 8.979) (xy -6.0278 8.5169) (xy -6.2777 7.9764) (xy -6.5509 7.3872)
-						(xy -6.8337 6.7792) (xy -7.1122 6.1819) (xy -7.3725 5.6252) (xy -7.6009 5.1386) (xy -7.7835 4.7519)
-						(xy -7.9064 4.4949) (xy -7.9559 4.3971) (xy -7.9595 4.4) (xy -8.0249 4.5223) (xy -8.1624 4.8057)
-						(xy -8.3611 5.227) (xy -8.6101 5.7625) (xy -8.8982 6.3889) (xy -9.2145 7.0827) (xy -9.28 7.2269)
-						(xy -9.5943 7.9141) (xy -9.8802 8.5327) (xy -10.1263 9.0584) (xy -10.3213 9.4671) (xy -10.4537 9.7344)
-						(xy -10.512 9.8361) (xy -10.5237 9.8176) (xy -10.5687 9.6385) (xy -10.6384 9.2896) (xy -10.7283 8.7951)
-						(xy -10.8343 8.1795) (xy -10.9518 7.4671) (xy -11.0765 6.682) (xy -11.1288 6.3472) (xy -11.2518 5.5629)
-						(xy -11.3649 4.8456) (xy -11.4637 4.2229) (xy -11.5437 3.7228) (xy -11.6007 3.3729) (xy -11.6301 3.201)
-						(xy -11.6417 3.1371) (xy -11.642 2.9856) (xy -11.5377 2.9254) (xy -11.2771 2.9147) (xy -10.8692 2.9147)
-						(xy -10.5724 5.0748) (xy -10.5454 5.2699) (xy -10.456 5.902) (xy -10.3745 6.455) (xy -10.3059 6.8972)
-						(xy -10.2551 7.1967) (xy -10.227 7.3216) (xy -10.1831 7.2716) (xy -10.0636 7.0569) (xy -9.8813 6.6974)
-						(xy -9.6482 6.2172) (xy -9.3761 5.6403) (xy -9.0769 4.9907) (xy -8.8638 4.5234) (xy -8.5742 3.8921)
-						(xy -8.3528 3.4201) (xy -8.1885 3.0885) (xy -8.0704 2.8783) (xy -7.9873 2.7707) (xy -7.9282 2.7467)
-						(xy -7.882 2.7874)
+						(xy 5.8101 3.253) (xy 5.7775 3.5914) (xy 4.4502 3.6205) (xy 3.123 3.6496) (xy 3.123 4.8957) (xy 3.123 6.1418)
+						(xy 4.4242 6.1418) (xy 5.7255 6.1418) (xy 5.7255 6.5061) (xy 5.7255 6.8705) (xy 4.4242 6.8705)
+						(xy 3.123 6.8705) (xy 3.123 7.8594) (xy 3.123 8.8483) (xy 4.4763 8.8483) (xy 5.8295 8.8483) (xy 5.8295 9.2127)
+						(xy 5.8295 9.577) (xy 4.0599 9.577) (xy 2.2902 9.577) (xy 2.2902 6.2459) (xy 2.2902 2.9147) (xy 4.0665 2.9147)
+						(xy 5.8427 2.9147) (xy 5.8101 3.253)
+					)
+					(stroke
+						(width 0.01)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.2869 -8.432) (xy 7.2869 -7.391) (xy 5.5173 -7.391) (xy 3.7476 -7.391) (xy 3.7476 -6.35)
+						(xy 3.7476 -5.3091) (xy 5.5173 -5.3091) (xy 7.2869 -5.3091) (xy 7.2869 -4.2681) (xy 7.2869 -3.2271)
+						(xy 5.5173 -3.2271) (xy 3.7476 -3.2271) (xy 3.7476 -2.1861) (xy 3.7476 -1.1451) (xy 5.5173 -1.1451)
+						(xy 7.2869 -1.1451) (xy 7.2869 -0.1041) (xy 7.2869 0.9368) (xy 4.3722 0.9368) (xy 1.4574 0.9368)
+						(xy 1.4574 -4.2681) (xy 1.4574 -9.473) (xy 4.3722 -9.473) (xy 7.2869 -9.473) (xy 7.2869 -8.432)
+					)
+					(stroke
+						(width 0.01)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 8.6461 2.9258) (xy 9.3253 2.9897) (xy 9.8808 3.1217) (xy 10.3601 3.3345) (xy 10.8107 3.6409)
+						(xy 10.928 3.7381) (xy 11.3327 4.1756) (xy 11.6695 4.7419) (xy 11.8313 5.0914) (xy 11.945 5.4297)
+						(xy 11.9972 5.7823) (xy 12.0097 6.2459) (xy 12.0013 6.6434) (xy 11.9571 7.0084) (xy 11.8551 7.3422)
+						(xy 11.6739 7.741) (xy 11.6474 7.7938) (xy 11.1957 8.482) (xy 10.6233 9.0036) (xy 9.9198 9.368)
+						(xy 9.9028 9.3743) (xy 9.5796 9.4732) (xy 9.221 9.5355) (xy 8.7695 9.5678) (xy 8.1679 9.577) (xy 6.9746 9.577)
+						(xy 6.9746 6.2459) (xy 6.9746 3.6434) (xy 7.8074 3.6434) (xy 7.8074 6.2569) (xy 7.8074 8.8704)
+						(xy 8.6142 8.8296) (xy 9.2285 8.7566) (xy 9.9277 8.533) (xy 10.4755 8.1677) (xy 10.8694 7.6632)
+						(xy 11.1072 7.0218) (xy 11.1865 6.2459) (xy 11.1806 6.0277) (xy 11.0581 5.309) (xy 10.772 4.7155)
+						(xy 10.3154 4.2362) (xy 9.6812 3.86) (xy 9.1797 3.7036) (xy 8.5101 3.6457) (xy 7.8074 3.6434)
+						(xy 6.9746 3.6434) (xy 6.9746 2.9147) (xy 8.1008 2.9147) (xy 8.6461 2.9258)
 					)
 					(stroke
 						(width 0.01)
@@ -615,13 +688,75 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(text "Mbed CE CI Shield V2"
+		(exclude_from_sim no)
+		(at 20.32 24.13 0)
+		(effects
+			(font
+				(face "Calibri")
+				(size 6 6)
+				(thickness 0.8)
+				(bold yes)
+				(italic yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "73e0d928-74c6-48fb-b6e7-a8bdc6039177")
+	)
+	(text_box "I2C pullups.  1.1k gives 3mA pulldown current, the maximum allowed by the standard.  These pullups are compatible with regular I2C but should give decent signal integrity for fast mode plus as well."
+		(exclude_from_sim no)
+		(at 182.88 16.51 0)
+		(size 34.29 22.86)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "1dba7f29-424c-4998-a5f7-3b21e3a307b6")
+	)
+	(text_box "Logic Analyzer Input Mapping (depending on FUNC_SELECT settings and specific test):\n\n0: UART.MCU_RX/I2C.SCL/SPI.SCLK\n1: UART.MCU_TX/I2C.SDA/SPI.MOSI\n2: SPI.MISO\n3: SPI.HW_CS\n4: SPI.CAN_SD_CS\n5: GPOUT0/UART.RTS\n6: GPOUT1/PWM\n7: GPOUT2/UART.CTS/CAN Bus"
+		(exclude_from_sim no)
+		(at 93.98 100.33 0)
+		(size 46.99 25.4)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "e7a6ae4d-8c8e-4625-b69d-a8c0ff555344")
 	)
 	(junction
 		(at 185.42 64.77)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4ae6247e-93fa-45b4-9998-b5ed2cc95a34")
+	)
+	(junction
+		(at 21.59 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5e02b8d7-68c7-4fdf-9535-acc8af34fdc6")
 	)
 	(junction
 		(at 191.77 59.69)
@@ -863,7 +998,7 @@
 	)
 	(wire
 		(pts
-			(xy 21.59 135.89) (xy 21.59 106.68)
+			(xy 21.59 135.89) (xy 21.59 127)
 		)
 		(stroke
 			(width 0)
@@ -1001,6 +1136,16 @@
 		)
 		(uuid "2bae7b41-a409-4a6f-bd28-e93b37448c78")
 	)
+	(wire
+		(pts
+			(xy 86.36 146.05) (xy 86.36 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "323646f6-b68e-4723-96d1-6b252a383e62")
+	)
 	(bus
 		(pts
 			(xy 184.15 107.95) (xy 190.5 107.95)
@@ -1071,6 +1216,16 @@
 		)
 		(uuid "447de303-44c6-460e-8480-9084dfc02ee9")
 	)
+	(wire
+		(pts
+			(xy 60.96 161.29) (xy 86.36 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4820f4c8-8e1e-47b4-9120-94902d491a34")
+	)
 	(bus
 		(pts
 			(xy 185.42 64.77) (xy 212.09 64.77)
@@ -1103,6 +1258,16 @@
 	)
 	(wire
 		(pts
+			(xy 21.59 127) (xy 21.59 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d494800-312f-43a1-9b3c-ba9384c519a1")
+	)
+	(wire
+		(pts
 			(xy 270.51 130.81) (xy 241.3 130.81)
 		)
 		(stroke
@@ -1130,6 +1295,16 @@
 			(type default)
 		)
 		(uuid "566a742c-b2f7-4ffd-b7a6-cba09ff16495")
+	)
+	(wire
+		(pts
+			(xy 69.85 127) (xy 21.59 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58cce3d1-e04f-4aae-a87a-a6955a67b18a")
 	)
 	(wire
 		(pts
@@ -1353,6 +1528,16 @@
 	)
 	(wire
 		(pts
+			(xy 88.9 146.05) (xy 86.36 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "922130fa-2bea-436a-9b5e-c2e9b4cc0cba")
+	)
+	(wire
+		(pts
 			(xy 173.99 102.87) (xy 173.99 127)
 		)
 		(stroke
@@ -1551,6 +1736,26 @@
 		)
 		(uuid "c4f45034-a2b5-4861-97fe-b10d66f86d51")
 	)
+	(wire
+		(pts
+			(xy 69.85 142.24) (xy 69.85 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c50e969d-73e6-49c3-9597-d334947d97cc")
+	)
+	(wire
+		(pts
+			(xy 88.9 142.24) (xy 69.85 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c8d09933-15e5-48f8-a9a6-d4b54ce157b4")
+	)
 	(bus
 		(pts
 			(xy 165.1 64.77) (xy 185.42 64.77)
@@ -1663,16 +1868,6 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 142.24) (xy 88.9 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "db20a37a-5090-460a-bf68-79c26b215c07")
-	)
-	(wire
-		(pts
 			(xy 180.34 132.08) (xy 180.34 144.78)
 		)
 		(stroke
@@ -1770,59 +1965,6 @@
 			(type default)
 		)
 		(uuid "ffd47149-97b7-444a-9c99-8807ff38c24b")
-	)
-	(text_box "I2C pullups.  1.1k gives 3mA pulldown current, the maximum allowed by the standard.  These pullups are compatible with regular I2C but should give decent signal integrity for fast mode plus as well."
-		(exclude_from_sim no)
-		(at 182.88 16.51 0)
-		(size 34.29 22.86)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "1dba7f29-424c-4998-a5f7-3b21e3a307b6")
-	)
-	(text_box "Logic Analyzer Input Mapping (depending on FUNC_SELECT settings and specific test):\n\n0: UART.MCU_RX/I2C.SCL/SPI.SCLK\n1: UART.MCU_TX/I2C.SDA/SPI.MOSI\n2: SPI.MISO\n3: SPI.HW_CS\n4: SPI.CAN_SD_CS\n5: GPOUT0/UART.RTS\n6: GPOUT1/PWM\n7: GPOUT2/UART.CTS/CAN Bus"
-		(exclude_from_sim no)
-		(at 93.98 100.33 0)
-		(size 46.99 25.4)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "e7a6ae4d-8c8e-4625-b69d-a8c0ff555344")
-	)
-	(text "Mbed CE CI Shield V2"
-		(exclude_from_sim no)
-		(at 20.32 24.13 0)
-		(effects
-			(font
-				(face "Calibri")
-				(size 6 6)
-				(thickness 0.8)
-				(bold yes)
-				(italic yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "73e0d928-74c6-48fb-b6e7-a8bdc6039177")
 	)
 	(label "LOGIC_IN5"
 		(at 180.34 132.08 270)
@@ -2074,18 +2216,32 @@
 		)
 		(uuid "f8229c36-b0d7-47bb-9c3a-ee45b14e785f")
 	)
+	(label "DATA_USB_CONNECTED"
+		(at 60.96 161.29 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fc439675-9c7d-4d20-b29d-dbb5dedbdeab")
+	)
 	(symbol
 		(lib_id "Device:NetTie_2")
 		(at 161.29 129.54 270)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "176844e6-c345-4b50-a04e-dbdd34dbde96")
 		(property "Reference" "NT3"
 			(at 162.56 128.27 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2095,48 +2251,58 @@
 		)
 		(property "Value" "NetTie_2"
 			(at 162.56 130.81 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "NetTie:NetTie-2_SMD_Pad0.5mm"
 			(at 161.29 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 161.29 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Net tie, 2 pins"
 			(at 161.29 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LibRef" ""
 			(at 161.29 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -2158,14 +2324,18 @@
 		(lib_id "Device:NetTie_2")
 		(at 180.34 129.54 270)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "192ab803-aedd-49ce-80c6-739648380053")
 		(property "Reference" "NT6"
 			(at 181.61 128.27 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2175,48 +2345,58 @@
 		)
 		(property "Value" "NetTie_2"
 			(at 181.61 130.81 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "NetTie:NetTie-2_SMD_Pad0.5mm"
 			(at 180.34 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 180.34 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Net tie, 2 pins"
 			(at 180.34 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LibRef" ""
 			(at 180.34 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -2238,23 +2418,29 @@
 		(lib_id "power:+3.3V")
 		(at 175.26 25.4 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1ef32c32-a699-4bff-bf79-2f985ddcb386")
 		(property "Reference" "#PWR066"
 			(at 175.26 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "+3.3V"
 			(at 175.26 20.32 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2263,29 +2449,35 @@
 		)
 		(property "Footprint" ""
 			(at 175.26 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 175.26 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 			(at 175.26 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -2304,14 +2496,18 @@
 		(lib_id "Device:NetTie_2")
 		(at 186.69 129.54 270)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "489c7d8f-0092-4ce7-afcb-ac858a9a472e")
 		(property "Reference" "NT7"
 			(at 187.96 128.27 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2321,48 +2517,58 @@
 		)
 		(property "Value" "NetTie_2"
 			(at 187.96 130.81 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "NetTie:NetTie-2_SMD_Pad0.5mm"
 			(at 186.69 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 186.69 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Net tie, 2 pins"
 			(at 186.69 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LibRef" ""
 			(at 186.69 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -2384,14 +2590,18 @@
 		(lib_id "Device:NetTie_2")
 		(at 173.99 129.54 270)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "633376c4-606d-406d-9c41-c94ae490ea4a")
 		(property "Reference" "NT5"
 			(at 175.26 128.27 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2401,48 +2611,58 @@
 		)
 		(property "Value" "NetTie_2"
 			(at 175.26 130.81 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "NetTie:NetTie-2_SMD_Pad0.5mm"
 			(at 173.99 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 173.99 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Net tie, 2 pins"
 			(at 173.99 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LibRef" ""
 			(at 173.99 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -2464,14 +2684,18 @@
 		(lib_id "Device:NetTie_2")
 		(at 148.59 129.54 270)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6abeccea-aafa-4099-8bdd-c8aa32e821c9")
 		(property "Reference" "NT1"
 			(at 149.86 128.27 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2481,48 +2705,58 @@
 		)
 		(property "Value" "NetTie_2"
 			(at 149.86 130.81 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "NetTie:NetTie-2_SMD_Pad0.5mm"
 			(at 148.59 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 148.59 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Net tie, 2 pins"
 			(at 148.59 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LibRef" ""
 			(at 148.59 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -2545,13 +2779,17 @@
 		(at 177.8 33.02 0)
 		(mirror x)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "7484364f-8206-4fe6-b910-b53aa0a46200")
 		(property "Reference" "R34"
 			(at 175.26 30.48 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2560,6 +2798,8 @@
 		)
 		(property "Value" "1.1k"
 			(at 175.26 35.56 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2568,56 +2808,68 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 178.816 32.766 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 177.8 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Resistor, US symbol"
 			(at 177.8 33.02 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Supplier" "Digi-Key"
 			(at 177.8 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LibRef" "RC1206FR-071K1L"
 			(at 177.8 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "SKU" "311-1.10KFRCT-ND"
 			(at 177.8 33.02 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -2639,14 +2891,18 @@
 		(lib_id "Device:NetTie_2")
 		(at 167.64 129.54 270)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7a9b9b04-5bd6-491d-b421-94b372003723")
 		(property "Reference" "NT4"
 			(at 168.91 128.27 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2656,48 +2912,58 @@
 		)
 		(property "Value" "NetTie_2"
 			(at 168.91 130.81 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "NetTie:NetTie-2_SMD_Pad0.5mm"
 			(at 167.64 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 167.64 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Net tie, 2 pins"
 			(at 167.64 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LibRef" ""
 			(at 167.64 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -2719,14 +2985,18 @@
 		(lib_id "project libraries:MbedCELogo")
 		(at 30.48 180.34 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a102b84b-6a50-4d35-a21c-870d0de14a23")
 		(property "Reference" "LG1"
 			(at 30.48 167.6504 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2735,47 +3005,57 @@
 		)
 		(property "Value" "MbedCELogo"
 			(at 30.48 193.0296 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "project libraries:Mbed CE Logo"
 			(at 30.48 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 30.48 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Mbed CE Logo"
 			(at 30.48 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LibRef" ""
 			(at 30.48 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(instances
@@ -2791,14 +3071,18 @@
 		(lib_id "Device:NetTie_2")
 		(at 154.94 129.54 270)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b1302d5d-6fff-4476-8c19-e2282a7ee3a3")
 		(property "Reference" "NT2"
 			(at 156.21 128.27 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2808,48 +3092,58 @@
 		)
 		(property "Value" "NetTie_2"
 			(at 156.21 130.81 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "NetTie:NetTie-2_SMD_Pad0.5mm"
 			(at 154.94 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 154.94 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Net tie, 2 pins"
 			(at 154.94 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LibRef" ""
 			(at 154.94 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -2872,13 +3166,17 @@
 		(at 172.72 33.02 0)
 		(mirror x)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "eddb0b14-2d61-4a31-85b1-69b7d5af0f52")
 		(property "Reference" "R33"
 			(at 170.18 30.48 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2887,6 +3185,8 @@
 		)
 		(property "Value" "1.1k"
 			(at 170.18 35.56 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2895,56 +3195,68 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 173.736 32.766 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 172.72 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Resistor, US symbol"
 			(at 172.72 33.02 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Supplier" "Digi-Key"
 			(at 172.72 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LibRef" "RC1206FR-071K1L"
 			(at 172.72 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "SKU" "311-1.10KFRCT-ND"
 			(at 172.72 33.02 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -2965,17 +3277,23 @@
 	(sheet
 		(at 104.14 165.1)
 		(size 62.23 24.13)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "059ba0d2-25a2-4040-8fdd-1e25fcedcad8")
 		(property "Sheetname" "PowerUSBPort"
 			(at 104.14 164.3884 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2985,6 +3303,8 @@
 		)
 		(property "Sheetfile" "PowerUSBPort.kicad_sch"
 			(at 104.14 189.8146 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3001,19 +3321,25 @@
 		)
 	)
 	(sheet
-		(at 204.47 109.22)
-		(size 57.15 19.05)
+		(at 204.47 113.03)
+		(size 57.15 15.24)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "065d8c94-aeac-493b-9604-8ed7e7ad7af2")
 		(property "Sheetname" "CAN - SD Mux"
-			(at 204.47 108.5084 0)
+			(at 204.47 112.3184 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3023,6 +3349,8 @@
 		)
 		(property "Sheetfile" "CAN_SD_Mux.kicad_sch"
 			(at 204.47 128.8546 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3032,53 +3360,53 @@
 		)
 		(pin "SD_CARD_ENABLE" input
 			(at 204.47 116.84 180)
+			(uuid "f06c1c53-2fc6-44c9-a505-c78fa44c8ac2")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "f06c1c53-2fc6-44c9-a505-c78fa44c8ac2")
 		)
 		(pin "SPI{CAN_SD_CS CAN_CS SD_CS MOSI MISO}" bidirectional
 			(at 261.62 119.38 0)
+			(uuid "486feac1-e832-4e94-9a32-80d8fd2baa81")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "486feac1-e832-4e94-9a32-80d8fd2baa81")
 		)
 		(pin "GPOUT2" input
 			(at 204.47 121.92 180)
+			(uuid "3848b8b2-08a8-4eff-a415-b5058fe16359")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "3848b8b2-08a8-4eff-a415-b5058fe16359")
 		)
 		(pin "LOGIC_IN7" output
 			(at 204.47 127 180)
+			(uuid "bea01553-bf7a-4e79-a360-44458e088442")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "bea01553-bf7a-4e79-a360-44458e088442")
 		)
 		(pin "CAN_BUS" input
 			(at 261.62 125.73 0)
+			(uuid "67678e80-d536-4cac-a189-355272a5c1c2")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "67678e80-d536-4cac-a189-355272a5c1c2")
 		)
 		(instances
 			(project "mbed-ce-ci-shield-v2"
@@ -3091,17 +3419,23 @@
 	(sheet
 		(at 212.09 52.07)
 		(size 68.58 27.94)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "1e471c6e-a872-4398-8c30-01f0a30d79ce")
 		(property "Sheetname" "ArduinoConnector"
 			(at 212.09 51.3584 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3111,6 +3445,8 @@
 		)
 		(property "Sheetfile" "ArduinoConnector.kicad_sch"
 			(at 212.09 80.5946 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3120,63 +3456,63 @@
 		)
 		(pin "UART{MCU_TX MCU_RX RTS}" bidirectional
 			(at 212.09 62.23 180)
+			(uuid "bc06382e-b60c-4681-b933-0e57c458ecfa")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "bc06382e-b60c-4681-b933-0e57c458ecfa")
 		)
 		(pin "I2C{SCL SDA}" bidirectional
 			(at 212.09 59.69 180)
+			(uuid "7678517d-6abf-42fd-8457-af88310d0881")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "7678517d-6abf-42fd-8457-af88310d0881")
 		)
 		(pin "SPI{SCLK MOSI MISO CAN_SD_CS HW_CS}" bidirectional
 			(at 212.09 64.77 180)
+			(uuid "cbb4e3fa-521d-4328-a3c3-976dadbca981")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "cbb4e3fa-521d-4328-a3c3-976dadbca981")
 		)
 		(pin "SER_FUNC_SELECT[0..2]" output
 			(at 212.09 74.93 180)
+			(uuid "328d838e-e47a-43a0-910e-fdbccfdeb907")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "328d838e-e47a-43a0-910e-fdbccfdeb907")
 		)
 		(pin "GPOUT[0..2]" output
 			(at 212.09 77.47 180)
+			(uuid "68f20c23-e450-4b85-b8e0-839e6251cec6")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "68f20c23-e450-4b85-b8e0-839e6251cec6")
 		)
 		(pin "SD_CARD_ENABLE" output
 			(at 212.09 71.12 180)
+			(uuid "4004f5b5-cc8b-44c1-bab3-d77cea51700b")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "4004f5b5-cc8b-44c1-bab3-d77cea51700b")
 		)
 		(instances
 			(project "mbed-ce-ci-shield-v2"
@@ -3187,19 +3523,25 @@
 		)
 	)
 	(sheet
-		(at 212.09 87.63)
-		(size 46.99 17.78)
+		(at 212.09 88.9)
+		(size 46.99 16.51)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "25f8559c-e7f1-47b3-be11-aaa166453322")
 		(property "Sheetname" "MicroSDCard"
-			(at 212.09 86.9184 0)
+			(at 212.09 88.1884 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3209,6 +3551,8 @@
 		)
 		(property "Sheetfile" "MicroSDCard.kicad_sch"
 			(at 212.09 105.9946 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3218,23 +3562,23 @@
 		)
 		(pin "SPI{SCLK MOSI MISO SD_CS}" bidirectional
 			(at 212.09 97.79 180)
+			(uuid "caf56a87-6517-47b9-8299-0b31d8607341")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "caf56a87-6517-47b9-8299-0b31d8607341")
 		)
 		(pin "SD_CARD_ENABLE" input
 			(at 212.09 95.25 180)
+			(uuid "8d290be6-ff9b-4b18-a360-edc183811537")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "8d290be6-ff9b-4b18-a360-edc183811537")
 		)
 		(instances
 			(project "mbed-ce-ci-shield-v2"
@@ -3247,17 +3591,23 @@
 	(sheet
 		(at 240.03 21.59)
 		(size 39.37 13.97)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "502804e3-3934-4e7a-a466-dea1f6df7ba2")
 		(property "Sheetname" "I2CEEPROM"
 			(at 240.03 20.8784 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3267,6 +3617,8 @@
 		)
 		(property "Sheetfile" "I2CEEPROM.kicad_sch"
 			(at 240.03 36.1446 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3276,13 +3628,13 @@
 		)
 		(pin "I2C{SCL SDA}" bidirectional
 			(at 240.03 29.21 180)
+			(uuid "c9adcc86-f0d4-4fa2-b931-6950cbfbfd7c")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "c9adcc86-f0d4-4fa2-b931-6950cbfbfd7c")
 		)
 		(instances
 			(project "mbed-ce-ci-shield-v2"
@@ -3295,17 +3647,23 @@
 	(sheet
 		(at 245.11 135.89)
 		(size 34.29 24.13)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "6c93a008-184c-4fde-8753-4c70ee31e968")
 		(property "Sheetname" "CAN Transceiver"
 			(at 245.11 135.1784 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3315,6 +3673,8 @@
 		)
 		(property "Sheetfile" "CANTransceiver.kicad_sch"
 			(at 245.11 160.6046 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3324,43 +3684,43 @@
 		)
 		(pin "SPI{SCLK MOSI MISO CAN_CS}" bidirectional
 			(at 279.4 140.97 0)
+			(uuid "7a7e418b-8ac7-47b4-869d-6da0c6740b11")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "7a7e418b-8ac7-47b4-869d-6da0c6740b11")
 		)
 		(pin "~RESET" input
 			(at 245.11 156.21 180)
+			(uuid "f6162369-ff3f-4095-a00d-0f3229c552d7")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "f6162369-ff3f-4095-a00d-0f3229c552d7")
 		)
 		(pin "MCP_CAN_RX" output
 			(at 245.11 146.05 180)
+			(uuid "8290b662-53cb-43e2-87c4-a57f00c6c0a5")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "8290b662-53cb-43e2-87c4-a57f00c6c0a5")
 		)
 		(pin "12MHZ_CLK" input
 			(at 245.11 153.67 180)
+			(uuid "1947bbce-6403-4e3c-a7ef-05784c7249fe")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "1947bbce-6403-4e3c-a7ef-05784c7249fe")
 		)
 		(instances
 			(project "mbed-ce-ci-shield-v2"
@@ -3373,17 +3733,23 @@
 	(sheet
 		(at 83.82 50.8)
 		(size 58.42 27.94)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "a2280405-5315-4fe3-be7c-fd34d4bf90fe")
 		(property "Sheetname" "USBSerialAdapter"
 			(at 83.82 50.0884 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3393,6 +3759,8 @@
 		)
 		(property "Sheetfile" "USBSerialAdapter.kicad_sch"
 			(at 83.82 79.3246 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3402,73 +3770,73 @@
 		)
 		(pin "I2C{SCL SDA}" bidirectional
 			(at 142.24 59.69 0)
+			(uuid "50352751-d6e2-46ce-b674-d1b77578d38a")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "50352751-d6e2-46ce-b674-d1b77578d38a")
 		)
 		(pin "UART{MCU_TX MCU_RX RTS}" bidirectional
 			(at 142.24 62.23 0)
+			(uuid "15f07b60-c76f-43ca-97db-8528402471cd")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "15f07b60-c76f-43ca-97db-8528402471cd")
 		)
 		(pin "SPI{SCLK MOSI MISO HW_CS}" bidirectional
 			(at 142.24 64.77 0)
+			(uuid "374fe332-6c1e-4767-8ad0-c0ef8bf2e414")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "374fe332-6c1e-4767-8ad0-c0ef8bf2e414")
 		)
 		(pin "SER_FUNC_SELECT[0..2]" input
 			(at 142.24 74.93 0)
+			(uuid "6fa3cde6-f494-4d31-9acc-245f0af9cbbc")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "6fa3cde6-f494-4d31-9acc-245f0af9cbbc")
 		)
 		(pin "USB{D+ D-}" bidirectional
 			(at 83.82 60.96 180)
+			(uuid "865c5fac-2bf3-4b3d-83eb-0c8fea31c1b4")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "865c5fac-2bf3-4b3d-83eb-0c8fea31c1b4")
 		)
 		(pin "BUS_LINES[0..3]" output
 			(at 142.24 69.85 0)
+			(uuid "37d2db07-90c9-498f-b950-3820fbc34f05")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "37d2db07-90c9-498f-b950-3820fbc34f05")
 		)
 		(pin "DATA_USB_CONNECTED" input
 			(at 83.82 57.15 180)
+			(uuid "c6f089da-125a-4f35-bd5a-8f78bc602f37")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "c6f089da-125a-4f35-bd5a-8f78bc602f37")
 		)
 		(instances
 			(project "mbed-ce-ci-shield-v2"
@@ -3481,17 +3849,23 @@
 	(sheet
 		(at 29.21 132.08)
 		(size 36.83 20.32)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "afb13bad-f815-4420-a8e2-616c627fc38e")
 		(property "Sheetname" "Oscillators"
 			(at 29.21 131.3684 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3501,6 +3875,8 @@
 		)
 		(property "Sheetfile" "Oscillators.kicad_sch"
 			(at 29.21 152.9846 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3510,23 +3886,13 @@
 		)
 		(pin "12MHZ_CLK" output
 			(at 29.21 135.89 180)
+			(uuid "4485a62d-c6f3-42e7-bf22-2196a6601a38")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "4485a62d-c6f3-42e7-bf22-2196a6601a38")
-		)
-		(pin "24MHZ_CLK" output
-			(at 66.04 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "60ef4b82-7f89-48a1-a454-e89668bb6bd2")
 		)
 		(instances
 			(project "mbed-ce-ci-shield-v2"
@@ -3539,17 +3905,23 @@
 	(sheet
 		(at 26.67 83.82)
 		(size 39.37 26.67)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "d2cb7c4f-a03f-4f1c-8cab-0427a0ad2909")
 		(property "Sheetname" "USB Hub"
 			(at 26.67 83.1084 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3559,6 +3931,8 @@
 		)
 		(property "Sheetfile" "usb_hub.kicad_sch"
 			(at 26.67 111.0746 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3568,43 +3942,43 @@
 		)
 		(pin "INT_USB2{D+ D-}" bidirectional
 			(at 66.04 93.98 0)
+			(uuid "f5862ca8-c51b-4071-8b09-e2abc2da084c")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "f5862ca8-c51b-4071-8b09-e2abc2da084c")
 		)
 		(pin "INT_USB1{D+ D-}" bidirectional
 			(at 66.04 99.06 0)
+			(uuid "8779bba6-5758-4548-bc60-282a5bbc401c")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "8779bba6-5758-4548-bc60-282a5bbc401c")
 		)
 		(pin "DATA_USB_CONNECTED" output
 			(at 66.04 90.17 0)
+			(uuid "80052629-f5ed-4530-b7e9-2df6e00f9f85")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "80052629-f5ed-4530-b7e9-2df6e00f9f85")
 		)
 		(pin "12MHZ_CLK" input
 			(at 26.67 106.68 180)
+			(uuid "97a19775-0b75-47ed-8033-52bc94d45b68")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "97a19775-0b75-47ed-8033-52bc94d45b68")
 		)
 		(instances
 			(project "mbed-ce-ci-shield-v2"
@@ -3617,17 +3991,23 @@
 	(sheet
 		(at 88.9 130.81)
 		(size 46.99 20.32)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "f4546d92-79b2-49d8-a7ba-866a7f1f353e")
 		(property "Sheetname" "Logic Analyzer"
 			(at 88.9 130.0984 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3637,6 +4017,8 @@
 		)
 		(property "Sheetfile" "logic_analyzer.kicad_sch"
 			(at 88.9 151.7146 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3646,33 +4028,43 @@
 		)
 		(pin "LOGIC_IN[0..7]" input
 			(at 135.89 147.32 0)
+			(uuid "d8ad5c04-667e-4434-bebc-f677c7a6b78a")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "d8ad5c04-667e-4434-bebc-f677c7a6b78a")
 		)
 		(pin "USB{D+ D-}" bidirectional
 			(at 88.9 138.43 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
 			(uuid "9261233f-3071-4b99-a988-b8aaa2e95e5b")
-		)
-		(pin "24MHZ_CLK" input
-			(at 88.9 142.24 180)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
+		)
+		(pin "12MHZ_CLK" input
+			(at 88.9 142.24 180)
 			(uuid "e21eaf6f-0b72-4f7c-947d-1d81c1aa2a5b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "~RESET" input
+			(at 88.9 146.05 180)
+			(uuid "c082cfc8-aaff-492d-9c85-1753ab62b18d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
 		)
 		(instances
 			(project "mbed-ce-ci-shield-v2"
@@ -3687,4 +4079,5 @@
 			(page "1")
 		)
 	)
+	(embedded_fonts no)
 )
